@@ -1,99 +1,83 @@
 # Daily Progress Log
 
 **Project:** RP Network Analysis — MSc Thesis
-
-**Project Title:**  
+**Project Title:**
 Network-Based Analysis of Signalling Pathways in Retinitis Pigmentosa:
 Identifying the Protein Subnetwork Linking Disease Genes to Apoptosis
-
-**Author:** Ahmed Yomi Isiaka  
-**Supervisor:** Doc. Dr. Erinija Pranckevičienė  
-**Institution:** Vilnius University, Faculty of Medicine  
+**Author:** Ahmed Yomi Isiaka
+**Supervisor:** Doc. Dr. Erinija Pranckevičienė
+**Institution:** Vilnius University, Faculty of Medicine
 **Programme:** MSc Systems Biology
 
 ---
 
-# Entry 1 — 01 August 2026
+## Entry 1 — 2026-08-01
 
-## Objective
+### Objectives for today
+- Initialise the research project and GitHub repository
+- Review the approved research proposal
+- Plan the full computational pipeline
 
-To initialize the research project, organise the GitHub repository, review the approved research proposal, and prepare the computational workflow before beginning data collection.
+### What was done
+- Created GitHub repository: https://github.com/ahmedyomiisiaka/RP-Network-Analysis
+- Added README with project overview, pipeline, databases, and references
+- Added .gitignore to exclude raw data, large network files, and cache files
+- Reviewed the approved MSc research proposal in full
+- Planned 12-stage pipeline (Stage 0–11) mapped to databases and tools
+- Created Notebook 00: project setup, folder structure, environment check
 
----
-
-## Activities Completed
-
-- Created the GitHub repository:
-  https://github.com/ahmedyomiisiaka/RP-Network-Analysis
-
-- Added the project README containing:
-  - Project overview
-  - Research objectives
-  - Planned methodology
-  - Computational workflow
-  - Databases
-  - References
-
-- Added a `.gitignore` file to exclude:
-  - Raw datasets
-  - Large network files
-  - Python cache files
-  - Temporary files
-  - Google Colab checkpoint files
-
-- Carefully reviewed the approved MSc research proposal.
-
-- Compared the research methodology with the planned computational workflow.
-
-- Divided the project into eleven clearly defined stages to ensure reproducibility.
-
-- Prepared the project structure for implementation in Google Colab.
-
----
-
-## Project Pipeline
-
-- Stage 0 – Project initialization and documentation
-- Stage 1 – Collection and curation of RP-associated genes
-- Stage 2 – Collection of apoptosis pathway genes
-- Stage 3 – Gene identifier mapping (UniProt)
-- Stage 4 – Protein interaction network construction (STRING & IntAct)
-- Stage 5 – Context-specific network filtering
-- Stage 6 – Source-target pathway reconstruction
-- Stage 7 – Network topology analysis
-- Stage 8 – Pathway enrichment analysis
-- Stage 9 – Candidate target prioritization
-- Stage 10 – Validation using retinal single-cell RNA-seq
-- Stage 11 – Visualization and thesis figure generation
-
----
-
-## Files Created
-
+### Files created
 - README.md
 - .gitignore
 - docs/progress_log.md
+- notebooks/Notebook_00_Project_Setup.ipynb
+
+### Problems encountered
+- None
+
+### Next steps
+- Begin Stage 1: collect RP-associated genes from RetiGene and Rivolta 2025
 
 ---
 
-## Challenges
+## Entry 2 — 2026-08-01
 
-No technical issues were encountered during project initialization.
+### Objectives for today
+- Collect RP-associated genes from RetiGene database
+- Collect RP-associated genes from Rivolta et al. (2025) Table S1
+- Cross-check both lists and produce final reconciled gene list
+
+### What was done
+
+**Part A — RetiGene v1.13:**
+- Downloaded full gene table manually from https://retigene.erdc.info
+- Total genes in database: 528 (all IRDs)
+- Filtered for: Phenotype contains "RP" AND Broad category = Non-syndromic or Both
+- RP genes retrieved: 114
+
+**Part B — Rivolta et al. 2025, Table S1:**
+- Uploaded mmc2.xlsx (Am J Hum Genet, 2025)
+- Filtered for: Retained = Yes, Category contains RP
+- Genes: 101 + 2 loci = 103 total entries
+
+**Part C — Reconciliation:**
+- Genes in both sources: 101 (high confidence)
+- Only in RetiGene: 13 (newer additions since paper)
+- Only in Rivolta: 0
+- Final gene list: 116 total entries (114 genes + 2 loci)
+
+### Output files
+- data/raw/rp_genes_retigene.csv — RetiGene RP genes
+- data/raw/rp_genes_rivolta2025.csv — Rivolta 2025 RP genes
+- data/processed/rp_genes_final.csv — Final reconciled list
+
+### Problems encountered
+- RetiGene has no public API — data downloaded manually from website
+- Colab session reset required re-uploading mmc2.xlsx
+
+### Next steps (Stage 2 — Notebook 02)
+- Collect apoptosis pathway proteins from Reactome R-HSA-109581
+- Collect apoptosis pathway proteins from KEGG hsa04210
+- Cross-check and produce final apoptosis target list
 
 ---
-
-## Next Steps
-
-Begin **Stage 1**:
-
-- Download the curated Retinitis Pigmentosa gene list from RetiGene.
-- Verify the reported RP-associated genes.
-- Remove duplicate entries if necessary.
-- Create the master RP gene dataset.
-- Document every processing step.
-
----
-
-## Notes
-
-This project will be developed using reproducible computational methods. Every analysis step, code implementation, parameter selection, software package, database version, and generated output will be documented throughout the project to ensure transparency and reproducibility.
