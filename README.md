@@ -140,3 +140,113 @@ analyses (UniProt mapping, STRING, IntAct).
 ---
 
 ## Repository Structure
+
+RP-Network-Analysis/
+│
+├── notebooks/ # Google Colab notebooks (Stage 0–11)
+│ ├── Notebook_00_Project_Setup.ipynb
+│ ├── Notebook_01_RP_Gene_Collection.ipynb
+│ └── Notebook_02_Apoptosis_Gene_Collection.ipynb
+│
+├── data/
+│ ├── raw/ # Original downloaded datasets (not on GitHub)
+│ ├── processed/ # Cleaned and curated datasets
+│ └── results/ # Analysis outputs
+│
+├── scripts/ # Python helper scripts
+├── docs/ # Daily progress log and documentation
+├── figures/ # Thesis figures and diagrams
+├── README.md
+└── .gitignore
+
+
+> ⚠️ Raw data files and large network files are excluded from this
+> repository via `.gitignore`. Only notebooks, scripts, and processed
+> datasets are version-controlled.
+
+---
+
+## How to Run
+
+All analysis is performed in Google Colab. Run notebooks sequentially.
+
+| Notebook | Stage | Description |
+|----------|-------|-------------|
+| Notebook_00 | Stage 0 | Project setup and documentation |
+| Notebook_01 | Stage 1 | RP gene collection and curation |
+| Notebook_02 | Stage 2 | Apoptosis pathway gene collection |
+| Notebook_03 | Stage 3 | Gene identifier mapping (UniProt) |
+| Notebook_04 | Stage 4 | STRING and IntAct network construction |
+| Notebook_05 | Stage 5 | Context-specific network filtering |
+| Notebook_06 | Stage 6 | Source-to-target pathway reconstruction |
+| Notebook_07 | Stage 7 | Network topology analysis |
+| Notebook_08 | Stage 8 | Pathway enrichment analysis |
+| Notebook_09 | Stage 9 | Candidate target prioritisation |
+| Notebook_10 | Stage 10 | scRNA-seq validation |
+| Notebook_11 | Stage 11 | Visualisation and figure generation |
+
+Each notebook contains:
+- Objective
+- Input data
+- Methods
+- Python code
+- Output files
+- Interpretation of results
+
+---
+
+## Documentation
+
+Daily progress is recorded in `docs/progress_log.md`.
+
+Each entry includes:
+- Date
+- Objectives
+- Methods used
+- Results obtained
+- Problems encountered
+- Next steps
+
+---
+
+## References
+
+- Rivolta C., et al. (2025). RetiGene: A comprehensive gene atlas for
+  inherited retinal diseases. *Am J Hum Genet*, 112(10):2253–2265.
+  https://doi.org/10.1016/j.ajhg.2025.08.017
+
+- Szklarczyk D., et al. (2023). STRING v12: protein–protein association
+  networks and functional enrichment analysis. *Nucleic Acids Res*,
+  51(D1):D638–D646. https://doi.org/10.1093/nar/gkac1000
+
+- Gil D., et al. (2017). PathLinker: connecting signalling pathways
+  through protein interaction networks. *F1000Research*, 6:58.
+  https://doi.org/10.12688/f1000research.9559.2
+
+- Lukowski S.W., et al. (2019). A single-cell transcriptome atlas of
+  the adult human retina. *EMBO J*, 38:e100811.
+  https://doi.org/10.15252/embj.2018100811
+
+- Binder J.X., et al. (2014). COMPARTMENTS: unification and
+  visualization of protein subcellular localization evidence.
+  *Database*, bau012. https://doi.org/10.1093/database/bau012
+
+- Kotlyar M., et al. (2019). IID 2018 update: context-specific
+  physical protein–protein interactions. *Nucleic Acids Res*,
+  47(D1):D581–D589. https://doi.org/10.1093/nar/gky1037
+
+- Gillespie M., et al. (2022). The reactome pathway knowledgebase
+  2022. *Nucleic Acids Res*, 50(D1):D687–D692.
+  https://doi.org/10.1093/nar/gkab1028
+
+- Kanehisa M., et al. (2023). KEGG for taxonomy-based analysis of
+  pathways and genomes. *Nucleic Acids Res*, 51(D1):D587–D592.
+  https://doi.org/10.1093/nar/gkac963
+
+---
+
+## License
+
+This repository contains research material developed as part of an
+MSc thesis in Systems Biology at Vilnius University. The code is
+provided for academic and research purposes.
