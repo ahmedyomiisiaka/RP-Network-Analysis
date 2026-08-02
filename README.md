@@ -53,8 +53,8 @@ potential therapeutic or genome-editing targets.
 |-------|--------|------------|
 | Stage 0 | ✅ Complete | Project setup, folder structure, documentation |
 | Stage 1 | ✅ Complete | 114 RP entries: 112 protein-coding genes + 2 loci |
-| Stage 2 | 🔄 In progress | Apoptosis target genes from Reactome and KEGG |
-| Stage 3 | ⏳ Pending | UniProt identifier mapping |
+| Stage 2 | ✅ Complete | 262 apoptosis target proteins (40 in both sources) |
+| Stage 3 | 🔄 In progress | UniProt identifier mapping |
 | Stage 4 | ⏳ Pending | PPI network construction |
 | Stage 5 | ⏳ Pending | Context-specific filtering |
 | Stage 6 | ⏳ Pending | Pathway reconstruction |
