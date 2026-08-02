@@ -1,0 +1,115 @@
+gene_symbol,entry_type,inheritance,primary_category,rna_seq_tissue,scrna_broad,in_rivolta_2025,in_retigene,confidence,source_primary,date_compiled
+AGBL5,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+AHI1,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+AIPL1,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+ARHGEF18,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+ARL2BP,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+ARL3,Gene,AD-AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+ARL6,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+BBS1,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+BBS2,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+BBS9,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+BEST1,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+C19orf44,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CC2D2A,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CDHR1,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CEP162,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CEP250,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CERKL,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CFAP20,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CFAP410,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CFAP418,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CLCC1,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CLN3,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CLRN1,Gene,AR,Both,Retina-prevalent,Other cells,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CNGA1,Gene,AR,Non-syndromic,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CNGB1,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+COQ2,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+COQ5,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+COQ8B,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CRB1,Gene,AR,Non-syndromic,Retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CRX,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+CYP4V2,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+DHDDS,Gene,AR,Non-syndromic,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+DHX38,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+DYNC2H1,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+EYS,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+FAM161A,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+FLVCR1,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+GNAT1,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+GUCA1A,Gene,AD,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+GUCY2D,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+HGSNAT,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+HK1,Gene,AD,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IDH3A,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IDH3B,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IDH3G,Gene,X-linked,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IFT140,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IFT172,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IMPDH1,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IMPG1,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+IMPG2,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+INPP5E,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+KIAA1549,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+KIZ,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+KLHL7,Gene,AD-AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+LRAT,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+MAK,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+MERTK,Gene,AR,Non-syndromic,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+MVK,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+NR2E3,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+NRL,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+OFD1,Gene,X-linked,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PCARE,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PDE6A,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PDE6B,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PDE6G,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PDSS1,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+POMGNT1,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRCD,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRPF3,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRPF31,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRPF4,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRPF8,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+PRPH2,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RAX2,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RBP3,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RCBTB1,Gene,AR,Both,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RDH12,Gene,AD-AR,Non-syndromic,No data,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+REEP6,Gene,AR,Non-syndromic,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RHO,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RLBP1,Gene,AR,Non-syndromic,Retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RP1,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RP1L1,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RP2,Gene,X-linked,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RPE65,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RPGR,Gene,X-linked,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SAG,Gene,AD-AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SLC24A1,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SLC37A3,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SLC4A7,Gene,AR,Non-syndromic,Not retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SLC66A1,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SLC7A14,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SNRNP200,Gene,AD-AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+SPATA7,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+TBC1D32,Gene,AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+TMEM216,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+TOPORS,Gene,AD,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+TTC8,Gene,AR,Both,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+TULP1,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+UBAP1L,Gene,AR,Non-syndromic,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+USH2A,Gene,AR,Both,Retina-prevalent,Rod/Cone/RPE,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+ZNF408,Gene,AD-AR,Non-syndromic,Not retina-prevalent,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+RP17 locus,Locus,AD,Non-syndromic,No data,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+Xq27.1 locus,Locus,X-linked,Non-syndromic,No data,None,True,True,Both sources,Rivolta_2025_TableS1,2026-08-02
+BCOR,Gene,X-linked,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+CREB3,Gene,AR,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+FSD1L,Gene,AR,Both,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+PRPF6,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+RNU4-2,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+RNU6-1,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+RNU6-2,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+RNU6-8,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+RNU6-9,Gene,AD,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+SAXO6,Gene,AR,Non-syndromic,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
+SCLT1,Gene,AR,Both,,,False,True,RetiGene only (post-2025 addition),RetiGene_v1.13,2026-08-02
