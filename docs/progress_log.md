@@ -141,3 +141,47 @@ The final dataset was programmatically verified for:
 - Produce final apoptosis target list with UniProt accessions
 
 ---
+
+---
+
+## Entry 3 — 2026-08-02
+
+### Objectives for today
+- Collect apoptosis pathway proteins from Reactome R-HSA-109581
+- Collect apoptosis pathway proteins from KEGG hsa04210
+- Cross-check both sources and produce final apoptosis target list
+
+### Stage 2 — Apoptosis Pathway Gene Collection
+
+#### Data sources
+- Reactome pathway R-HSA-109581 (Intrinsic Pathway for Apoptosis)
+- KEGG pathway hsa04210 (Apoptosis)
+
+#### Results
+
+| Item | Count |
+|------|-------|
+| Reactome R-HSA-109581 proteins | 165 |
+| KEGG hsa04210 proteins | 137 |
+| Proteins in both sources | 40 |
+| Reactome only | 125 |
+| KEGG only | 97 |
+| **Total final apoptosis targets** | **262** |
+
+#### Key proteins confirmed present
+CASP3, CASP9, BCL2, BAX, CYCS, APAF1
+
+#### Output files
+- data/raw/apoptosis_reactome.csv
+- data/raw/apoptosis_kegg.csv
+- data/processed/apoptosis_genes_final.csv
+
+#### Problems encountered
+- Document any issues here
+
+### Next steps (Stage 3 — Notebook 03)
+- Map all RP gene symbols to UniProt accessions
+- Map all apoptosis gene symbols to UniProt accessions
+- Produce unified identifier table for network construction
+
+---
