@@ -1,263 +1,263 @@
-gene_symbol,uniprot_id,protein_name,in_reactome,in_kegg,confidence,pathway_ids,source_primary,date_compiled
-TRAF2,Q12933,UniProt:Q12933 TRAF2,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-TRADD,Q15628,UniProt:Q15628 TRADD,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-RIPK1,Q13546,UniProt:Q13546 RIPK1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-FADD,Q13158,UniProt:Q13158 FADD,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CASP8,Q14790,UniProt:Q14790 CASP8,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-TNFRSF10B,O14763,UniProt:O14763 TNFRSF10B,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-TNFRSF10A,O00220,UniProt:O00220 TNFRSF10A,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-TNFSF10,P50591,UniProt:P50591 TNFSF10,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-FASLG,P48023,UniProt:P48023 FASLG,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-FAS,P25445,UniProt:P25445 FAS,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CD14,P08571,UniProt:P08571 CD14,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TLR4,O00206,UniProt:O00206 TLR4,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-LY96,Q9Y6Y9,UniProt:Q9Y6Y9 LY96,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TICAM2,Q86XR7,UniProt:Q86XR7 TICAM2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TICAM1,Q8IUC6,UniProt:Q8IUC6 TICAM1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ORF71,F5HEZ4,UniProt:F5HEZ4 ORF71,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-MC159L,Q98325,UniProt:Q98325 MC159L,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-APPL1,Q9UKG1,UniProt:Q9UKG1 APPL1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DCC,P43146,UniProt:P43146 DCC,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CASP9,P55211,UniProt:P55211 CASP9,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CASP3,P42574,UniProt:P42574 CASP3,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-UNC5B,Q8IZJ1,UniProt:Q8IZJ1 UNC5B,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DAPK2,Q9UIK4,UniProt:Q9UIK4 DAPK2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DAPK3,O43293,UniProt:O43293 DAPK3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DAPK1,P53355,UniProt:P53355 DAPK1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-UNC5A,Q6ZN44,UniProt:Q6ZN44 UNC5A,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-MAGED1,Q9Y5V3,UniProt:Q9Y5V3 MAGED1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DIABLO,Q9NR28,UniProt:Q9NR28 DIABLO,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BAK1,Q16611,UniProt:Q16611 BAK1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BAX,Q07812,UniProt:Q07812 BAX,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CYCS,P99999,UniProt:P99999 CYCS,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-GSDMD,P57764,UniProt:P57764 GSDMD,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-GSDME,O60443,UniProt:O60443 GSDME,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-APAF1,O14727,UniProt:O14727 APAF1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CASP7,P55210,UniProt:P55210 CASP7,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-XIAP,P98170,UniProt:P98170 XIAP,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-CARD8,Q9Y2G2,UniProt:Q9Y2G2 CARD8,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-APIP,Q96GX9,UniProt:Q96GX9 APIP,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-AVEN,Q9NQS1,UniProt:Q9NQS1 AVEN,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-MAPK3,P27361,UniProt:P27361 MAPK3,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-MAPK1,P28482,UniProt:P28482 MAPK1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-UACA,Q9BZF9,UniProt:Q9BZF9 UACA,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CDKN2A,Q8N726,UniProt:Q8N726 CDKN2A,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-C1QBP,Q07021,UniProt:Q07021 C1QBP,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-BID,P55957,UniProt:P55957 BID,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BCL2,P10415,UniProt:P10415 BCL2,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BAD,Q92934,UniProt:Q92934 BAD,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-PMAIP1,Q13794,UniProt:Q13794 PMAIP1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BBC3,Q9BXH1,UniProt:Q9BXH1 BBC3,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BCL2L11,O43521,UniProt:O43521 BCL2L11,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BMF,Q96LC9,UniProt:Q96LC9 BMF,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-BCL2L1,Q07817,UniProt:Q07817 BCL2L1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-STAT3,P40763,UniProt:P40763 STAT3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-MAPK8,P45983,UniProt:P45983 MAPK8,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-DYNLL2,Q96FJ2,UniProt:Q96FJ2 DYNLL2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PPP3CC,P48454,UniProt:P48454 PPP3CC,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PPP3R1,P63098,UniProt:P63098 PPP3R1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAQ,P27348,UniProt:P27348 YWHAQ,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAH,Q04917,UniProt:Q04917 YWHAH,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAG,P61981,UniProt:P61981 YWHAG,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAB,P31946,UniProt:P31946 YWHAB,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAZ,P63104,UniProt:P63104 YWHAZ,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-SFN,P31947,UniProt:P31947 SFN,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-YWHAE,P62258,UniProt:P62258 YWHAE,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-AKT3,Q9Y243,UniProt:Q9Y243 AKT3,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-AKT2,P31751,UniProt:P31751 AKT2,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-AKT1,P31749,UniProt:P31749 AKT1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-DYNLL1,P63167,UniProt:P63167 DYNLL1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TP53,P04637,UniProt:P04637 TP53,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-E2F1,Q01094,UniProt:Q01094 E2F1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TFDP2,Q14188,UniProt:Q14188 TFDP2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TFDP1,Q14186,UniProt:Q14186 TFDP1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TP63,Q9H3D4,UniProt:Q9H3D4 TP63,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TP73,O15350,UniProt:O15350 TP73,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TP53BP2,Q13625,UniProt:Q13625 TP53BP2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PPP1R13B,Q96KQ4,UniProt:Q96KQ4 PPP1R13B,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-NMT1,P30419,UniProt:P30419 NMT1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-GZMB,P10144,UniProt:P10144 GZMB,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-PAK2,Q13177,UniProt:Q13177 PAK2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ARHGAP10,A1A4S6,UniProt:A1A4S6 ARHGAP10,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD8,P48556,UniProt:P48556 PSMD8,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD6,Q15008,UniProt:Q15008 PSMD6,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-SEM1,P60896,UniProt:P60896 SEM1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD3,O43242,UniProt:O43242 PSMD3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD11,O00231,UniProt:O00231 PSMD11,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD14,O00487,UniProt:O00487 PSMD14,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD7,P51665,UniProt:P51665 PSMD7,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD12,O00232,UniProt:O00232 PSMD12,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD13,Q9UNM6,UniProt:Q9UNM6 PSMD13,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD1,Q99460,UniProt:Q99460 PSMD1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ADRM1,Q16186,UniProt:Q16186 ADRM1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC3,P17980,UniProt:P17980 PSMC3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC6,P62333,UniProt:P62333 PSMC6,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC4,P43686,UniProt:P43686 PSMC4,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC5,P62195,UniProt:P62195 PSMC5,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC1,P62191,UniProt:P62191 PSMC1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMC2,P35998,UniProt:P35998 PSMC2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMD2,Q13200,UniProt:Q13200 PSMD2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA7,O14818,UniProt:O14818 PSMA7,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA1,P25786,UniProt:P25786 PSMA1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA2,P25787,UniProt:P25787 PSMA2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA3,P25788,UniProt:P25788 PSMA3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA4,P25789,UniProt:P25789 PSMA4,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA5,P28066,UniProt:P28066 PSMA5,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMA6,P60900,UniProt:P60900 PSMA6,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB5,P28074,UniProt:P28074 PSMB5,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB1,P20618,UniProt:P20618 PSMB1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB6,P28072,UniProt:P28072 PSMB6,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB7,Q99436,UniProt:Q99436 PSMB7,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB2,P49721,UniProt:P49721 PSMB2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB3,P49720,UniProt:P49720 PSMB3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PSMB4,P28070,UniProt:P28070 PSMB4,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-UBC,P0CG48,UniProt:P0CG48 UBC,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-UBB,P0CG47,UniProt:P0CG47 UBB,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-UBA52,P62987,UniProt:P62987 UBA52,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-RPS27A,P62979,UniProt:P62979 RPS27A,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-OMA1,Q96E52,UniProt:Q96E52 OMA1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-OPA1,O60313,UniProt:O60313 OPA1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DFFA,O00273,UniProt:O00273 DFFA,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-DFFB,O76075,UniProt:O76075 DFFB,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-KPNA1,P52294,UniProt:P52294 KPNA1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-KPNB1,Q14974,UniProt:Q14974 KPNB1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-4,P10412,UniProt:P10412 H1-4,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-5,P16401,UniProt:P16401 H1-5,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-2,P16403,UniProt:P16403 H1-2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-3,P16402,UniProt:P16402 H1-3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-1,Q02539,UniProt:Q02539 H1-1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-H1-0,P07305,UniProt:P07305 H1-0,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-HMGB2,P26583,UniProt:P26583 HMGB2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-HMGB1,P09429,UniProt:P09429 HMGB1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-STK26,Q9P289,UniProt:Q9P289 STK26,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ACIN1,Q9UKV3,UniProt:Q9UKV3 ACIN1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-STK24,Q9Y6E0,UniProt:Q9Y6E0 STK24,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-BCAP31,P51572,UniProt:P51572 BCAP31,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-BIRC2,Q13490,UniProt:Q13490 BIRC2,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-BMX,P51813,UniProt:P51813 BMX,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-FNTA,P49354,UniProt:P49354 FNTA,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PRKCD,Q05655,UniProt:Q05655 PRKCD,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CASP6,P55212,UniProt:P55212 CASP6,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-LMNB1,P20700,UniProt:P20700 LMNB1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-SATB1,Q01826,UniProt:Q01826 SATB1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ROCK1,Q13464,UniProt:Q13464 ROCK1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DSG2,Q14126,UniProt:Q14126 DSG2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-OCLN,Q16625,UniProt:Q16625 OCLN,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DSG1,Q02413,UniProt:Q02413 DSG1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DSP,P15924,UniProt:P15924 DSP,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CDH1,P12830,UniProt:P12830 CDH1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PKP1,Q13835,UniProt:Q13835 PKP1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CTNNB1,P35222,UniProt:P35222 CTNNB1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TJP2,Q9UDY2,UniProt:Q9UDY2 TJP2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DSG3,P32926,UniProt:P32926 DSG3,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-TJP1,Q07157,UniProt:Q07157 TJP1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-CLSPN,Q9HAW4,UniProt:Q9HAW4 CLSPN,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-SPTAN1,Q13813,UniProt:Q13813 SPTAN1,True,True,Both sources,"R-HSA-109581, hsa04210",Reactome,2026-08-02
-GAS2,O43903,UniProt:O43903 GAS2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DBNL,Q9UJU6,UniProt:Q9UJU6 DBNL,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-GSN,P06396,UniProt:P06396 GSN,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PLEC,Q15149,UniProt:Q15149 PLEC,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-VIM,P08670,UniProt:P08670 VIM,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-ADD1,P35611,UniProt:P35611 ADD1,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-MAPT,P10636,UniProt:P10636 MAPT,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PTK2,Q05397,UniProt:Q05397 PTK2,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PRKCQ,Q04759,UniProt:Q04759 PRKCQ,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-APC,P25054,UniProt:P25054 APC,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-DNM1L,O00429,UniProt:O00429 DNM1L,True,False,Reactome only,R-HSA-109581,Reactome,2026-08-02
-PIK3CD,A0A2K8FKV1,"PIK3CD, APDS, IMD14, IMD14A, IMD14B, P110DELTA, PI3K, ROCHIS, p110D; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA1B,P68363,"TUBA1B, K-ALPHA-1; tubulin alpha-1B chain",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-IKBKB,O14920,"IKBKB, IKK-2, IKK-beta, IKK2, IKKB, IMD15, IMD15A, IMD15B, NFKBIKB; inhibitor of nuclear factor kappa-B kinase subunit beta isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-GADD45A,P24522,"GADD45A, DDIT1, GADD45; growth arrest and DNA damage-inducible protein GADD45 alpha isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA8,Q9NY65,"TUBA8, CDCBM8, MACTHC2, TUBAL2; tubulin alpha-8 chain isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-EIF2AK3,B3KY45,"EIF2AK3, PEK, PERK, WRS; eukaryotic translation initiation factor 2-alpha kinase 3 isoform 1 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-RELA,Q04206,"RELA, AIF3BL3, CMCU, NFKB3, p65; transcription factor p65 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CHUK,O15111,"CHUK, BPS2, IKBKA, IKK-1, IKK-alpha, IKK1, IKKA, NFKBIKA, TCF16; inhibitor of nuclear factor kappa-B kinase subunit alpha isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSZ,Q9UBR2,"CTSZ, CTSX; cathepsin Z preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-LMNA,A0A384MQX1,"LMNA, CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1; lamin isoform A",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ACTG1,P63261,"ACTG1, ACT, ACTG, DFNA20, DFNA26, HEL-176; actin, cytoplasmic 2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CAPN1,B2RDI5,"CAPN1, CANP, CANP1, CANPL1, SPG76, muCANP, muCL; calpain-1 catalytic subunit",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-FOS,Q6FG41,"FOS, AP-1, C-FOS, p55; protein c-Fos",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NGF,P01138,"NGF, Beta-NGF, HSAN5, NGFB; beta-nerve growth factor precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PARP1,P09874,"PARP1, ADPRT, ADPRT 1, ADPRT1, ARTD1, PARP, PARP-1, PARS, PPOL, Poly-PARP, pADPRT-1; poly [ADP-ribose] polymerase 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NFKB1,P19838,"NFKB1, CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB; nuclear factor NF-kappa-B p105 subunit isoform 2 proprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PRF1,P14222,"PRF1, HPLH2, P1, PFP; perforin-1 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MCL1,Q07820,"MCL1, BCL2L3, EAT, MCL1-ES, MCL1L, MCL1S, Mcl-1, TM, bcl2-L-3, mcl1/EAT; induced myeloid leukemia cell differentiation protein Mcl-1 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NOL3,Q5TZN6,"NOL3, ARC, FCM, MYOCL1, MYP, NOP, NOP30; nucleolar protein 3 isoform MYP",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSL,P07711,"CTSL, CATL, CTSL1, MEP; procathepsin L isoform 1 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIK3R3,Q8N381,"PIK3R3, p55, p55-GAMMA, p55PIK; phosphatidylinositol 3-kinase regulatory subunit gamma isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSD,V9HWI3,"CTSD, CLN10, CPSD, HEL-S-130P; cathepsin D preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIK3CA,Q4LE51,"PIK3CA, CCM4, CLAPO, CLOVE, CWS5, HMH, MCAP, MCM, MCMTC, PI3K, PI3K-alpha, p110-alpha; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CASP2,A0A0S2Z3H1,"CASP2, CASP-2, ICH1, MRT80, NEDD-2, NEDD2, PPP1R57; caspase-2 isoform 1 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ERN1,O75460,"ERN1, IRE1, IRE1P, IRE1a, hIRE1p; serine/threonine-protein kinase/endoribonuclease IRE1 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-AIFM1,O95831,"AIFM1, AIF, AUNX1, CMT2D, CMTX4, COWCK, COXPD6, DFNX5, NADMR, NAMSD, PDCD8, SEMDHL; apoptosis-inducing factor 1, mitochondrial isoform AIF precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA3C,Q1ZYQ1,"TUBA3C, TUBA2, bA408E5.3; tubulin alpha-3C chain",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PARP3,Q9Y6F1,"PARP3, ADPRT3, ADPRTL2, ADPRTL3, ARTD3, IRT1, PADPRT-3; protein mono-ADP-ribosyltransferase PARP3 isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TNFRSF1A,P19438,"TNFRSF1A, CD120a, FPF, TBP1, TNF-R, TNF-R-I, TNF-R55, TNFAR, TNFR1, TNFR55, TNFR60, p55, p55-R, p60; tumor necrosis factor receptor superfamily member 1A isoform 1 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PARP4,Q9UKK3,"PARP4, ADPRTL1, ARTD4, PARP-4, PARPL, PH5P, VAULT3, VPARP, VWA5C, p193; protein mono-ADP-ribosyltransferase PARP4",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA3E,A0AAG2UW83,TUBA3E; tubulin alpha-3E chain,False,True,KEGG only,hsa04210,KEGG,2026-08-02
-GADD45G,O95257,"GADD45G, CR6, DDIT2, GADD45gamma, GRP17; growth arrest and DNA damage-inducible protein GADD45 gamma",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-DAB2IP,Q5VWQ8,"DAB2IP, AF9Q34, AIP-1, AIP1, DIP1/2; disabled homolog 2-interacting protein isoform 3",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAP3K5,Q99683,"MAP3K5, ASK1, MAPKKK5, MEKK5; mitogen-activated protein kinase kinase kinase 5 isoform 2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CFLAR,A0A024R3Y4,"CFLAR, CASH, CASP8AP1, CLARP, Casper, FLAME, FLAME-1, FLAME1, FLIP, I-FLICE, MRIT, c-FLIP, c-FLIPL, c-FLIPR, c-FLIPS, cFLIP; CASP8 and FADD-like apoptosis regulator isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBAL3,A6NHL2,TUBAL3; tubulin alpha chain-like 3 isoform 1,False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PDPK1,O15530,"PDPK1, PDK1, PDPK2, PDPK2P, PRO0461; 3-phosphoinositide-dependent protein kinase 1 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-BIRC5,O15392,"BIRC5, API4, EPR-1; baculoviral IAP repeat-containing protein 5 isoform 2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TRAF1,Q13077,"TRAF1, EBI6, MGC:10353; TNF receptor-associated factor 1 isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PTPN13,Q12923,"PTPN13, FAP-1, PNP1, PTP-BAS, PTP-BL, PTP1E, PTPL1, PTPLE, hPTP1E; tyrosine-protein phosphatase non-receptor type 13 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-EIF2S1,Q53XC0,"EIF2S1, EIF-2, EIF-2A, EIF-2alpha, EIF2, EIF2A; eukaryotic translation initiation factor 2 subunit 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-RAF1,L7RRS6,"RAF1, CMD1NN, CRAF, NS5, Raf-1, c-Raf; RAF proto-oncogene serine/threonine-protein kinase isoform b",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TP53AIP1,Q9HCN2,"TP53AIP1, P53AIP1; p53-regulated apoptosis-inducing protein 1 isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA1C,Q9BQE3,"TUBA1C, OZEMA24, TUBA6, bcm948; tubulin alpha-1C chain isoform c",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSK,P43235,"CTSK, CTS02, CTSO, CTSO1, CTSO2, PKND, PYCD; cathepsin K preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ATM,Q13315,"ATM, AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1; serine-protein kinase ATM isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CSF2RB,Q6NSJ8,"CSF2RB, CD131, CDw131, IL3RB, IL5RB, SMDP5, betaGMR; cytokine receptor common subunit beta isoform 2 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSH,P09668,"CTSH, ACC-4, ACC-5, ACC4, ACC5, CPSB; pro-cathepsin H isoform a preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSB,A0A024R374,"CTSB, APPS, CPSB, KWE, RECEUP; cathepsin B isoform 1 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-IKBKG,Q9Y6K9,"IKBKG, AMCBX1, EDAID1, FIP-3, FIP3, Fip3p, IKK-gamma, IKKAP1, IKKG, IMD33, IP, IP1, IP2, IPD2, NEMO, SAIDX, ZC2HC9; NF-kappa-B essential modulator isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-IL3,P08700,"IL3, IL-3, MCGF, MULTI-CSF; interleukin-3 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NTRK1,P04629,"NTRK1, MTC, TRK, TRK1, TRKA, Trk-A, p140-TrkA; high affinity nerve growth factor receptor isoform 2 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NFKBIA,P25963,"NFKBIA, EDAID2, IKBA, MAD-3, NFKBI; NF-kappa-B inhibitor alpha",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ATF4,P18848,"ATF4, CREB-2, CREB2, TAXREB67, TXREB; cyclic AMP-dependent transcription factor ATF-4",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSC,P53634,"CTSC, CPPI, DPP-I, DPP1, DPPI, HMS, JP, JPD, PALS, PDON1, PLS; dipeptidyl peptidase 1 isoform a preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSF,Q9UBX1,"CTSF, CATSF, CLN13; cathepsin F precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-GADD45B,O75293,"GADD45B, GADD45BETA, MYD118; growth arrest and DNA damage-inducible protein GADD45 beta",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-BCL2A1,Q16548,"BCL2A1, ACC-1, ACC-2, ACC1, ACC2, BCL2L5, BFL1, GRS, HBPA1; bcl-2-related protein A1 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ACTB,Q1KLZ0,"ACTB, BKRNS, BNS, BRWS1, CSMH, DDS1, PS1TP5BP1, THC8; actin, cytoplasmic 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PARP2,Q9UGN5,"PARP2, ADPRT2, ADPRTL2, ADPRTL3, ARTD2, PARP-2, pADPRT-2; poly [ADP-ribose] polymerase 2 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-HRAS,X5D945,"HRAS, C-BAS/HAS, C-H-RAS, C-HA-RAS1, CTLO, H-RASIDX, HAMSV, HRAS1, RASH1, p21ras; GTPase HRas isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CAPN2,Q59EF6,"CAPN2, CANP2, CANPL2, CANPml, mCANP; calpain-2 catalytic subunit isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-JUN,P05412,"JUN, AP-1, AP1, c-Jun, cJUN, p39; transcription factor Jun",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-DDIT3,Q53YD1,"DDIT3, AltDDIT3, C/EBPzeta, CEBPZ, CHOP, CHOP-10, CHOP10, GADD153; DNA damage-inducible transcript 3 protein isoform 2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ENDOG,E5KNL5,"ENDOG; endonuclease G, mitochondrial precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ITPR2,Q14571,"ITPR2, ANHD, CFAP48, INSP3R2, IP3R2; inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-DAXX,Q53F85,"DAXX, BING2, DAP6, EAP1, SMIM40; death domain-associated protein 6 isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIK3R1,P27986,"PIK3R1, AGM7, GRB1, IMD36, p85, p85-ALPHA, p85alpha; phosphatidylinositol 3-kinase regulatory subunit alpha isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAP3K14,Q68D39,"MAP3K14, FTDCR1B, HS, HSNIK, IMD112, NIK; mitogen-activated protein kinase kinase kinase 14",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-IL3RA,P26951,"IL3RA, CD123, IL-3R-alpha, IL3R, IL3RAY, IL3RX, IL3RY, hIL-3Ra; interleukin-3 receptor subunit alpha isoform 1 precursor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIK3CB,P42338,"PIK3CB, P110BETA, PI3K, PI3KBETA, PIK3C1; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ITPR3,Q59ES2,"ITPR3, CMT1J, IMD132, IMD133, IP3R, IP3R-3, IP3R3; inositol 1,4,5-trisphosphate-gated calcium channel ITPR3",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-NRAS,Q5U091,"NRAS, ALPS4, CMNS, KRAS, N-ras, NCMS, NRAS1, NS6; GTPase NRas",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CASP10,Q92851,"CASP10, ALPS2, FLICE-2, FLICE2, MCH4; caspase-10 isoform 2 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-KRAS,P01116,"KRAS, 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2; GTPase KRas isoform a",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSO,P43234,"CTSO, CTSO1; cathepsin O preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAPK9,P45984,"MAPK9, JNK-55, JNK2, JNK2A, JNK2ALPHA, JNK2B, JNK2BETA, PRKM9, SAPK, SAPK1a, p54a, p54aSAPK; mitogen-activated protein kinase 9 isoform alpha2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIK3R2,O00459,"PIK3R2, MPPH, MPPH1, P85B, p85, p85-BETA, p85beta; phosphatidylinositol 3-kinase regulatory subunit beta",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA1A,Q71U36,"TUBA1A, B-ALPHA-1, LIS3, TUBA3; tubulin alpha-1A chain isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSV,B2R717,"CTSV, CATL2, CTSL2, CTSU; cathepsin L2 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAPK10,P53779,"MAPK10, JNK3, JNK3A, PRKM10, SAPK1b, p493F12, p54bSAPK; mitogen-activated protein kinase 10 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-P3R3URF-PIK3R3,B4DXM8,"P3R3URF-PIK3R3, LOC110117498-PIK3R3; LOC110117498-PIK3R3 readthrough",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAP2K1,A4QPA9,"MAP2K1, CFC3, MAPKK1, MEK1, MEL, MKK1, PRKMK1; dual specificity mitogen-activated protein kinase kinase 1 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA4A,P68366,"TUBA4A, ALS22, CMYO26, FTDALS9, H2-ALPHA, OZEMA23, SPAX11, TUBA1; tubulin alpha-4A chain isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-SEPTIN4,O43236,"SEPTIN4, ARTS, BRADEION, C17orf47, CE5B3, H5, MART, PNUTL2, SEP4, SEPT4, SPGF99, Septin-4, hCDCREL-2, hucep-7; septin-4 isoform 11",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-ITPR1,Q14643,"ITPR1, ACV, CLA4, INSP3R1, IP3R, IP3R1, PPP1R94, SCA15, SCA16, SCA29; inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-HRK,O00198,"HRK, DP5, HARAKIRI; activator of apoptosis harakiri",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CASP12,Q6UXS9,"CASP12, CASP-12, CASP12P1; inactive caspase-12",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-HTRA2,A0A384MDW9,"HTRA2, MGCA8, OMI, PARK13, PRSS25; serine protease HTRA2, mitochondrial isoform 1 preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-BIRC3,Q13489,"BIRC3, AIP1, API2, CIAP2, HAIP1, HIAP1, IAP-1, MALT2, MIHC, RNF49, c-IAP2; baculoviral IAP repeat-containing protein 3",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-LMNB2,Q03252,"LMNB2, EPM9, LAMB2, LMN2, MCPH27; lamin-B2",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-MAP2K2,P36507,"MAP2K2, CFC4, MAPKK2, MEK2, MKK2, PRKMK2; dual specificity mitogen-activated protein kinase kinase 2 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSW,P56202,"CTSW, LYPN; cathepsin W preproprotein",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-CTSS,P25774,CTSS; cathepsin S isoform 1 preproprotein,False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TNF,Q5STB3,"TNF, DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F; tumor necrosis factor",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-PIDD1,Q9HB75,"PIDD1, LRDD, MRT75, PIDD; p53-induced death domain-containing protein 1 isoform 1",False,True,KEGG only,hsa04210,KEGG,2026-08-02
-TUBA4B,Q9H853,"TUBA4B, TUBA4; tubulin-like protein alpha-4B",False,True,KEGG only,hsa04210,KEGG,2026-08-02
+gene_symbol	uniprot_id	protein_name	in_reactome	in_kegg	confidence	pathway_ids	source_primary	date_compiled
+TRAF2	Q12933	UniProt:Q12933 TRAF2	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+TRADD	Q15628	UniProt:Q15628 TRADD	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+RIPK1	Q13546	UniProt:Q13546 RIPK1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+FADD	Q13158	UniProt:Q13158 FADD	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CASP8	Q14790	UniProt:Q14790 CASP8	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+TNFRSF10B	O14763	UniProt:O14763 TNFRSF10B	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+TNFRSF10A	O00220	UniProt:O00220 TNFRSF10A	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+TNFSF10	P50591	UniProt:P50591 TNFSF10	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+FASLG	P48023	UniProt:P48023 FASLG	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+FAS	P25445	UniProt:P25445 FAS	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CD14	P08571	UniProt:P08571 CD14	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TLR4	O00206	UniProt:O00206 TLR4	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+LY96	Q9Y6Y9	UniProt:Q9Y6Y9 LY96	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TICAM2	Q86XR7	UniProt:Q86XR7 TICAM2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TICAM1	Q8IUC6	UniProt:Q8IUC6 TICAM1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ORF71	F5HEZ4	UniProt:F5HEZ4 ORF71	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+MC159L	Q98325	UniProt:Q98325 MC159L	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+APPL1	Q9UKG1	UniProt:Q9UKG1 APPL1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DCC	P43146	UniProt:P43146 DCC	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CASP9	P55211	UniProt:P55211 CASP9	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CASP3	P42574	UniProt:P42574 CASP3	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+UNC5B	Q8IZJ1	UniProt:Q8IZJ1 UNC5B	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DAPK2	Q9UIK4	UniProt:Q9UIK4 DAPK2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DAPK3	O43293	UniProt:O43293 DAPK3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DAPK1	P53355	UniProt:P53355 DAPK1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+UNC5A	Q6ZN44	UniProt:Q6ZN44 UNC5A	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+MAGED1	Q9Y5V3	UniProt:Q9Y5V3 MAGED1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DIABLO	Q9NR28	UniProt:Q9NR28 DIABLO	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BAK1	Q16611	UniProt:Q16611 BAK1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BAX	Q07812	UniProt:Q07812 BAX	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CYCS	P99999	UniProt:P99999 CYCS	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+GSDMD	P57764	UniProt:P57764 GSDMD	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+GSDME	O60443	UniProt:O60443 GSDME	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+APAF1	O14727	UniProt:O14727 APAF1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CASP7	P55210	UniProt:P55210 CASP7	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+XIAP	P98170	UniProt:P98170 XIAP	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+CARD8	Q9Y2G2	UniProt:Q9Y2G2 CARD8	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+APIP	Q96GX9	UniProt:Q96GX9 APIP	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+AVEN	Q9NQS1	UniProt:Q9NQS1 AVEN	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+MAPK3	P27361	UniProt:P27361 MAPK3	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+MAPK1	P28482	UniProt:P28482 MAPK1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+UACA	Q9BZF9	UniProt:Q9BZF9 UACA	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CDKN2A	Q8N726	UniProt:Q8N726 CDKN2A	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+C1QBP	Q07021	UniProt:Q07021 C1QBP	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+BID	P55957	UniProt:P55957 BID	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BCL2	P10415	UniProt:P10415 BCL2	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BAD	Q92934	UniProt:Q92934 BAD	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+PMAIP1	Q13794	UniProt:Q13794 PMAIP1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BBC3	Q9BXH1	UniProt:Q9BXH1 BBC3	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BCL2L11	O43521	UniProt:O43521 BCL2L11	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BMF	Q96LC9	UniProt:Q96LC9 BMF	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+BCL2L1	Q07817	UniProt:Q07817 BCL2L1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+STAT3	P40763	UniProt:P40763 STAT3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+MAPK8	P45983	UniProt:P45983 MAPK8	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+DYNLL2	Q96FJ2	UniProt:Q96FJ2 DYNLL2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PPP3CC	P48454	UniProt:P48454 PPP3CC	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PPP3R1	P63098	UniProt:P63098 PPP3R1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAQ	P27348	UniProt:P27348 YWHAQ	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAH	Q04917	UniProt:Q04917 YWHAH	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAG	P61981	UniProt:P61981 YWHAG	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAB	P31946	UniProt:P31946 YWHAB	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAZ	P63104	UniProt:P63104 YWHAZ	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+SFN	P31947	UniProt:P31947 SFN	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+YWHAE	P62258	UniProt:P62258 YWHAE	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+AKT3	Q9Y243	UniProt:Q9Y243 AKT3	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+AKT2	P31751	UniProt:P31751 AKT2	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+AKT1	P31749	UniProt:P31749 AKT1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+DYNLL1	P63167	UniProt:P63167 DYNLL1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TP53	P04637	UniProt:P04637 TP53	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+E2F1	Q01094	UniProt:Q01094 E2F1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TFDP2	Q14188	UniProt:Q14188 TFDP2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TFDP1	Q14186	UniProt:Q14186 TFDP1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TP63	Q9H3D4	UniProt:Q9H3D4 TP63	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TP73	O15350	UniProt:O15350 TP73	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TP53BP2	Q13625	UniProt:Q13625 TP53BP2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PPP1R13B	Q96KQ4	UniProt:Q96KQ4 PPP1R13B	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+NMT1	P30419	UniProt:P30419 NMT1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+GZMB	P10144	UniProt:P10144 GZMB	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+PAK2	Q13177	UniProt:Q13177 PAK2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ARHGAP10	A1A4S6	UniProt:A1A4S6 ARHGAP10	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD8	P48556	UniProt:P48556 PSMD8	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD6	Q15008	UniProt:Q15008 PSMD6	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+SEM1	P60896	UniProt:P60896 SEM1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD3	O43242	UniProt:O43242 PSMD3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD11	O00231	UniProt:O00231 PSMD11	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD14	O00487	UniProt:O00487 PSMD14	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD7	P51665	UniProt:P51665 PSMD7	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD12	O00232	UniProt:O00232 PSMD12	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD13	Q9UNM6	UniProt:Q9UNM6 PSMD13	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD1	Q99460	UniProt:Q99460 PSMD1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ADRM1	Q16186	UniProt:Q16186 ADRM1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC3	P17980	UniProt:P17980 PSMC3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC6	P62333	UniProt:P62333 PSMC6	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC4	P43686	UniProt:P43686 PSMC4	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC5	P62195	UniProt:P62195 PSMC5	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC1	P62191	UniProt:P62191 PSMC1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMC2	P35998	UniProt:P35998 PSMC2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMD2	Q13200	UniProt:Q13200 PSMD2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA7	O14818	UniProt:O14818 PSMA7	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA1	P25786	UniProt:P25786 PSMA1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA2	P25787	UniProt:P25787 PSMA2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA3	P25788	UniProt:P25788 PSMA3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA4	P25789	UniProt:P25789 PSMA4	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA5	P28066	UniProt:P28066 PSMA5	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMA6	P60900	UniProt:P60900 PSMA6	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB5	P28074	UniProt:P28074 PSMB5	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB1	P20618	UniProt:P20618 PSMB1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB6	P28072	UniProt:P28072 PSMB6	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB7	Q99436	UniProt:Q99436 PSMB7	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB2	P49721	UniProt:P49721 PSMB2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB3	P49720	UniProt:P49720 PSMB3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PSMB4	P28070	UniProt:P28070 PSMB4	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+UBC	P0CG48	UniProt:P0CG48 UBC	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+UBB	P0CG47	UniProt:P0CG47 UBB	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+UBA52	P62987	UniProt:P62987 UBA52	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+RPS27A	P62979	UniProt:P62979 RPS27A	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+OMA1	Q96E52	UniProt:Q96E52 OMA1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+OPA1	O60313	UniProt:O60313 OPA1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DFFA	O00273	UniProt:O00273 DFFA	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+DFFB	O76075	UniProt:O76075 DFFB	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+KPNA1	P52294	UniProt:P52294 KPNA1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+KPNB1	Q14974	UniProt:Q14974 KPNB1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-4	P10412	UniProt:P10412 H1-4	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-5	P16401	UniProt:P16401 H1-5	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-2	P16403	UniProt:P16403 H1-2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-3	P16402	UniProt:P16402 H1-3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-1	Q02539	UniProt:Q02539 H1-1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+H1-0	P07305	UniProt:P07305 H1-0	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+HMGB2	P26583	UniProt:P26583 HMGB2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+HMGB1	P09429	UniProt:P09429 HMGB1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+STK26	Q9P289	UniProt:Q9P289 STK26	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ACIN1	Q9UKV3	UniProt:Q9UKV3 ACIN1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+STK24	Q9Y6E0	UniProt:Q9Y6E0 STK24	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+BCAP31	P51572	UniProt:P51572 BCAP31	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+BIRC2	Q13490	UniProt:Q13490 BIRC2	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+BMX	P51813	UniProt:P51813 BMX	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+FNTA	P49354	UniProt:P49354 FNTA	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PRKCD	Q05655	UniProt:Q05655 PRKCD	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CASP6	P55212	UniProt:P55212 CASP6	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+LMNB1	P20700	UniProt:P20700 LMNB1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+SATB1	Q01826	UniProt:Q01826 SATB1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ROCK1	Q13464	UniProt:Q13464 ROCK1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DSG2	Q14126	UniProt:Q14126 DSG2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+OCLN	Q16625	UniProt:Q16625 OCLN	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DSG1	Q02413	UniProt:Q02413 DSG1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DSP	P15924	UniProt:P15924 DSP	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CDH1	P12830	UniProt:P12830 CDH1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PKP1	Q13835	UniProt:Q13835 PKP1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CTNNB1	P35222	UniProt:P35222 CTNNB1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TJP2	Q9UDY2	UniProt:Q9UDY2 TJP2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DSG3	P32926	UniProt:P32926 DSG3	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+TJP1	Q07157	UniProt:Q07157 TJP1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+CLSPN	Q9HAW4	UniProt:Q9HAW4 CLSPN	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+SPTAN1	Q13813	UniProt:Q13813 SPTAN1	TRUE	TRUE	Both sources	R-HSA-109581, hsa04210	Reactome	8/2/2026
+GAS2	O43903	UniProt:O43903 GAS2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DBNL	Q9UJU6	UniProt:Q9UJU6 DBNL	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+GSN	P06396	UniProt:P06396 GSN	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PLEC	Q15149	UniProt:Q15149 PLEC	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+VIM	P08670	UniProt:P08670 VIM	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+ADD1	P35611	UniProt:P35611 ADD1	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+MAPT	P10636	UniProt:P10636 MAPT	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PTK2	Q05397	UniProt:Q05397 PTK2	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PRKCQ	Q04759	UniProt:Q04759 PRKCQ	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+APC	P25054	UniProt:P25054 APC	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+DNM1L	O00429	UniProt:O00429 DNM1L	TRUE	FALSE	Reactome only	R-HSA-109581	Reactome	8/2/2026
+PIK3CD	A0A2K8FKV1	PIK3CD, APDS, IMD14, IMD14A, IMD14B, P110DELTA, PI3K, ROCHIS, p110D; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit delta isoform isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA1B	P68363	TUBA1B, K-ALPHA-1; tubulin alpha-1B chain	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+IKBKB	O14920	IKBKB, IKK-2, IKK-beta, IKK2, IKKB, IMD15, IMD15A, IMD15B, NFKBIKB; inhibitor of nuclear factor kappa-B kinase subunit beta isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+GADD45A	P24522	GADD45A, DDIT1, GADD45; growth arrest and DNA damage-inducible protein GADD45 alpha isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA8	Q9NY65	TUBA8, CDCBM8, MACTHC2, TUBAL2; tubulin alpha-8 chain isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+EIF2AK3	B3KY45	EIF2AK3, PEK, PERK, WRS; eukaryotic translation initiation factor 2-alpha kinase 3 isoform 1 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+RELA	Q04206	RELA, AIF3BL3, CMCU, NFKB3, p65; transcription factor p65 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CHUK	O15111	CHUK, BPS2, IKBKA, IKK-1, IKK-alpha, IKK1, IKKA, NFKBIKA, TCF16; inhibitor of nuclear factor kappa-B kinase subunit alpha isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSZ	Q9UBR2	CTSZ, CTSX; cathepsin Z preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+LMNA	A0A384MQX1	LMNA, CDCD1, CDDC, CMD1A, CMT2B1, EMD2, FPL, FPLD, FPLD2, HGPS, IDC, LDP1, LFP, LGMD1B, LMN1, LMNC, LMNL1, MADA, PRO1; lamin isoform A	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ACTG1	P63261	ACTG1, ACT, ACTG, DFNA20, DFNA26, HEL-176; actin, cytoplasmic 2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CAPN1	B2RDI5	CAPN1, CANP, CANP1, CANPL1, SPG76, muCANP, muCL; calpain-1 catalytic subunit	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+FOS	Q6FG41	FOS, AP-1, C-FOS, p55; protein c-Fos	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NGF	P01138	NGF, Beta-NGF, HSAN5, NGFB; beta-nerve growth factor precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PARP1	P09874	PARP1, ADPRT, ADPRT 1, ADPRT1, ARTD1, PARP, PARP-1, PARS, PPOL, Poly-PARP, pADPRT-1; poly [ADP-ribose] polymerase 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NFKB1	P19838	NFKB1, CVID12, EBP-1, KBF1, NF-kB, NF-kB1, NF-kappa-B1, NF-kappaB, NF-kappabeta, NFKB-p105, NFKB-p50, NFkappaB; nuclear factor NF-kappa-B p105 subunit isoform 2 proprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PRF1	P14222	PRF1, HPLH2, P1, PFP; perforin-1 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MCL1	Q07820	MCL1, BCL2L3, EAT, MCL1-ES, MCL1L, MCL1S, Mcl-1, TM, bcl2-L-3, mcl1/EAT; induced myeloid leukemia cell differentiation protein Mcl-1 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NOL3	Q5TZN6	NOL3, ARC, FCM, MYOCL1, MYP, NOP, NOP30; nucleolar protein 3 isoform MYP	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSL	P07711	CTSL, CATL, CTSL1, MEP; procathepsin L isoform 1 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIK3R3	Q8N381	PIK3R3, p55, p55-GAMMA, p55PIK; phosphatidylinositol 3-kinase regulatory subunit gamma isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSD	V9HWI3	CTSD, CLN10, CPSD, HEL-S-130P; cathepsin D preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIK3CA	Q4LE51	PIK3CA, CCM4, CLAPO, CLOVE, CWS5, HMH, MCAP, MCM, MCMTC, PI3K, PI3K-alpha, p110-alpha; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit alpha isoform	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CASP2	A0A0S2Z3H1	CASP2, CASP-2, ICH1, MRT80, NEDD-2, NEDD2, PPP1R57; caspase-2 isoform 1 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ERN1	O75460	ERN1, IRE1, IRE1P, IRE1a, hIRE1p; serine/threonine-protein kinase/endoribonuclease IRE1 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+AIFM1	O95831	AIFM1, AIF, AUNX1, CMT2D, CMTX4, COWCK, COXPD6, DFNX5, NADMR, NAMSD, PDCD8, SEMDHL; apoptosis-inducing factor 1, mitochondrial isoform AIF precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA3C	Q1ZYQ1	TUBA3C, TUBA2, bA408E5.3; tubulin alpha-3C chain	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PARP3	Q9Y6F1	PARP3, ADPRT3, ADPRTL2, ADPRTL3, ARTD3, IRT1, PADPRT-3; protein mono-ADP-ribosyltransferase PARP3 isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TNFRSF1A	P19438	TNFRSF1A, CD120a, FPF, TBP1, TNF-R, TNF-R-I, TNF-R55, TNFAR, TNFR1, TNFR55, TNFR60, p55, p55-R, p60; tumor necrosis factor receptor superfamily member 1A isoform 1 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PARP4	Q9UKK3	PARP4, ADPRTL1, ARTD4, PARP-4, PARPL, PH5P, VAULT3, VPARP, VWA5C, p193; protein mono-ADP-ribosyltransferase PARP4	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA3E	A0AAG2UW83	TUBA3E; tubulin alpha-3E chain	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+GADD45G	O95257	GADD45G, CR6, DDIT2, GADD45gamma, GRP17; growth arrest and DNA damage-inducible protein GADD45 gamma	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+DAB2IP	Q5VWQ8	DAB2IP, AF9Q34, AIP-1, AIP1, DIP1/2; disabled homolog 2-interacting protein isoform 3	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAP3K5	Q99683	MAP3K5, ASK1, MAPKKK5, MEKK5; mitogen-activated protein kinase kinase kinase 5 isoform 2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CFLAR	A0A024R3Y4	CFLAR, CASH, CASP8AP1, CLARP, Casper, FLAME, FLAME-1, FLAME1, FLIP, I-FLICE, MRIT, c-FLIP, c-FLIPL, c-FLIPR, c-FLIPS, cFLIP; CASP8 and FADD-like apoptosis regulator isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBAL3	A6NHL2	TUBAL3; tubulin alpha chain-like 3 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PDPK1	O15530	PDPK1, PDK1, PDPK2, PDPK2P, PRO0461; 3-phosphoinositide-dependent protein kinase 1 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+BIRC5	O15392	BIRC5, API4, EPR-1; baculoviral IAP repeat-containing protein 5 isoform 2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TRAF1	Q13077	TRAF1, EBI6, MGC:10353; TNF receptor-associated factor 1 isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PTPN13	Q12923	PTPN13, FAP-1, PNP1, PTP-BAS, PTP-BL, PTP1E, PTPL1, PTPLE, hPTP1E; tyrosine-protein phosphatase non-receptor type 13 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+EIF2S1	Q53XC0	EIF2S1, EIF-2, EIF-2A, EIF-2alpha, EIF2, EIF2A; eukaryotic translation initiation factor 2 subunit 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+RAF1	L7RRS6	RAF1, CMD1NN, CRAF, NS5, Raf-1, c-Raf; RAF proto-oncogene serine/threonine-protein kinase isoform b	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TP53AIP1	Q9HCN2	TP53AIP1, P53AIP1; p53-regulated apoptosis-inducing protein 1 isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA1C	Q9BQE3	TUBA1C, OZEMA24, TUBA6, bcm948; tubulin alpha-1C chain isoform c	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSK	P43235	CTSK, CTS02, CTSO, CTSO1, CTSO2, PKND, PYCD; cathepsin K preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ATM	Q13315	ATM, AT1, ATA, ATC, ATD, ATDC, ATE, TEL1, TELO1; serine-protein kinase ATM isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CSF2RB	Q6NSJ8	CSF2RB, CD131, CDw131, IL3RB, IL5RB, SMDP5, betaGMR; cytokine receptor common subunit beta isoform 2 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSH	P09668	CTSH, ACC-4, ACC-5, ACC4, ACC5, CPSB; pro-cathepsin H isoform a preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSB	A0A024R374	CTSB, APPS, CPSB, KWE, RECEUP; cathepsin B isoform 1 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+IKBKG	Q9Y6K9	IKBKG, AMCBX1, EDAID1, FIP-3, FIP3, Fip3p, IKK-gamma, IKKAP1, IKKG, IMD33, IP, IP1, IP2, IPD2, NEMO, SAIDX, ZC2HC9; NF-kappa-B essential modulator isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+IL3	P08700	IL3, IL-3, MCGF, MULTI-CSF; interleukin-3 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NTRK1	P04629	NTRK1, MTC, TRK, TRK1, TRKA, Trk-A, p140-TrkA; high affinity nerve growth factor receptor isoform 2 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NFKBIA	P25963	NFKBIA, EDAID2, IKBA, MAD-3, NFKBI; NF-kappa-B inhibitor alpha	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ATF4	P18848	ATF4, CREB-2, CREB2, TAXREB67, TXREB; cyclic AMP-dependent transcription factor ATF-4	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSC	P53634	CTSC, CPPI, DPP-I, DPP1, DPPI, HMS, JP, JPD, PALS, PDON1, PLS; dipeptidyl peptidase 1 isoform a preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSF	Q9UBX1	CTSF, CATSF, CLN13; cathepsin F precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+GADD45B	O75293	GADD45B, GADD45BETA, MYD118; growth arrest and DNA damage-inducible protein GADD45 beta	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+BCL2A1	Q16548	BCL2A1, ACC-1, ACC-2, ACC1, ACC2, BCL2L5, BFL1, GRS, HBPA1; bcl-2-related protein A1 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ACTB	Q1KLZ0	ACTB, BKRNS, BNS, BRWS1, CSMH, DDS1, PS1TP5BP1, THC8; actin, cytoplasmic 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PARP2	Q9UGN5	PARP2, ADPRT2, ADPRTL2, ADPRTL3, ARTD2, PARP-2, pADPRT-2; poly [ADP-ribose] polymerase 2 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+HRAS	X5D945	HRAS, C-BAS/HAS, C-H-RAS, C-HA-RAS1, CTLO, H-RASIDX, HAMSV, HRAS1, RASH1, p21ras; GTPase HRas isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CAPN2	Q59EF6	CAPN2, CANP2, CANPL2, CANPml, mCANP; calpain-2 catalytic subunit isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+JUN	P05412	JUN, AP-1, AP1, c-Jun, cJUN, p39; transcription factor Jun	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+DDIT3	Q53YD1	DDIT3, AltDDIT3, C/EBPzeta, CEBPZ, CHOP, CHOP-10, CHOP10, GADD153; DNA damage-inducible transcript 3 protein isoform 2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ENDOG	E5KNL5	ENDOG; endonuclease G, mitochondrial precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ITPR2	Q14571	ITPR2, ANHD, CFAP48, INSP3R2, IP3R2; inositol 1,4,5-trisphosphate-gated calcium channel ITPR2 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+DAXX	Q53F85	DAXX, BING2, DAP6, EAP1, SMIM40; death domain-associated protein 6 isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIK3R1	P27986	PIK3R1, AGM7, GRB1, IMD36, p85, p85-ALPHA, p85alpha; phosphatidylinositol 3-kinase regulatory subunit alpha isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAP3K14	Q68D39	MAP3K14, FTDCR1B, HS, HSNIK, IMD112, NIK; mitogen-activated protein kinase kinase kinase 14	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+IL3RA	P26951	IL3RA, CD123, IL-3R-alpha, IL3R, IL3RAY, IL3RX, IL3RY, hIL-3Ra; interleukin-3 receptor subunit alpha isoform 1 precursor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIK3CB	P42338	PIK3CB, P110BETA, PI3K, PI3KBETA, PIK3C1; phosphatidylinositol 4,5-bisphosphate 3-kinase catalytic subunit beta isoform isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ITPR3	Q59ES2	ITPR3, CMT1J, IMD132, IMD133, IP3R, IP3R-3, IP3R3; inositol 1,4,5-trisphosphate-gated calcium channel ITPR3	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+NRAS	Q5U091	NRAS, ALPS4, CMNS, KRAS, N-ras, NCMS, NRAS1, NS6; GTPase NRas	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CASP10	Q92851	CASP10, ALPS2, FLICE-2, FLICE2, MCH4; caspase-10 isoform 2 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+KRAS	P01116	KRAS, 'C-K-RAS, C-K-RAS, CFC2, K-RAS2A, K-RAS2B, K-RAS4A, K-RAS4B, K-Ras, K-Ras 2, KI-RAS, KRAS1, KRAS2, NS, NS3, OES, RALD, RASK2, c-Ki-ras, c-Ki-ras2; GTPase KRas isoform a	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSO	P43234	CTSO, CTSO1; cathepsin O preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAPK9	P45984	MAPK9, JNK-55, JNK2, JNK2A, JNK2ALPHA, JNK2B, JNK2BETA, PRKM9, SAPK, SAPK1a, p54a, p54aSAPK; mitogen-activated protein kinase 9 isoform alpha2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIK3R2	O00459	PIK3R2, MPPH, MPPH1, P85B, p85, p85-BETA, p85beta; phosphatidylinositol 3-kinase regulatory subunit beta	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA1A	Q71U36	TUBA1A, B-ALPHA-1, LIS3, TUBA3; tubulin alpha-1A chain isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSV	B2R717	CTSV, CATL2, CTSL2, CTSU; cathepsin L2 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAPK10	P53779	MAPK10, JNK3, JNK3A, PRKM10, SAPK1b, p493F12, p54bSAPK; mitogen-activated protein kinase 10 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+P3R3URF-PIK3R3	B4DXM8	P3R3URF-PIK3R3, LOC110117498-PIK3R3; LOC110117498-PIK3R3 readthrough	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAP2K1	A4QPA9	MAP2K1, CFC3, MAPKK1, MEK1, MEL, MKK1, PRKMK1; dual specificity mitogen-activated protein kinase kinase 1 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA4A	P68366	TUBA4A, ALS22, CMYO26, FTDALS9, H2-ALPHA, OZEMA23, SPAX11, TUBA1; tubulin alpha-4A chain isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+SEPTIN4	O43236	SEPTIN4, ARTS, BRADEION, C17orf47, CE5B3, H5, MART, PNUTL2, SEP4, SEPT4, SPGF99, Septin-4, hCDCREL-2, hucep-7; septin-4 isoform 11	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+ITPR1	Q14643	ITPR1, ACV, CLA4, INSP3R1, IP3R, IP3R1, PPP1R94, SCA15, SCA16, SCA29; inositol 1,4,5-trisphosphate-gated calcium channel ITPR1 isoform 4	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+HRK	O00198	HRK, DP5, HARAKIRI; activator of apoptosis harakiri	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CASP12	Q6UXS9	CASP12, CASP-12, CASP12P1; inactive caspase-12	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+HTRA2	A0A384MDW9	HTRA2, MGCA8, OMI, PARK13, PRSS25; serine protease HTRA2, mitochondrial isoform 1 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+BIRC3	Q13489	BIRC3, AIP1, API2, CIAP2, HAIP1, HIAP1, IAP-1, MALT2, MIHC, RNF49, c-IAP2; baculoviral IAP repeat-containing protein 3	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+LMNB2	Q03252	LMNB2, EPM9, LAMB2, LMN2, MCPH27; lamin-B2	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+MAP2K2	P36507	MAP2K2, CFC4, MAPKK2, MEK2, MKK2, PRKMK2; dual specificity mitogen-activated protein kinase kinase 2 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSW	P56202	CTSW, LYPN; cathepsin W preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+CTSS	P25774	CTSS; cathepsin S isoform 1 preproprotein	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TNF	Q5STB3	TNF, DIF, IMD127, TNF-alpha, TNFA, TNFSF2, TNLG1F; tumor necrosis factor	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+PIDD1	Q9HB75	PIDD1, LRDD, MRT75, PIDD; p53-induced death domain-containing protein 1 isoform 1	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
+TUBA4B	Q9H853	TUBA4B, TUBA4; tubulin-like protein alpha-4B	FALSE	TRUE	KEGG only	hsa04210	KEGG	8/2/2026
