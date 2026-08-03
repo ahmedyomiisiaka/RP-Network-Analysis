@@ -211,9 +211,10 @@ Q6. Core proteins listed above
 
 #### Problems encountered
 No technical problems encountered during data extraction
-or reconciliation. The KEGG /conv/uniprot/hsa04210 endpoint
-does not accept pathway IDs — resolved by downloading the full
-human KEGG to UniProt mapping table and filtering for pathway genes.
+or reconciliation. The KEGG /conv/uniprot/hsa endpoint provides the human-wide
+gene-to-UniProt mapping rather than a pathway-specific mapping.
+The full mapping table was therefore downloaded and filtered
+to the genes belonging to hsa04210.
 
 ### Output files
 
