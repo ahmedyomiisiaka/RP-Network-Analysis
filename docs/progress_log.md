@@ -144,20 +144,32 @@ The final dataset was programmatically verified for:
 
 ---
 
-## Entry 3 — 2026-08-02
+## Entry 3 — 2026-08-03
 
 ### Objectives for today
-- Collect apoptosis pathway proteins from Reactome R-HSA-109581
-- Collect apoptosis pathway proteins from KEGG hsa04210
-- Cross-check both sources and produce final apoptosis target list
+Retrieve apoptosis-associated proteins from Reactome R-HSA-109581
+and KEGG hsa04210 and construct a reconciled reference target set
+for downstream source-to-target network reconstruction.
 
-### Stage 2 — Apoptosis Pathway Gene Collection
+### Stage 2 — Apoptosis-Associated Protein Collection
 
 #### Data sources
-- Reactome pathway R-HSA-109581 (Intrinsic Pathway for Apoptosis)
-- KEGG pathway hsa04210 (Apoptosis)
+- Reactome: pathway R-HSA-109581 (Intrinsic Pathway for Apoptosis)
+  URL: https://reactome.org/PathwayBrowser/#/R-HSA-109581
+- KEGG: pathway hsa04210 (Apoptosis)
+  URL: https://www.genome.jp/pathway/hsa04210
 
-#### Results
+#### Method
+- Reactome queried via REST API:
+  GET https://reactome.org/ContentService/data/participants/R-HSA-109581
+  Filtered for: schemaClass = ReferenceGeneProduct, stId starts with 'uniprot:'
+- KEGG queried via REST API in three steps:
+  Step 1: GET https://rest.kegg.jp/link/hsa/hsa04210 — gene IDs
+  Step 2: GET https://rest.kegg.jp/list/[gene_ids] — gene symbols (batches of 10)
+  Step 3: GET https://rest.kegg.jp/conv/uniprot/hsa — full human UniProt mapping
+- Both lists reconciled by gene symbol (uppercase comparison)
+
+#### Results — Authoritative Stage 2 numbers
 
 | Item | Count |
 |------|-------|
@@ -166,22 +178,55 @@ The final dataset was programmatically verified for:
 | Proteins in both sources | 40 |
 | Reactome only | 125 |
 | KEGG only | 97 |
-| **Total final apoptosis targets** | **262** |
+| **Total reference set** | **262** |
+| Duplicate UniProt IDs | 0 |
+| Missing UniProt IDs | 0 |
 
-#### Key proteins confirmed present
-CASP3, CASP9, BCL2, BAX, CYCS, APAF1
+Arithmetic check: 165 + 137 - 40 = 262
 
-#### Output files
-- data/raw/apoptosis_reactome.csv
-- data/raw/apoptosis_kegg.csv
-- data/processed/apoptosis_genes_final.csv
+#### Proteins confirmed in both sources (40 core targets)
+AKT1, AKT2, AKT3, APAF1, BAD, BAK1, BAX, BBC3, BCL2, BCL2L1,
+BCL2L11, BID, BIRC2, CASP3, CASP6, CASP7, CASP8, CASP9, CYCS,
+DFFA, DFFB, DIABLO, FADD, FAS, FASLG, GZMB, LMNB1, MAPK1, MAPK3,
+MAPK8, PMAIP1, RIPK1, SPTAN1, TNFRSF10A, TNFRSF10B, TNFSF10,
+TP53, TRADD, TRAF2, XIAP
+
+#### Target set definition
+Two datasets are produced for different downstream uses:
+
+1. Reference set (262 proteins) — used in Stage 8 enrichment analysis
+   File: data/processed/apoptosis_genes_final.csv
+
+2. Core target set (40 proteins) — used in Stage 6 PathLinker
+   reconstruction. Confirmed in both Reactome and KEGG.
+   File: data/processed/apoptosis_core_targets.csv
+
+#### Six-question QC validation
+Q1. All entries unique by UniProt ID: YES
+Q2. All entries have valid UniProt IDs: YES (100% coverage)
+Q3. Duplicated gene-protein mappings: None
+Q4. Missing UniProt IDs: None
+Q5. Shared between both databases: 40 proteins
+Q6. Core proteins listed above
 
 #### Problems encountered
-- Document any issues here
+No technical problems encountered during data extraction
+or reconciliation. The KEGG /conv/uniprot/hsa04210 endpoint
+does not accept pathway IDs — resolved by downloading the full
+human KEGG to UniProt mapping table and filtering for pathway genes.
+
+### Output files
+
+| File | Description | Entries |
+|------|-------------|----------|
+| data/raw/apoptosis_reactome.csv | Raw Reactome proteins | 165 |
+| data/raw/apoptosis_kegg.csv | Raw KEGG proteins | 137 |
+| data/processed/apoptosis_genes_final.csv | Full reference set | 262 |
+| data/processed/apoptosis_core_targets.csv | Core PathLinker targets | 40 |
 
 ### Next steps (Stage 3 — Notebook 03)
-- Map all RP gene symbols to UniProt accessions
-- Map all apoptosis gene symbols to UniProt accessions
-- Produce unified identifier table for network construction
+- Map all 112 RP protein-coding gene symbols to UniProt accessions
+- Verify UniProt accessions for all 262 apoptosis reference proteins
+- Produce unified identifier table for network construction in Stage 4
 
 ---
