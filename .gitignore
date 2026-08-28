@@ -32,7 +32,8 @@ Thumbs.db
 # Large datasets
 # -----------------------------
 data/raw/
-data/processed/
+data/processed/*
+!data/processed/context_specific_evidence_master.tsv
 data/results/
 
 # -----------------------------
