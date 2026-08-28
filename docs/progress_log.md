@@ -231,3 +231,236 @@ to the genes belonging to hsa04210.
 - Produce unified identifier table for network construction in Stage 4
 
 ---
+## Entry 4 — 2026-08-13
+
+### Stage 4 — PPI Network Construction (interim results)
+
+#### What was done
+Queried STRING v12 API for direct interaction partners of 112 curated RP protein-coding genes.
+
+#### Parameters used
+- Database: STRING v12
+- Species: Homo sapiens (taxonomy ID: 9606)
+- Confidence threshold: 0.400 (medium, exploratory — final threshold pending supervisor confirmation)
+- Query method: one protein at a time via /api/tsv/interaction_partners
+
+#### Results
+
+| Item | Value |
+|------|-------|
+| Genes successfully queried | 105 of 112 |
+| Failed queries | 7 |
+| Total unique edges (score >= 0.400) | 9,835 |
+| Total unique proteins in network | 4,132 |
+| Seed proteins (RP genes) in network | 105 |
+| New interacting partners | 4,027 |
+
+#### Score distribution
+
+| Score range | Edges |
+|-------------|-------|
+| 0.400-0.499 | 3,590 |
+| 0.500-0.699 | 3,410 |
+| 0.700-0.899 | 1,635 |
+| 0.900-1.000 | 1,200 |
+
+#### Network size at different thresholds
+
+| Threshold | Edges | Proteins |
+|-----------|-------|----------|
+| 0.400 | 9,835 | 4,132 (105 seeds + 4,027 partners) |
+| 0.500 | 6,245 | 2,608 (105 seeds + 2,503 partners) |
+| 0.700 | 2,835 | 1,292 (102 seeds + 1,190 partners) |
+| 0.900 | 1,200 | 662 (79 seeds + 583 partners) |
+
+#### Failed queries — 7 genes
+- CFAP418: gene symbol not found in STRING v12
+- RNU4-2, RNU6-1, RNU6-2, RNU6-8, RNU6-9: small nuclear RNA genes — not proteins, cannot be in a protein interaction database
+- SAXO6: very recently added to RetiGene, not yet in STRING v12
+
+#### Key biological finding
+The 20 highest-degree partner proteins are all known retinal disease genes not in the 112-gene RP input set (ABCA4, GUCA1B, ROM1, CEP290, RPGRIP1, CNGA3, GNAT2 etc.). This confirms STRING is returning biologically relevant interactions.
+
+#### Pending supervisor confirmation
+1. Final confidence threshold to use
+2. Handling of 5 RNU RNA genes (recommend exclusion from protein set)
+3. STRING + IntAct integration strategy
+
+#### Output files
+- data/raw/string_interactions_raw.tsv
+- data/processed/ppi_interactions.tsv
+- data/processed/ppi_nodes.tsv
+
+### Next steps
+- Confirm threshold with supervisor
+- Query IntAct for same input genes
+- Begin Stage 5: context-specific annotation
+
+---
+## Entry 5 — 2026-08-14
+
+### Stage 5 — Context-Specific Network Filtering (Filters A and B)
+
+#### What was done
+Applied two biological filters to the Stage 4 STRING network (9,835 edges, 4,132 proteins) to retain only interactions biologically plausible in retinal photoreceptor context.
+
+#### Filter A — COMPARTMENTS (subcellular co-localisation)
+
+| Property | Value |
+|----------|-------|
+| Database | COMPARTMENTS (Jensen Lab) |
+| File | human_compartment_integrated_full.tsv |
+| URL | https://download.jensenlab.org/ |
+| Access date | 2026-08-13 |
+| Score cutoff | >= 3 (medium-high confidence) |
+| Broad GO terms excluded | Yes (cellular_component, organelle, etc.) |
+
+Method: For each interaction edge, retrieved specific subcellular compartments for both proteins (score >= 3, broad terms excluded). If the two compartment sets overlap, the edge is retained. If no overlap exists, the edge is removed. Proteins not found in COMPARTMENTS are retained conservatively.
+
+Results:
+- Edges input: 9,835
+- Edges removed (no compartment overlap): 523
+- Edges retained: 9,312
+
+#### Filter B — Human Protein Atlas (retinal expression)
+
+| Property | Value |
+|----------|-------|
+| Database | Human Protein Atlas v25.1 |
+| File | rna_tissue_consensus.tsv |
+| URL | https://www.proteinatlas.org/about/download |
+| Access date | 2026-08-13 |
+| Expression cutoff | nTPM > 0 (any detectable expression in retina) |
+
+Method: For each edge passing Filter A, retrieved nTPM value in retinal tissue for both proteins. If either protein has nTPM = 0 in retina, the edge is removed. Proteins not found in HPA are retained conservatively.
+
+Results:
+- Edges input: 9,312
+- Edges removed (not expressed in retina): 389
+- Edges retained: 8,923
+
+#### Filtering summary
+
+| Stage | Edges | Proteins |
+|-------|-------|----------|
+| Stage 4 network | 9,835 | 4,132 |
+| After Filter A (COMPARTMENTS) | 9,312 | — |
+| After Filter B (HPA retina) | 8,923 | 3,738 |
+| RP seed proteins retained | — | 105 |
+
+#### Pending
+- Filter C: IID — retina-specific interaction evidence
+- Filter D: TissueNet v3 — retinal interaction scoring
+- Await supervisor review before proceeding
+
+#### Output files
+- data/raw/compartments_human.tsv
+- data/raw/hpa_rna_consensus.tsv.zip
+- data/processed/filter_A_compartments.tsv
+- data/processed/filter_A_passed.tsv
+- data/processed/filter_B_expression.tsv
+- data/processed/filter_B_passed.tsv
+- data/processed/network_filtered.tsv
+
+---
+
+---
+
+## Entry 7 — 2026-08-29
+
+### Stage 5 — Context-Specific Annotation (COMPARTMENTS + HPA + IID complete)
+
+#### Supervisor-confirmed parameters (meeting 2026-08-15)
+- STRING combined score: ≥ 0.400
+- COMPARTMENTS confidence score: ≥ 2.0
+- Human Protein Atlas retinal expression: nTPM > 0
+
+#### Important methodological change
+Per supervisor guidance, the approach changed from hard filtering
+to annotation. All 9,835 STRING interactions are retained in the
+master evidence table. Each database adds annotation columns rather
+than removing interactions. Final interaction selection will be made
+after all evidence layers are integrated.
+
+#### Filter A — COMPARTMENTS (rerun with score ≥ 2.0)
+
+| Property | Value |
+|----------|-------|
+| Database | COMPARTMENTS (Jensen Lab) |
+| File | human_compartment_integrated_full.tsv |
+| URL | https://download.jensenlab.org/ |
+| Access date | 2026-08-13 |
+| Score cutoff | ≥ 2.0 (confirmed by supervisor 2026-08-15) |
+| Broad GO terms excluded | Yes |
+
+Results:
+- Interactions with shared specific compartment: 9,751 / 9,835
+- Interactions without compartment overlap: 84
+- Output: data/processed/compartments_interaction_annotation_t2.tsv
+
+#### Filter B — Human Protein Atlas (retinal expression)
+
+| Property | Value |
+|----------|-------|
+| Database | Human Protein Atlas v25.1 |
+| File | rna_tissue_consensus.tsv |
+| URL | https://www.proteinatlas.org/about/download |
+| Access date | 2026-08-13 |
+| Expression cutoff | nTPM > 0 |
+
+Results:
+- Both proteins expressed in retina: 9,202 / 9,835
+- Output: data/processed/hpa_retina_interaction_annotation.tsv
+
+#### Filter C — IID (Integrated Interactions Database)
+
+| Property | Value |
+|----------|-------|
+| Database | Integrated Interactions Database (IID) |
+| Dataset | Human annotated protein-protein interactions |
+| URL | https://iid.ophid.utoronto.ca |
+| Access date | 2026-08-29 |
+| Matching method | Exact undirected gene-pair matching |
+
+Results:
+- IID exact matches: 2,293 / 9,835 (23.31%)
+- Experimental support: 1,527 interactions
+- NOT_FOUND: not treated as evidence that interaction is false
+- Output: data/processed/iid_interaction_annotation.tsv
+
+#### Master evidence table
+
+All three annotation layers integrated into one file.
+All 9,835 STRING interactions retained.
+
+| Evidence layers | Interactions |
+|----------------|--------------|
+| All 3 (COMPARTMENTS + HPA + IID) | 2,240 |
+| 2 layers | 6,961 |
+| 1 layer | 604 |
+| 0 layers | 30 |
+
+Output: data/processed/context_specific_evidence_master.tsv
+
+#### QC example — MERTK–GAS6
+- STRING score: 0.999
+- COMPARTMENTS: PASS (shared localisation)
+- HPA retina: MERTK 15.4 nTPM, GAS6 5.8 nTPM — both expressed
+- IID: EXPERIMENTAL (2 methods, 2 PMIDs)
+- Evidence layers: 3/3
+
+#### Pending
+- TissueNet v3 tissue-specific interaction evidence
+- Functional annotation
+- Pathway enrichment analysis
+- PathLinker
+
+### Output files
+| File | Description |
+|------|-------------|
+| data/processed/compartments_interaction_annotation_t2.tsv | COMPARTMENTS annotation |
+| data/processed/hpa_retina_interaction_annotation.tsv | HPA retinal expression annotation |
+| data/processed/iid_interaction_annotation.tsv | IID annotation |
+| data/processed/context_specific_evidence_master.tsv | Master evidence table |
+
+---
