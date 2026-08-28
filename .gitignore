@@ -70,3 +70,19 @@ figures/output/
 # -----------------------------
 .vscode/
 .idea/
+
+# Large external database downloads
+data/raw/*.gz
+data/raw/*.zip
+data/raw/*.tsv
+data/raw/*.txt
+data/raw/*.xlsx
+
+# Colab/Python temporary files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
