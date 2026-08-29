@@ -177,3 +177,128 @@ All 9,835 STRING interactions retained.
 **No final filtering has been applied.** All interactions are retained
 with their evidence annotations. Biological filtering decisions will
 be made after all evidence layers are complete.
+
+
+---
+
+## PANTHER / Gene Ontology — Stage 6 Functional Enrichment
+
+**Purpose:** Functional enrichment and overrepresentation analysis of
+RP seed proteins and retinal-network interaction partners.
+
+**Resource:** PANTHER Classification System  
+**Website:** https://pantherdb.org/  
+**Analysis:** PANTHER Overrepresentation Test  
+**Organism:** Homo sapiens  
+**Reference list:** Homo sapiens — all genes in the PANTHER database  
+**Reference-list size reported by PANTHER:** 20,580 genes  
+**Statistical test:** Fisher's Exact test  
+**Multiple-testing correction:** False Discovery Rate (FDR)  
+**Significance threshold used:** FDR < 0.05  
+
+**GO ontology release reported in downloaded result:** 2026-04-28  
+**PANTHER Overrepresentation Test release reported in downloaded result:** 2024-08-07  
+**Project access / analysis date:** 2026-08-29 to 2026-08-30  
+
+### Gene sets analysed so far
+
+#### RP seed proteins
+
+Input:
+
+`rp_seeds_105.txt`
+
+- curated RP seed genes submitted: 105
+- all 105 RP gene symbols recognized by PANTHER
+- four symbols had multiple PANTHER mappings:
+  - RP1
+  - INPP5E
+  - SAG
+  - ARHGEF18
+
+GO Biological Process result:
+
+- 95 significant terms at FDR < 0.05
+- 93 overrepresented
+- 2 underrepresented
+
+Main biological themes included retinal function, photoreceptor biology,
+phototransduction, visual perception, retina homeostasis, and ciliary biology.
+
+#### Retinal-network interaction partners
+
+Input:
+
+`retinal_network_partners_3643.txt`
+
+- submitted network-partner genes: 3,643
+- uniquely mapped: 3,635
+- unmapped: 8
+- multiple mapping information reported for 159 identifiers
+
+GO Biological Process result:
+
+- 2,105 significant terms at FDR < 0.05
+- 2,080 overrepresented
+- 25 underrepresented
+
+Prominent biological themes included RNA processing, RNA splicing,
+spliceosomal processing, metabolism, gene expression, protein processing,
+cellular localization, transport, and ciliary processes.
+
+### GO Biological Process comparison
+
+After excluding the PANTHER `Unclassified` category:
+
+- RP seed terms with GO IDs: 94
+- network-partner terms with GO IDs: 2,104
+- shared significant terms: 82
+- RP-seed-specific significant terms: 12
+- partner-specific significant terms: 2,022
+
+### Files
+
+Raw PANTHER exports:
+
+- `PANTHER_GO_BP_RP_seeds_raw.txt`
+- `PANTHER_GO_BP_retinal_partners_raw.txt`
+
+Processed results:
+
+- `PANTHER_GO_BP_RP_seeds_clean.tsv`
+- `PANTHER_GO_BP_RP_seeds_significant_FDR05.tsv`
+- `PANTHER_GO_BP_retinal_partners_clean.tsv`
+- `PANTHER_GO_BP_retinal_partners_significant_FDR05.tsv`
+- `GO_BP_shared_RP_seeds_and_partners.tsv`
+- `GO_BP_RP_seed_specific.tsv`
+- `GO_BP_partner_specific.tsv`
+
+### Interpretation rule
+
+GO enrichment identifies functions occurring more frequently in the submitted
+gene set than expected relative to the selected reference background.
+
+Significant enrichment does not by itself demonstrate causality or direct
+pathway activation.
+
+GO terms are hierarchical and may represent overlapping parent and child
+biological concepts; therefore, related significant GO terms are interpreted
+as functional themes rather than as fully independent biological findings.
+
+### Current Stage 6 status
+
+Completed:
+
+- GO Biological Process — RP seed proteins
+- GO Biological Process — retinal-network partners
+- RP seed versus partner GO Biological Process comparison
+
+Pending:
+
+- GO Molecular Function
+- GO Cellular Component
+- Reactome pathway enrichment
+- KEGG pathway enrichment
+- functional grouping/module analysis
+
+---

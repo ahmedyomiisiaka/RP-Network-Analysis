@@ -1,0 +1,83 @@
+GO_ID	GO_term	RP_observed	RP_expected	RP_fold	RP_FDR	partner_observed	partner_expected	partner_fold	partner_FDR
+GO:0050953	sensory perception of light stimulus	33	0.81	40.99	8.64e-41	76	27.39	2.77	1.92e-17
+GO:0007601	visual perception	31	0.77	40.09	5.5e-38	72	26.31	2.74	3.88e-16
+GO:0001895	retina homeostasis	14	0.24	58.74	2.88e-18	26	8.11	3.21	7.59e-08
+GO:0060271	cilium assembly	24	1.75	13.69	2.15e-17	164	59.65	2.75	3.17e-37
+GO:0009583	detection of light stimulus	14	0.28	50.83	2.37e-17	33	9.37	3.52	2.24e-11
+GO:0044782	cilium organization	24	1.94	12.35	2.07e-16	186	66.14	2.81	3.51e-44
+GO:0045494	photoreceptor cell maintenance	12	0.19	62.94	5.06e-16	21	6.49	3.24	1.68e-06
+GO:0120031	plasma membrane bounded cell projection assembly	24	2.12	11.33	1.19e-15	185	72.09	2.57	7.08e-37
+GO:0030031	cell projection assembly	24	2.14	11.22	1.34e-15	186	72.81	2.55	9.46e-37
+GO:0042461	photoreceptor cell development	11	0.16	67.00	4.87e-15	14	5.59	2.51	0.00459
+GO:0046530	photoreceptor cell differentiation	11	0.21	51.92	1.18e-13	17	7.21	2.36	0.00298
+GO:0009581	detection of external stimulus	14	0.6	23.19	1.14e-12	50	20.55	2.43	4.58e-09
+GO:0009582	detection of abiotic stimulus	14	0.62	22.59	1.55e-12	50	21.09	2.37	1.58e-08
+GO:0061512	protein localization to cilium	12	0.42	28.32	8.93e-12	50	14.42	3.47	9.2e-17
+GO:0050908	detection of light stimulus involved in visual perception	8	0.09	88.85	9.02e-12	8	3.06	2.61	0.0401
+GO:0050962	detection of light stimulus involved in sensory perception	8	0.09	88.85	9.58e-12	8	3.06	2.61	0.0401
+GO:0001894	tissue homeostasis	14	0.82	17.05	6.21e-11	58	27.93	2.08	2.68e-07
+GO:0060249	anatomical structure homeostasis	14	0.82	17.05	6.54e-11	58	27.93	2.08	2.69e-07
+GO:0070925	organelle assembly	26	4.49	5.80	1.43e-10	340	152.65	2.23	5.02e-51
+GO:0009416	response to light stimulus	16	1.33	12.04	1.93e-10	89	45.24	1.97	1.46e-09
+GO:0003008	system process	36	9.52	3.78	4.85e-10	374	324.04	1.15	0.014
+GO:0009314	response to radiation	16	1.85	8.63	2.44e-08	112	63.08	1.78	7.33e-09
+GO:0120036	plasma membrane bounded cell projection organization	25	5.24	4.77	2.52e-08	342	178.42	1.92	5.42e-35
+GO:0030030	cell projection organization	25	5.28	4.74	2.67e-08	345	179.5	1.92	1.53e-35
+GO:0006720	isoprenoid metabolic process	10	0.64	15.73	3.62e-07	62	21.63	2.87	3.97e-15
+GO:0007602	phototransduction	7	0.2	35.72	3.74e-07	25	6.67	3.75	1.54e-09
+GO:1905515	non-motile cilium assembly	7	0.21	33.89	5.37e-07	23	7.03	3.27	3.35e-07
+GO:0060041	retina development in camera-type eye	9	0.49	18.27	6.3e-07	43	16.76	2.57	1.12e-08
+GO:0032501	multicellular organismal process	57	27.75	2.05	1.09e-06	1119	944.37	1.18	3.32e-11
+GO:0009584	detection of visible light	6	0.14	43.57	1.55e-06	17	4.69	3.63	2.72e-06
+GO:0033365	protein localization to organelle	18	3.45	5.22	3.37e-06	268	117.33	2.28	3.91e-42
+GO:0097499	protein localization to non-motile cilium	5	0.09	55.53	7.89e-06	10	3.06	3.26	0.00224
+GO:0048871	multicellular organismal-level homeostasis	15	2.45	6.13	7.89e-06	142	83.26	1.71	7.78e-10
+GO:0000388	spliceosome conformational change to release U4 (or U4atac) and U1 (or U11)	6	0.19	32.37	9.47e-06	25	6.31	3.96	2.44e-10
+GO:0000244	spliceosomal tri-snRNP complex assembly	6	0.2	29.81	1.55e-05	30	6.85	4.38	2.7e-14
+GO:0022607	cellular component assembly	35	13.47	2.60	1.68e-05	851	458.49	1.86	2.62e-87
+GO:0000393	spliceosomal conformational changes to generate catalytic conformation	6	0.21	29.05	1.74e-05	29	7.03	4.13	1.12e-12
+GO:0007423	sensory organ development	13	1.97	6.60	2.73e-05	119	67.04	1.77	1.82e-09
+GO:0001654	eye development	11	1.33	8.24	3.04e-05	91	45.42	2.00	2.8e-10
+GO:0150063	visual system development	11	1.36	8.11	3.49e-05	94	46.14	2.04	4.14e-11
+GO:0048880	sensory system development	11	1.39	7.93	4.31e-05	97	47.22	2.05	1.17e-11
+GO:0008299	isoprenoid biosynthetic process	5	0.15	32.55	0.000117	23	5.23	4.40	4.66e-11
+GO:0044085	cellular component biogenesis	35	14.63	2.39	0.00015	921	497.78	1.85	6.98e-95
+GO:0043010	camera-type eye development	9	1.04	8.63	0.000289	78	35.5	2.20	4.1e-11
+GO:1901663	quinone biosynthetic process	4	0.09	44.43	0.000445	12	3.06	3.92	4.88e-05
+GO:0006744	ubiquinone biosynthetic process	4	0.09	44.43	0.000453	12	3.06	3.92	4.89e-05
+GO:0000387	spliceosomal snRNP assembly	6	0.37	16.18	0.000497	51	12.62	4.04	1.5000000000000001e-21
+GO:0006721	terpenoid metabolic process	7	0.59	11.80	0.000552	58	20.19	2.87	3.15e-14
+GO:0042592	homeostatic process	21	6.63	3.17	0.00056	349	225.64	1.55	5.5e-17
+GO:0006743	ubiquinone metabolic process	4	0.1	39.75	0.000667	12	3.42	3.50	0.00024
+GO:0051179	localization	43	21.77	1.97	0.000699	1141	740.9	1.54	5.57e-65
+GO:0042462	eye photoreceptor cell development	4	0.11	35.96	0.00097	14	3.78	3.70	2.19e-05
+GO:1901661	quinone metabolic process	4	0.11	35.96	0.000986	13	3.78	3.43	0.00015
+GO:1904491	protein localization to ciliary transition zone	4	0.12	34.33	0.00114	17	3.96	4.29	6.22e-08
+GO:0001523	retinoid metabolic process	6	0.48	12.59	0.00182	45	16.22	2.77	1.91e-10
+GO:0042073	intraciliary transport	5	0.29	17.48	0.00204	42	9.73	4.32	1.52e-19
+GO:0051606	detection of stimulus	14	3.47	4.03	0.00206	76	118.23	.64	8.42e-05
+GO:0006996	organelle organization	33	15.21	2.17	0.00207	884	517.6	1.71	3.3900000000000005e-70
+GO:0016101	diterpenoid metabolic process	6	0.49	12.18	0.00207	45	16.76	2.68	7.45e-10
+GO:0008104	intracellular protein localization	21	7.37	2.85	0.0023	474	250.87	1.89	1.43e-47
+GO:0048592	eye morphogenesis	6	0.53	11.33	0.00305	39	18.02	2.16	1.32e-05
+GO:0001754	eye photoreceptor cell differentiation	4	0.16	25.17	0.00361	17	5.41	3.14	4.01e-05
+GO:0042181	ketone biosynthetic process	4	0.17	22.89	0.00517	15	5.95	2.52	0.00281
+GO:0009628	response to abiotic stimulus	16	4.98	3.21	0.00667	302	169.59	1.78	1.92e-24
+GO:0008150	biological_process	106	92.57	1.15	0.00758	3561	3149.77	1.13	4.14e-119
+GO:0030182	neuron differentiation	15	4.54	3.30	0.00829	218	154.45	1.41	8.13e-07
+GO:0048666	neuron development	13	3.56	3.65	0.01	176	121.11	1.45	2.09e-06
+GO:0060042	retina morphogenesis in camera-type eye	4	0.21	18.88	0.0104	20	7.21	2.77	6.78e-05
+GO:0033036	macromolecule localization	23	9.57	2.40	0.0106	586	325.48	1.80	7.76e-52
+GO:0007017	microtubule-based process	15	4.66	3.22	0.0106	342	158.6	2.16	1.42e-47
+GO:0006066	alcohol metabolic process	8	1.37	5.83	0.0122	119	46.68	2.55	3.19e-23
+GO:0003356	regulation of cilium beat frequency	3	0.08	35.40	0.0129	8	2.88	2.77	0.0274
+GO:0045444	fat cell differentiation	5	0.44	11.37	0.0132	28	14.96	1.87	0.00519
+GO:0048699	generation of neurons	15	4.84	3.10	0.0151	235	164.54	1.43	8.22e-08
+GO:0099111	microtubule-based transport	7	1.08	6.48	0.0172	99	36.77	2.69	1.7700000000000003e-21
+GO:0009987	cellular process	96	79.11	1.21	0.0217	3357	2692.0	1.25	2.0300000000000003e-185
+GO:0003407	neural retina development	4	0.27	14.81	0.024	26	9.19	2.83	2.02e-06
+GO:0090596	sensory organ morphogenesis	6	0.81	7.40	0.0255	53	27.57	1.92	1.44e-05
+GO:0071482	cellular response to light stimulus	5	0.53	9.44	0.0287	34	18.02	1.89	0.00142
+GO:0016043	cellular component organization	46	28.13	1.64	0.0361	1459	957.35	1.52	1.1e-86
+GO:0006892	post-Golgi vesicle-mediated transport	5	0.57	8.74	0.0402	35	19.46	1.80	0.00372
+GO:0006950	response to stress	4	16.07	.25	0.0491	704	546.98	1.29	2.89e-13

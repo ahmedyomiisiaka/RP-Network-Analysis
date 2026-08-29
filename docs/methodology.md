@@ -1,7 +1,7 @@
 # Methodology — RP Network Analysis
 
 **Project:** Network-Based Analysis of Signalling Pathways in Retinitis Pigmentosa  
-**Last updated:** 2026-08-29
+**Last updated:** 2026-08-30
 
 ---
 
@@ -538,28 +538,243 @@ The main Stage 5 outputs are:
 
 ---
 
-# 9. Next Analytical Phase
 
-Following completion of the retinal context-specific network, the next
-analysis will focus on:
+# 9. Functional Annotation and Enrichment Analysis — Stage 6
 
-1. functional annotation of the retinal-network proteins;
-2. Gene Ontology enrichment;
+Functional annotation and enrichment analysis was initiated using the final
+retinal context-specific network generated in Stage 5.
+
+The Stage 6 input network contains:
+
+- 9,149 retinal context-specific interactions
+- 3,748 unique proteins
+- 105 RP seed proteins
+- 3,643 non-RP retinal-network interaction partners
+
+Three enrichment input sets were prepared:
+
+1. 105 RP seed proteins
+2. 3,643 non-RP retinal-network interaction partners
+3. 3,748 proteins representing the complete retinal-context network
+
+The RP seed and partner sets were analysed separately so that biological
+processes already represented among known RP-associated genes could be
+distinguished from broader functional processes represented by the
+retinal-network interaction partners.
+
+---
+
+## 9.1 PANTHER GO Biological Process Enrichment — RP Seed Proteins
+
+Gene Ontology Biological Process enrichment was performed using the
+PANTHER Overrepresentation Test.
+
+**Organism:** Homo sapiens  
+**Reference:** Homo sapiens, all genes in the PANTHER database  
+**Annotation dataset:** GO biological process complete  
+**Statistical test:** Fisher's Exact test  
+**Multiple-testing correction:** False Discovery Rate (FDR)  
+**Significance threshold:** FDR < 0.05
+
+The input consisted of 105 RP seed gene symbols.
+
+All 105 RP input genes were recognized by PANTHER.
+
+Four gene symbols showed multiple PANTHER mappings:
+
+- RP1
+- INPP5E
+- SAG
+- ARHGEF18
+
+The original curated gene symbols were retained rather than manually altering
+the identifiers.
+
+The PANTHER result contained 95 significant GO Biological Process terms at
+FDR < 0.05:
+
+- 93 overrepresented terms
+- 2 underrepresented terms
+
+Strongly enriched biological themes included:
+
+- sensory perception of light stimulus
+- visual perception
+- retina homeostasis
+- photoreceptor cell maintenance
+- photoreceptor cell development
+- photoreceptor cell differentiation
+- phototransduction
+- cilium assembly
+- cilium organization
+- protein localization to cilium
+
+These results provide a functional quality-control check showing that the RP
+seed set is strongly enriched for retinal, photoreceptor, light-sensing, and
+ciliary biology.
+
+---
+
+## 9.2 PANTHER GO Biological Process Enrichment — Retinal-Network Partners
+
+The second enrichment input consisted of 3,643 non-RP proteins from the final
+retinal context-specific interaction network.
+
+PANTHER mapping summary:
+
+- submitted partner genes: 3,643
+- uniquely mapped genes: 3,635
+- unmapped identifiers: 8
+- multiple mapping information reported: 159 identifiers
+
+The downloaded PANTHER result contained 2,105 significant GO Biological
+Process terms at FDR < 0.05:
+
+- 2,080 overrepresented terms
+- 25 underrepresented terms
+
+Prominent functional themes included:
+
+- RNA processing
+- RNA splicing
+- spliceosomal mRNA processing
+- RNA metabolism
+- protein metabolism
+- protein catabolism
+- gene expression
+- nucleotide metabolism
+- cellular localization and transport
+- ciliary transport and organization
+
+The network-partner enrichment therefore represents a broader functional
+landscape than the RP seed enrichment.
+
+---
+
+## 9.3 RP Seed versus Retinal-Network Partner Comparison
+
+Significant GO Biological Process terms from the RP seed and retinal-network
+partner analyses were compared by GO identifier.
+
+After excluding the PANTHER `Unclassified` category:
+
+- RP seed GO terms with standard GO IDs: 94
+- partner GO terms with standard GO IDs: 2,104
+- shared significant GO terms: 82
+- RP-seed-specific significant GO terms: 12
+- partner-specific significant GO terms: 2,022
+
+Shared biological processes included:
+
+- sensory perception of light stimulus
+- visual perception
+- retina homeostasis
+- cilium assembly
+- cilium organization
+- photoreceptor cell maintenance
+- photoreceptor cell development
+- photoreceptor cell differentiation
+- phototransduction
+- retina development
+
+The RP-seed-specific terms were dominated by specialized photoreceptor
+functions including:
+
+- photoreceptor outer-segment organization
+- visible-light phototransduction
+- G protein-coupled opsin signalling
+- transducin-mediated opsin signalling
+- vitamin A metabolism
+- photoreceptor morphogenesis
+- protein localization to the photoreceptor outer segment
+
+The partner-specific enrichment revealed broader functional systems,
+particularly:
+
+- RNA splicing
+- spliceosomal processing
+- mRNA processing
+- RNA metabolism
+- nucleotide metabolism
+- gene expression
+- cellular localization
+- metabolic processes
+
+The term `partner-specific` means statistically significant in the
+retinal-network partner enrichment but not significant in the RP-seed
+enrichment under the same analysis settings. It does not mean that the
+corresponding process is biologically absent from RP.
+
+---
+
+## 9.4 Stage 6 Files Generated So Far
+
+Enrichment input files:
+
+- `rp_seeds_105.txt`
+- `retinal_network_partners_3643.txt`
+- `all_retinal_network_proteins_3748.txt`
+
+GO Biological Process result files:
+
+- `PANTHER_GO_BP_RP_seeds_raw.txt`
+- `PANTHER_GO_BP_RP_seeds_clean.tsv`
+- `PANTHER_GO_BP_RP_seeds_significant_FDR05.tsv`
+- `PANTHER_GO_BP_retinal_partners_raw.txt`
+- `PANTHER_GO_BP_retinal_partners_clean.tsv`
+- `PANTHER_GO_BP_retinal_partners_significant_FDR05.tsv`
+- `GO_BP_shared_RP_seeds_and_partners.tsv`
+- `GO_BP_RP_seed_specific.tsv`
+- `GO_BP_partner_specific.tsv`
+
+---
+
+## 9.5 Stage 6 Status
+
+Completed so far:
+
+- enrichment input preparation and QC
+- GO Biological Process enrichment of RP seed proteins
+- GO Biological Process enrichment of retinal-network partners
+- RP seed versus retinal-network partner GO Biological Process comparison
+
+Pending:
+
+- GO Molecular Function enrichment
+- GO Cellular Component enrichment
+- Reactome pathway enrichment
+- KEGG pathway enrichment
+- functional grouping/module interpretation
+- integration of enrichment results with subsequent pathway/network analyses
+
+Stage 6 is therefore in progress and is not yet complete.
+
+---
+
+# 10. Next Analytical Phase
+
+Stage 6 functional enrichment analysis is currently in progress.
+
+GO Biological Process enrichment has been completed for RP seed proteins and
+retinal-network partners, including comparison of shared and set-specific
+significant processes.
+
+The remaining Stage 6 analysis will focus on:
+
+1. GO Molecular Function enrichment;
+2. GO Cellular Component enrichment;
 3. Reactome pathway enrichment;
 4. KEGG pathway enrichment;
 5. identification of functional groups/modules in which proteins participate
    collectively;
-6. interpretation of retinal degeneration, signalling, cell-death and other
-   biologically relevant pathways;
-7. PathLinker/source-to-target reconstruction after the functional context
-   has been established.
-
-PathLinker will therefore not be started before functional annotation and
-enrichment analysis have been completed and reviewed.
+6. biological interpretation of retinal degeneration, signalling, cell-death,
+   ciliary, metabolic, RNA-processing, and other enriched mechanisms;
+7. PathLinker/source-to-target reconstruction after functional context has
+   been established and reviewed.
 
 ---
 
-# 10. Current Project Status
+# 11. Current Project Status
 
 Completed:
 
@@ -574,6 +789,10 @@ Completed:
 - four-layer context-evidence integration
 - final Stage 5 QC audit
 - definition of retinal context-specific network
+- Stage 6 enrichment input preparation
+- RP-seed GO Biological Process enrichment
+- retinal-network-partner GO Biological Process enrichment
+- RP-seed versus partner GO Biological Process comparison
 
 Current final retinal network:
 
@@ -581,6 +800,11 @@ Current final retinal network:
 - 3,748 proteins
 - 105 RP seed proteins retained
 
-Next:
+Current Stage 6 status:
 
-Functional annotation and enrichment analysis.
+- GO Biological Process analysis complete
+- GO Molecular Function pending
+- GO Cellular Component pending
+- Reactome enrichment pending
+- KEGG enrichment pending
+- functional grouping/module analysis pending

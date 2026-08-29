@@ -1,0 +1,13 @@
+GO_term_raw	reference_count	observed_count	expected_count	direction	fold_enrichment_raw	raw_p_value	FDR	GO_ID	GO_term	fold_enrichment_numeric	significant_FDR_0.05
+sensory perception (GO:0007600)	847	35	4.49	+	7.80	3.75e-22	1.72e-18	GO:0007600	sensory perception	7.8	True
+nervous system process (GO:0050877)	1159	36	6.14	+	5.86	1.01e-18	1.26e-15	GO:0050877	nervous system process	5.86	True
+photoreceptor cell outer segment organization (GO:0035845)	7	6	0.04	+	> 100	1.34e-13	8.77e-11	GO:0035845	photoreceptor cell outer segment organization	100.0	True
+phototransduction, visible light (GO:0007603)	11	6	0.06	+	> 100	8.68e-12	4.78e-09	GO:0007603	phototransduction, visible light	100.0	True
+G protein-coupled opsin signaling pathway (GO:0016056)	6	5	0.03	+	> 100	2.27e-11	1.2e-08	GO:0016056	G protein-coupled opsin signaling pathway	100.0	True
+transducin-mediated opsin signaling pathway (GO:0141190)	4	4	0.02	+	> 100	7.45e-10	3.42e-07	GO:0141190	transducin-mediated opsin signaling pathway	100.0	True
+vitamin A metabolic process (GO:0006776)	7	3	0.04	+	80.92	4.98e-06	0.00114	GO:0006776	vitamin A metabolic process	80.92	True
+regulation of cilium beat frequency involved in ciliary motility (GO:0060296)	8	3	0.04	+	70.80	7.94e-06	0.00176	GO:0060296	regulation of cilium beat frequency involved in ciliary motility	70.8	True
+response to light intensity (GO:0009642)	11	3	0.06	+	51.49	2.31e-05	0.00448	GO:0009642	response to light intensity	51.49	True
+protein localization to photoreceptor outer segment (GO:1903546)	3	2	0.02	+	> 100	8.31e-05	0.0136	GO:1903546	protein localization to photoreceptor outer segment	100.0	True
+photoreceptor cell morphogenesis (GO:0008594)	4	2	0.02	+	94.40	0.000166	0.025	GO:0008594	photoreceptor cell morphogenesis	94.4	True
+isocitrate metabolic process (GO:0006102)	4	2	0.02	+	94.40	0.000166	0.0253	GO:0006102	isocitrate metabolic process	94.4	True

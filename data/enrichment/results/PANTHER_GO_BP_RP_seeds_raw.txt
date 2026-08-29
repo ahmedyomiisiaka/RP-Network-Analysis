@@ -1,0 +1,107 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20240807)
+Annotation Version and Release Date:	GO Ontology database DOI:   Released 2026-04-28
+Analyzed List:	rp_seeds_105.txt (Homo sapiens)
+Reference List:	Homo sapiens (all genes in database)
+Test Type:	FISHER
+Correction:	FDR
+GO biological process complete	Homo sapiens - REFLIST (20580)	rp_seeds_105.txt (109)	rp_seeds_105.txt (expected)	rp_seeds_105.txt (over/under)	rp_seeds_105.txt (fold Enrichment)	rp_seeds_105.txt (raw P-value)	rp_seeds_105.txt (FDR)
+transducin-mediated opsin signaling pathway (GO:0141190)	4	4	.02	+	 > 100	7.45E-10	3.42E-07
+photoreceptor cell outer segment organization (GO:0035845)	7	6	.04	+	 > 100	1.34E-13	8.77E-11
+G protein-coupled opsin signaling pathway (GO:0016056)	6	5	.03	+	 > 100	2.27E-11	1.20E-08
+protein localization to photoreceptor outer segment (GO:1903546)	3	2	.02	+	 > 100	8.31E-05	1.36E-02
+phototransduction, visible light (GO:0007603)	11	6	.06	+	 > 100	8.68E-12	4.78E-09
+isocitrate metabolic process (GO:0006102)	4	2	.02	+	94.40	1.66E-04	2.53E-02
+photoreceptor cell morphogenesis (GO:0008594)	4	2	.02	+	94.40	1.66E-04	2.50E-02
+detection of light stimulus involved in sensory perception (GO:0050962)	17	8	.09	+	88.85	1.11E-14	9.58E-12
+detection of light stimulus involved in visual perception (GO:0050908)	17	8	.09	+	88.85	1.11E-14	9.02E-12
+vitamin A metabolic process (GO:0006776)	7	3	.04	+	80.92	4.98E-06	1.14E-03
+regulation of cilium beat frequency involved in ciliary motility (GO:0060296)	8	3	.04	+	70.80	7.94E-06	1.76E-03
+photoreceptor cell development (GO:0042461)	31	11	.16	+	67.00	4.25E-18	4.87E-15
+photoreceptor cell maintenance (GO:0045494)	36	12	.19	+	62.94	2.94E-19	5.06E-16
+retina homeostasis (GO:0001895)	45	14	.24	+	58.74	8.38E-22	2.88E-18
+protein localization to non-motile cilium (GO:0097499)	17	5	.09	+	55.53	2.23E-08	7.89E-06
+photoreceptor cell differentiation (GO:0046530)	40	11	.21	+	51.92	1.11E-16	1.18E-13
+response to light intensity (GO:0009642)	11	3	.06	+	51.49	2.31E-05	4.48E-03
+detection of light stimulus (GO:0009583)	52	14	.28	+	50.83	8.62E-21	2.37E-17
+ubiquinone biosynthetic process (GO:0006744)	17	4	.09	+	44.43	1.68E-06	4.53E-04
+quinone biosynthetic process (GO:1901663)	17	4	.09	+	44.43	1.68E-06	4.45E-04
+detection of visible light (GO:0009584)	26	6	.14	+	43.57	4.06E-09	1.55E-06
+sensory perception of light stimulus (GO:0050953)	152	33	.81	+	40.99	6.28E-45	8.64E-41
+visual perception (GO:0007601)	146	31	.77	+	40.09	8.00E-42	5.50E-38
+ubiquinone metabolic process (GO:0006743)	19	4	.10	+	39.75	2.71E-06	6.67E-04
+quinone metabolic process (GO:1901661)	21	4	.11	+	35.96	4.16E-06	9.86E-04
+eye photoreceptor cell development (GO:0042462)	21	4	.11	+	35.96	4.16E-06	9.70E-04
+phototransduction (GO:0007602)	37	7	.20	+	35.72	8.69E-10	3.74E-07
+regulation of cilium beat frequency (GO:0003356)	16	3	.08	+	35.40	7.70E-05	1.29E-02
+protein localization to ciliary transition zone (GO:1904491)	22	4	.12	+	34.33	5.06E-06	1.14E-03
+non-motile cilium assembly (GO:1905515)	39	7	.21	+	33.89	1.29E-09	5.37E-07
+isoprenoid biosynthetic process (GO:0008299)	29	5	.15	+	32.55	4.08E-07	1.17E-04
+spliceosome conformational change to release U4 (or U4atac) and U1 (or U11) (GO:0000388)	35	6	.19	+	32.37	2.75E-08	9.47E-06
+spliceosomal tri-snRNP complex assembly (GO:0000244)	38	6	.20	+	29.81	4.62E-08	1.55E-05
+spliceosomal conformational changes to generate catalytic conformation (GO:0000393)	39	6	.21	+	29.05	5.44E-08	1.74E-05
+protein localization to cilium (GO:0061512)	80	12	.42	+	28.32	1.17E-14	8.93E-12
+eye photoreceptor cell differentiation (GO:0001754)	30	4	.16	+	25.17	1.83E-05	3.61E-03
+detection of external stimulus (GO:0009581)	114	14	.60	+	23.19	1.16E-15	1.14E-12
+ketone biosynthetic process (GO:0042181)	33	4	.17	+	22.89	2.71E-05	5.17E-03
+detection of abiotic stimulus (GO:0009582)	117	14	.62	+	22.59	1.69E-15	1.55E-12
+retina morphogenesis in camera-type eye (GO:0060042)	40	4	.21	+	18.88	5.87E-05	1.04E-02
+retina development in camera-type eye (GO:0060041)	93	9	.49	+	18.27	1.56E-09	6.30E-07
+intraciliary transport (GO:0042073)	54	5	.29	+	17.48	9.77E-06	2.04E-03
+anatomical structure homeostasis (GO:0060249)	155	14	.82	+	17.05	9.03E-14	6.54E-11
+tissue homeostasis (GO:0001894)	155	14	.82	+	17.05	9.03E-14	6.21E-11
+spliceosomal snRNP assembly (GO:0000387)	70	6	.37	+	16.18	1.91E-06	4.97E-04
+isoprenoid metabolic process (GO:0006720)	120	10	.64	+	15.73	8.15E-10	3.62E-07
+neural retina development (GO:0003407)	51	4	.27	+	14.81	1.54E-04	2.40E-02
+cilium assembly (GO:0060271)	331	24	1.75	+	13.69	9.36E-21	2.15E-17
+retinoid metabolic process (GO:0001523)	90	6	.48	+	12.59	8.34E-06	1.82E-03
+cilium organization (GO:0044782)	367	24	1.94	+	12.35	1.05E-19	2.07E-16
+diterpenoid metabolic process (GO:0016101)	93	6	.49	+	12.18	1.01E-05	2.07E-03
+response to light stimulus (GO:0009416)	251	16	1.33	+	12.04	3.23E-13	1.93E-10
+terpenoid metabolic process (GO:0006721)	112	7	.59	+	11.80	2.21E-06	5.52E-04
+fat cell differentiation (GO:0045444)	83	5	.44	+	11.37	7.94E-05	1.32E-02
+eye morphogenesis (GO:0048592)	100	6	.53	+	11.33	1.53E-05	3.05E-03
+plasma membrane bounded cell projection assembly (GO:0120031)	400	24	2.12	+	11.33	7.75E-19	1.19E-15
+cell projection assembly (GO:0030031)	404	24	2.14	+	11.22	9.75E-19	1.34E-15
+cellular response to light stimulus (GO:0071482)	100	5	.53	+	9.44	1.92E-04	2.87E-02
+post-Golgi vesicle-mediated transport (GO:0006892)	108	5	.57	+	8.74	2.75E-04	4.02E-02
+response to radiation (GO:0009314)	350	16	1.85	+	8.63	4.96E-11	2.44E-08
+camera-type eye development (GO:0043010)	197	9	1.04	+	8.63	1.05E-06	2.89E-04
+eye development (GO:0001654)	252	11	1.33	+	8.24	9.95E-08	3.04E-05
+visual system development (GO:0150063)	256	11	1.36	+	8.11	1.17E-07	3.49E-05
+sensory system development (GO:0048880)	262	11	1.39	+	7.93	1.47E-07	4.31E-05
+sensory perception (GO:0007600)	847	35	4.49	+	7.80	3.75E-22	1.72E-18
+sensory organ morphogenesis (GO:0090596)	153	6	.81	+	7.40	1.65E-04	2.55E-02
+sensory organ development (GO:0007423)	372	13	1.97	+	6.60	8.73E-08	2.73E-05
+microtubule-based transport (GO:0099111)	204	7	1.08	+	6.48	1.08E-04	1.72E-02
+multicellular organismal-level homeostasis (GO:0048871)	462	15	2.45	+	6.13	2.18E-08	7.89E-06
+nervous system process (GO:0050877)	1159	36	6.14	+	5.86	1.01E-18	1.26E-15
+alcohol metabolic process (GO:0006066)	259	8	1.37	+	5.83	7.18E-05	1.22E-02
+organelle assembly (GO:0070925)	847	26	4.49	+	5.80	2.28E-13	1.43E-10
+protein localization to organelle (GO:0033365)	651	18	3.45	+	5.22	9.07E-09	3.37E-06
+plasma membrane bounded cell projection organization (GO:0120036)	990	25	5.24	+	4.77	4.94E-11	2.52E-08
+cell projection organization (GO:0030030)	996	25	5.28	+	4.74	5.62E-11	2.67E-08
+detection of stimulus (GO:0051606)	656	14	3.47	+	4.03	9.57E-06	2.06E-03
+system process (GO:0003008)	1798	36	9.52	+	3.78	8.46E-13	4.85E-10
+neuron development (GO:0048666)	672	13	3.56	+	3.65	5.62E-05	1.00E-02
+neuron differentiation (GO:0030182)	857	15	4.54	+	3.30	4.58E-05	8.29E-03
+microtubule-based process (GO:0007017)	880	15	4.66	+	3.22	6.18E-05	1.06E-02
+response to abiotic stimulus (GO:0009628)	941	16	4.98	+	3.21	3.54E-05	6.67E-03
+homeostatic process (GO:0042592)	1252	21	6.63	+	3.17	2.20E-06	5.60E-04
+generation of neurons (GO:0048699)	913	15	4.84	+	3.10	9.33E-05	1.51E-02
+intracellular protein localization (GO:0008104)	1392	21	7.37	+	2.85	1.14E-05	2.30E-03
+cellular component assembly (GO:0022607)	2544	35	13.47	+	2.60	5.12E-08	1.68E-05
+macromolecule localization (GO:0033036)	1806	23	9.57	+	2.40	6.06E-05	1.06E-02
+cellular component biogenesis (GO:0044085)	2762	35	14.63	+	2.39	5.35E-07	1.50E-04
+organelle organization (GO:0006996)	2872	33	15.21	+	2.17	9.76E-06	2.07E-03
+multicellular organismal process (GO:0032501)	5240	57	27.75	+	2.05	2.76E-09	1.09E-06
+localization (GO:0051179)	4111	43	21.77	+	1.97	2.90E-06	6.99E-04
+cellular component organization (GO:0016043)	5312	46	28.13	+	1.64	2.44E-04	3.61E-02
+cellular process (GO:0009987)	14937	96	79.11	+	1.21	1.37E-04	2.17E-02
+biological_process (GO:0008150)	17477	106	92.57	+	1.15	4.07E-05	7.58E-03
+response to stress (GO:0006950)	3035	4	16.07	-	.25	3.39E-04	4.91E-02
+Unclassified (UNCLASSIFIED)	3103	3	16.43	-	.18	4.07E-05	7.48E-03
