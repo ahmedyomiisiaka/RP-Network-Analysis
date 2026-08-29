@@ -1,364 +1,262 @@
-# Methodology
+# Methodology — RP Network Analysis
 
-## Analysis of Signaling Pathways in Retinitis Pigmentosa and Identification of Potential Targets for Genome Editing
+**Project:** Network-Based Analysis of Signalling Pathways in Retinitis Pigmentosa  
+**Last updated:** 2026-08-29
 
-## 1. Overview
+---
 
-This project applies a network-based systems biology approach to investigate
-proteins associated with retinitis pigmentosa (RP), their protein-protein
-interaction partners, and the biological context in which these interactions
-may occur.
+# 1. RP Gene Collection
 
-The current workflow consists of:
+Retinitis pigmentosa (RP)-associated genes were collected and curated from
+RetiGene and Rivolta et al. (2025).
 
-1. Collection and curation of RP-associated genes.
-2. Construction of a protein-protein interaction (PPI) network using STRING.
-3. Annotation of protein interactions with subcellular localisation evidence
-   from COMPARTMENTS.
-4. Annotation of retinal expression using the Human Protein Atlas (HPA).
-5. Addition of independent PPI evidence from the Integrated Interactions
-   Database (IID).
-6. Addition of tissue-specific interaction evidence from TissueNet.
-7. Functional annotation and pathway enrichment analysis.
-8. Identification of functional groups/modules and biologically relevant
-   pathways.
-9. Reconstruction and prioritisation of paths between RP-associated proteins
-   and selected downstream biological targets using PathLinker.
+The complete RP catalogue contained 114 entries:
 
-The main principle of the context-specific analysis is to retain the original
-interaction network while progressively adding independent evidence to each
-interaction. Interactions are therefore annotated with evidence categories
-before a final context-specific filtering decision is made.
+- 112 protein-coding genes
+- 2 loci
 
+The two locus entries were retained in the catalogue for provenance but were
+excluded from protein-protein interaction analysis because they cannot be
+submitted as individual protein identifiers.
 
-## 2. RP Gene Collection and Curation
-
-### 2.1 Data sources
-
-RP-associated genes were collected and curated from the project gene sources,
-including:
-
-- RetiGene
-- Rivolta et al. (2025)
-
-The combined RP gene list was reviewed to distinguish protein-coding genes
-from non-protein-coding loci or entries that could not be used directly for
-protein-protein interaction analysis.
-
-The working RP gene set used for network construction is stored in:
+The working protein-level RP gene set is stored in:
 
 `data/processed/rp_genes_for_network.csv`
 
-The complete curated gene information is stored separately to preserve the
-provenance of the original RP gene collection.
+---
 
+# 2. Apoptosis Reference Dataset
 
-## 3. Protein-Protein Interaction Network Construction
+Apoptosis-related proteins were collected earlier from Reactome and KEGG.
 
-### 3.1 STRING database
+Sources included:
 
-The RP protein interaction network was constructed using STRING for:
+- Reactome apoptosis-related pathway data
+- KEGG pathway hsa04210 (Apoptosis)
 
-- Organism: Homo sapiens
-- NCBI taxonomy identifier: 9606
+The prepared datasets contain:
 
-The RP-associated protein-coding genes were used as seed/query proteins.
+- 262 apoptosis-associated proteins in the combined reference set
+- 40 proteins occurring in both Reactome and KEGG
 
-A minimum STRING combined interaction score of:
+These datasets were prepared as potential downstream reference/target sets.
 
-`0.400`
+However, following supervisor guidance, apoptosis-target definition and
+PathLinker analysis were paused while the interaction network and
+context-specific annotation were completed.
 
-was used.
+The exact use of the apoptosis reference proteins in PathLinker will therefore
+be confirmed before source-to-target reconstruction is performed.
 
-This threshold was confirmed during discussion with the thesis supervisor.
+---
 
-The purpose of using this threshold was to retain a sufficiently broad set of
-potential interaction partners before applying biological context information
-such as retinal expression, subcellular localisation, and tissue-specific
-interaction evidence.
+# 3. Protein-Protein Interaction Network Construction
 
-### 3.2 STRING information retained
+The STRING database was used to construct the candidate protein-protein
+interaction network from the RP protein-coding gene set.
 
-For each interaction, the following information was retained where available:
+**Database:** STRING  
+**Species:** Homo sapiens  
+**NCBI taxonomy ID:** 9606  
+**Minimum STRING combined interaction score:** >= 0.400
 
-- STRING identifier for protein A
-- STRING identifier for protein B
-- preferred protein/gene name for protein A
-- preferred protein/gene name for protein B
-- NCBI taxonomy identifier
-- STRING combined score
-- neighbourhood score
-- gene fusion score
-- phylogenetic co-occurrence score
-- co-expression/association score
-- experimental evidence score
-- curated database evidence score
-- text-mining evidence score
-- query gene
-- RP seed status of each interacting protein
+The low-to-medium confidence threshold of 0.400 was retained following
+supervisor guidance because subsequent biological-context evidence was used to
+evaluate the candidate interactions.
+
+The resulting STRING network contained:
+
+- 9,835 unique undirected interactions
+- 4,132 unique proteins
+- 105 RP seed proteins represented in STRING
+- 4,027 additional interacting proteins
+
+Seven RP input entries were not represented as STRING query/seed proteins in
+the retrieved interaction network.
 
 The main STRING interaction table is:
 
 `data/processed/ppi_interactions.tsv`
 
+For each interaction, STRING evidence fields were retained, including the
+combined interaction score and available evidence-channel scores.
 
-## 4. STRING Network Audit
+---
 
-The RP working input contained 112 genes.
+# 4. Context-Specific Interaction Annotation
 
-Of these, 105 were represented as STRING seed proteins in the resulting
-interaction table.
+The STRING network represents a broad candidate interaction network.
 
-Seven input entries were not represented as STRING seed proteins in the
-retrieved network:
+To evaluate biological relevance in the retinal context, every STRING
+interaction was progressively annotated using several independent biological
+databases.
 
-- CFAP418
-- RNU4-2
-- RNU6-1
-- RNU6-2
-- RNU6-8
-- RNU6-9
-- SAXO6
-
-The resulting network contained:
-
-- 9,835 unique interactions
-- 4,132 unique network proteins
-- 105 RP seed proteins represented in the STRING network
-
-The minimum observed STRING score was 0.400 and the maximum was 0.999.
-
-An undirected interaction-pair audit was performed to ensure that the same
-protein pair had not been duplicated simply because of reversed interaction
-orientation. All 9,835 interactions represented unique undirected pairs.
-
-
-## 5. Context-Specific Interaction Annotation
-
-The STRING network represents a broad interaction network. Not every
-interaction is necessarily biologically relevant in retinal tissue.
-
-Therefore, additional biological databases are being integrated to provide
-context-specific evidence.
-
-The current context-specific evidence sources are:
+The evidence layers used were:
 
 1. COMPARTMENTS — subcellular localisation
-2. Human Protein Atlas — retinal expression
+2. Human Protein Atlas — retinal RNA expression
 3. Integrated Interactions Database (IID) — independent PPI evidence
-4. TissueNet — tissue-specific PPI evidence (planned)
+4. TissueNet v3 — additional PPI evidence
 
-The context-specific analysis is performed at the interaction level.
+The analysis followed an annotation-first strategy.
 
-Each row represents one STRING protein-protein interaction, while additional
-columns describe evidence associated with that interaction.
+All 9,835 STRING interactions were retained in the complete master evidence
+table while evidence from each database was added as additional columns.
 
+Final retinal-context filtering was performed only after the evidence layers
+had been integrated.
 
-## 6. COMPARTMENTS Subcellular Localisation Annotation
+---
 
-### 6.1 Purpose
+## 4.1 COMPARTMENTS — Subcellular Co-localisation
 
-Two proteins are more biologically plausible interaction partners when they
-have evidence supporting localisation to compatible or shared subcellular
-locations.
+Subcellular localisation information was obtained from the COMPARTMENTS human
+all-channels-integrated dataset.
 
-COMPARTMENTS was therefore used to annotate the subcellular localisation of
-proteins in the STRING network.
+**Database:** COMPARTMENTS  
+**Website:** https://compartments.jensenlab.org/  
+**Local analysis file:** `compartments_human.tsv`  
+**Dataset:** Human, all channels integrated  
+**Confidence cutoff:** >= 2.0
 
-Database:
-
-COMPARTMENTS
-
-Website:
-
-https://compartments.jensenlab.org/
-
-### 6.2 Identifier matching
-
-STRING protein identifiers have the format:
+STRING Ensembl protein identifiers were converted from the form:
 
 `9606.ENSP00000295408`
 
-whereas the COMPARTMENTS human dataset uses Ensembl protein identifiers such
-as:
+to:
 
 `ENSP00000295408`
 
-The `9606.` species prefix was therefore removed from the STRING identifiers
-before matching them to COMPARTMENTS.
+before matching to the COMPARTMENTS dataset.
 
-Matching was performed primarily using Ensembl protein identifiers rather
-than relying only on gene symbols.
+Only COMPARTMENTS localisation annotations with confidence score >= 2.0 were
+considered.
 
-### 6.3 COMPARTMENTS confidence threshold
+### Informative localisation criterion
 
-The supervisor-confirmed COMPARTMENTS threshold was:
+Very broad Gene Ontology Cellular Component parent terms were not considered
+sufficient evidence of meaningful protein co-localisation.
 
-`score >= 2.0`
+Generic high-level terms such as:
 
-All localisation annotations below this threshold were excluded from the
-localisation-overlap assessment.
+- `cell` (GO:0005623)
+- `cell part` (GO:0044464)
+- `cellular_component`
+- `cellular anatomical entity`
+- broad intracellular anatomical terms
+- broad organelle parent categories
 
-### 6.4 Removal of broad ontology terms
+were excluded from establishing localisation overlap.
 
-Very broad Gene Ontology Cellular Component terms can produce apparent
-co-localisation without providing useful information about where proteins
-could interact.
+Generic `Membrane` annotation alone was also not considered sufficient
+evidence of specific co-localisation.
 
-Broad/non-informative parent terms were therefore excluded before evaluating
-localisation overlap.
-
-The purpose of this step was to ensure that a PASS classification reflected
-shared informative localisation evidence rather than only membership in a
-very general cellular-component category.
-
-### 6.5 Interaction classification
-
-For each STRING interaction, the usable GO Cellular Component annotations of
+For each STRING interaction, the informative localisation annotations of
 protein A and protein B were compared.
 
-Interactions were assigned one of three statuses:
+Interactions were classified as:
 
-#### PASS
+- `PASS` — both proteins shared at least one informative localisation
+- `NO_OVERLAP` — both proteins had usable localisation information but no
+  informative shared localisation
+- `UNKNOWN` — localisation information was insufficient for one or both
+  proteins
 
-Both proteins had usable COMPARTMENTS annotations and shared at least one
-retained GO Cellular Component term.
+The complete COMPARTMENTS annotation retained all original STRING
+interactions.
 
-#### NO_OVERLAP
+Final audited COMPARTMENTS result:
 
-Both proteins had usable localisation information, but no retained
-localisation term was shared.
+- PASS: 9,751
+- NO_OVERLAP: 71
+- UNKNOWN: 13
+- Total: 9,835
 
-#### UNKNOWN
-
-At least one of the interacting proteins lacked sufficient usable
-COMPARTMENTS localisation information under the selected criteria.
-
-### 6.6 Information retained
-
-The annotation table contains information including:
-
-- number of usable compartments for protein A
-- number of usable compartments for protein B
-- localisation terms for each protein
-- shared GO Cellular Component identifiers
-- shared compartment names
-- number of shared compartments
-- maximum shared localisation confidence
-- interaction localisation status
-- database name
-- COMPARTMENTS threshold
-- database access/documentation date
-
-### 6.7 Result
-
-Using the supervisor-confirmed COMPARTMENTS score threshold of 2.0:
-
-- Total STRING interactions: 9,835
-- COMPARTMENTS-supported interactions: 9,751
-
-The complete COMPARTMENTS annotation is stored in:
+The complete annotation table is:
 
 `data/processed/compartments_interaction_annotation_t2.tsv`
 
-At this stage, lack of shared localisation evidence is recorded as an
-annotation rather than being used alone to permanently delete an interaction.
+The PASS-only convenience subset is:
 
+`data/processed/compartments_shared_t2.tsv`
 
-## 7. Human Protein Atlas Retinal Expression Annotation
+### COMPARTMENTS QC
 
-### 7.1 Purpose
+An alternative rerun produced 9,805 PASS interactions because broad terms
+including `cell`, `cell part`, and generic `Membrane` were allowed to
+establish localisation overlap.
 
-An interaction relevant to retinal disease should have evidence that its
-participating proteins are expressed in retinal tissue.
+Comparison with the audited analysis showed that 54 interactions changed
+classification:
 
-Retinal expression was therefore investigated using RNA tissue consensus data
-from the Human Protein Atlas.
+- 51: NO_OVERLAP -> PASS
+- 3: UNKNOWN -> PASS
 
-Database:
+Because these changes were caused by non-specific localisation terms, the
+9,805-PASS rerun was rejected.
 
-Human Protein Atlas (HPA)
+The authoritative COMPARTMENTS result is therefore:
 
-Website:
+`9,751 PASS / 71 NO_OVERLAP / 13 UNKNOWN`
 
-https://www.proteinatlas.org/
+---
 
-Dataset:
+## 4.2 Human Protein Atlas — Retinal Expression
 
-RNA tissue consensus
+Retinal RNA-expression evidence was obtained from the Human Protein Atlas RNA
+tissue consensus dataset.
 
-Tissue:
+**Database:** Human Protein Atlas  
+**Website:** https://www.proteinatlas.org/  
+**Dataset:** RNA tissue consensus  
+**Local analysis file:** `rna_tissue_consensus.tsv`  
+**Tissue:** retina  
+**Expression measurement:** nTPM  
+**Expression criterion:** nTPM > 0
 
-Retina
+For every STRING interaction, the retinal-expression values of both
+participating proteins were assigned where available.
 
-### 7.2 Expression measurement
+An interaction was considered retinal-expression supported when:
 
-Expression was represented using normalized transcripts per million:
+`retina_nTPM_A > 0`
 
-`nTPM`
+AND
 
-The supervisor-confirmed criterion for evidence of retinal expression was:
+`retina_nTPM_B > 0`
 
-`retina nTPM > 0`
-
-### 7.3 Interaction-level annotation
-
-For every STRING interaction, retinal expression values were assigned to
-protein A and protein B where corresponding HPA records were available.
-
-The interaction was then classified according to whether both proteins had
-detectable retinal expression.
-
-The main categories were:
+Interactions were classified as:
 
 - `BOTH_EXPRESSED`
 - `BELOW_THRESHOLD`
 - `UNKNOWN`
 
-`BOTH_EXPRESSED` indicates that both interacting proteins had retinal
-expression greater than zero.
+Final HPA result:
 
-`BELOW_THRESHOLD` indicates that at least one mapped protein did not satisfy
-the selected expression criterion.
+- BOTH_EXPRESSED: 9,202
+- BELOW_THRESHOLD: 437
+- UNKNOWN: 196
 
-`UNKNOWN` indicates that sufficient retinal expression information could not
-be assigned to one or both proteins.
-
-### 7.4 Result
-
-The STRING network contained 9,835 interactions.
-
-Using retinal nTPM > 0:
-
-- 9,202 interactions had both proteins expressed in retina.
-
-The HPA retinal expression annotation is stored in:
+The HPA annotation table is:
 
 `data/processed/hpa_retina_interaction_annotation.tsv`
 
+Quality control confirmed that no interaction classified as
+`BOTH_EXPRESSED` contained an nTPM value <= 0.
 
-## 8. Integrated Interactions Database (IID) Annotation
+---
 
-### 8.1 Purpose
+## 4.3 Integrated Interactions Database (IID)
 
-The Integrated Interactions Database was used to determine whether STRING
-interaction pairs also had independent interaction evidence in another
-integrated PPI resource.
+The Integrated Interactions Database was used as an independent source of
+protein-protein interaction evidence.
 
-Database:
+**Database:** Integrated Interactions Database (IID)  
+**Website:** https://iid.ophid.utoronto.ca/  
+**Dataset:** Human annotated PPIs  
+**Access date:** 2026-08-29
 
-Integrated Interactions Database (IID)
-
-Website:
-
-https://iid.ophid.utoronto.ca/
-
-The human annotated PPI dataset was downloaded and used for interaction-level
-comparison.
-
-### 8.2 Interaction matching
-
-STRING and IID protein interactions were treated as undirected interactions.
+Exact undirected gene-pair matching was performed between STRING and IID.
 
 For example:
 
@@ -368,327 +266,321 @@ and:
 
 `GAS6 -- MERTK`
 
-represent the same protein pair.
+were treated as the same interaction.
 
-Canonical interaction keys were therefore created by normalising the
-interacting gene symbols and sorting the two symbols before matching.
+IID evidence fields retained included:
 
-Exact protein/gene-pair matching was then performed between the 9,835 STRING
-interactions and the IID human interaction dataset.
-
-### 8.3 Evidence retained from IID
-
-Where available, the following information was retained:
-
-- whether the interaction was found in IID
-- IID support category
+- interaction presence/absence
 - evidence type
 - experimental evidence
 - predicted evidence
 - orthology evidence
-- experimental detection methods
+- experimental methods
 - PubMed identifiers
 - source interaction databases
 - number of experimental methods
 - number of experimental publications
-- number of predicted publications
-- total publication count
 - detection type
-- database name
-- access date
 
-### 8.4 Interpretation of IID absence
+Absence from IID was classified as `NOT_FOUND`.
 
-An interaction that was not found in IID was not automatically classified as
-biologically false.
+`NOT_FOUND` was not interpreted as evidence that a STRING interaction is
+biologically false because databases differ in coverage and evidence sources.
 
-Instead, it was recorded as lacking an exact matching interaction in the
-downloaded IID dataset.
+Final IID result:
 
-This distinction is important because different PPI databases have different
-coverage, evidence sources, integration procedures, and update histories.
+- IID exact matches: 2,293 / 9,835
+- IID coverage of STRING interactions: 23.31%
+- Experimental support: 1,527
+- Predicted-only support: 625
+- Orthology-only support: 104
+- Predicted + orthology support: 37
+- NOT_FOUND: 7,542
 
-### 8.5 Result
-
-Of the 9,835 STRING interactions:
-
-- 2,293 interactions had an exact matching interaction in IID
-- IID coverage of the STRING network was 23.31%
-- 1,527 interactions had experimental IID support
-
-Additional matched interactions had predicted and/or orthology-based
-evidence.
-
-The IID annotation table is stored in:
+The IID annotation table is:
 
 `data/processed/iid_interaction_annotation.tsv`
 
+IID was used as additional evidence and was not used as a mandatory
+retinal-context exclusion criterion.
 
-## 9. Integrated Context-Specific Evidence Table
+---
 
-### 9.1 Purpose
+## 4.4 TissueNet v3 — Additional PPI Evidence
 
-Rather than immediately applying a strict binary filter after each database,
-the evidence obtained from different resources was integrated into one master
-interaction-level table.
+TissueNet v3 was used as an additional source of protein-protein interaction
+evidence.
 
-The purpose is to preserve the original STRING interaction network while
-recording the biological evidence supporting or questioning each interaction.
+**Database:** TissueNet v3  
+**Website:** https://netbio.bgu.ac.il/tissuenet  
+**PPI file:** `PPI.csv`  
+**Additional downloaded files:**  
+- `hpa_expression_ptpm.csv`
+- `gtex_v8_tpm.csv`
 
-The master table is:
+**Access date:** 2026-08-29
 
-`data/processed/context_specific_evidence_master.tsv`
+The TissueNet PPI dataset uses Ensembl gene identifiers (ENSG), whereas the
+STRING-derived network was primarily represented by gene symbols.
 
-### 9.2 Evidence layers currently integrated
+An identifier-mapping step was therefore performed before PPI matching.
 
-The current master table contains evidence from:
+Gene-symbol to Ensembl-gene mapping used exact mappings from:
 
-1. STRING
-2. COMPARTMENTS
-3. Human Protein Atlas
-4. IID
+1. Human Protein Atlas
+2. GTEx v8 as a secondary mapping source
 
-TissueNet will be incorporated as an additional tissue-specific evidence
-layer.
+Final identifier-mapping result:
 
-### 9.3 Evidence-layer indicators
+- Network proteins: 4,132
+- Resolved: 4,107
+- Unmapped: 23
+- Ambiguous: 2
+- Overall mapping coverage: 99.39%
 
-Three current positive-evidence indicators were created:
+For the RP seed proteins:
 
-- `compartments_supported`
-- `hpa_retina_supported`
-- `iid_supported`
+- RP seed proteins: 105
+- Resolved: 105
+- Mapping coverage: 100%
 
-A descriptive count:
+Interactions were then compared with TissueNet as undirected ENSG-ENSG pairs.
 
-`n_context_evidence_layers`
+### TissueNet full STRING-network result
 
-records how many of the three currently completed context layers provide
-positive evidence.
+Of the 9,835 STRING interactions:
 
-This count is used for descriptive summarisation only.
+- 9,767 were testable after identifier mapping
+- 929 were found in TissueNet
+- 8,838 were not found
+- 59 had unresolved mapping
+- 9 had ambiguous mapping
 
-It is NOT interpreted as a biological probability, interaction confidence
-score, or indication that an interaction with three evidence layers is
-exactly three times stronger than an interaction with one evidence layer.
+Among testable interactions, 9.51% were found in TissueNet.
 
-Each database provides a different type of biological information.
+### Important interpretation
 
-### 9.4 Current integrated results
+TissueNet was not used as a direct retina-expression database in this
+analysis.
 
-All 9,835 STRING interactions were retained in the master table.
+The downloaded TissueNet HPA and GTEx expression matrices did not contain an
+explicit retina tissue column.
 
-Current positive evidence-layer distribution:
+Therefore, direct retinal-expression evidence was provided by the Human
+Protein Atlas retina dataset described above.
 
-| Positive evidence layers | Number of interactions |
-|---|---:|
-| 0 | 30 |
-| 1 | 604 |
-| 2 | 6,961 |
-| 3 | 2,240 |
+TissueNet `FOUND` status was retained as additional PPI evidence.
 
-The current evidence categories are:
+TissueNet `NOT_FOUND` status was not interpreted as proof that an interaction
+is biologically absent.
 
-| Evidence category | Number of interactions |
-|---|---:|
-| COMPARTMENTS + HPA | 6,909 |
-| COMPARTMENTS + HPA + IID | 2,240 |
-| COMPARTMENTS only | 551 |
-| HPA only | 52 |
-| COMPARTMENTS + IID | 51 |
-| No positive evidence in current layers | 30 |
-| IID only | 1 |
-| HPA + IID | 1 |
+The TissueNet annotation table is:
 
-These categories describe the currently available evidence and do not yet
-represent the final biological classification of the network.
+`data/processed/tissuenet_interaction_annotation.tsv`
 
+---
 
-## 10. Quality-Control Example: MERTK-GAS6
+# 5. Integrated Context-Evidence Table
 
-The MERTK-GAS6 interaction was used as one representative quality-control
-example.
+COMPARTMENTS, HPA, IID, and TissueNet evidence were integrated into one
+interaction-level master table.
+
+The complete table contains all 9,835 original STRING interactions.
+
+The four positive evidence indicators are:
+
+- COMPARTMENTS support
+- HPA retina support
+- IID support
+- TissueNet support
+
+The four-layer evidence counts in the complete STRING network were:
+
+- COMPARTMENTS: 9,751
+- HPA retina: 9,202
+- IID: 2,293
+- TissueNet: 929
+
+Number of positive context evidence layers:
+
+- 0 layers: 30 interactions
+- 1 layer: 590 interactions
+- 2 layers: 6,946 interactions
+- 3 layers: 1,383 interactions
+- 4 layers: 886 interactions
+
+The complete integrated evidence table is:
+
+`data/processed/context_specific_evidence_master_tissuenet.tsv`
+
+The number of evidence layers is used as a descriptive annotation only and is
+not interpreted as a biological probability or quantitative interaction
+confidence score.
+
+---
+
+# 6. Final Retinal Context-Specific Network
+
+The final retinal context-specific network was defined using the two primary
+biological context criteria agreed for this stage:
+
+1. COMPARTMENTS status = `PASS`
+   - COMPARTMENTS score >= 2.0
+   - at least one informative shared localisation
+
+2. Human Protein Atlas retinal expression
+   - protein A retina nTPM > 0
+   - protein B retina nTPM > 0
+
+IID and TissueNet were retained as additional independent PPI evidence layers.
+
+They were not mandatory inclusion criteria because absence from either
+database does not demonstrate biological absence of an interaction.
+
+Final result:
+
+- Original STRING interactions: 9,835
+- Final retinal-context interactions: 9,149
+- Retained percentage: 93.02%
+- Unique proteins: 3,748
+- RP seed proteins retained: 105 / 105
+
+Interactions excluded from the retinal-context network:
+
+- 602 failed HPA retinal-expression criterion only
+- 53 failed COMPARTMENTS criterion only
+- 31 failed both COMPARTMENTS and HPA retina
+- Total excluded: 686
+
+Additional PPI evidence within the final 9,149 retinal interactions:
+
+- IID supported: 2,240
+- TissueNet supported: 898
+- Supported by both IID and TissueNet: 886
+
+The final retinal context-specific network is:
+
+`data/processed/retinal_context_specific_network.tsv`
+
+The excluded interactions and their reasons are stored in:
+
+`data/processed/retinal_context_excluded_interactions.tsv`
+
+The original complete 9,835-edge evidence table remains preserved separately.
+
+---
+
+# 7. Representative Quality-Control Example — MERTK–GAS6
+
+The MERTK–GAS6 interaction provides a representative example of evidence
+integration.
 
 STRING:
 
-- Interaction score: 0.999
+- combined score: 0.999
 
 COMPARTMENTS:
 
-- Status: PASS
-- Shared localisation evidence was identified.
+- status: PASS
 
-Human Protein Atlas:
+Human Protein Atlas retina:
 
-- MERTK retina expression: 15.4 nTPM
-- GAS6 retina expression: 5.8 nTPM
-- Expression status: BOTH_EXPRESSED
+- MERTK: 15.4 nTPM
+- GAS6: 5.8 nTPM
+- status: BOTH_EXPRESSED
 
 IID:
 
-- Interaction found: Yes
-- Support: EXPERIMENTAL
-- Number of experimental methods: 2
-- Number of experimental publications: 2
+- interaction found
+- support status: EXPERIMENTAL
+- two experimental methods
+- two experimental publications
 
-Therefore, MERTK-GAS6 currently has positive evidence from all three
-completed context-specific evidence layers.
+TissueNet:
 
+- interaction found
 
-## 11. TissueNet Tissue-Specific Interaction Evidence
+Therefore, MERTK–GAS6 satisfies the primary retinal-context criteria and also
+has additional independent support from IID and TissueNet.
 
-### Status
+---
 
-Pending.
+# 8. Reproducibility and Data Provenance
 
-### Purpose
-
-TissueNet will be investigated as an additional source of tissue-specific PPI
-information.
-
-The purpose is to determine whether interactions in the STRING-derived
-network have additional evidence supporting their occurrence in a relevant
-tissue context.
-
-Where suitable data are available, TissueNet information will be added as
-additional columns to the master evidence table rather than replacing the
-existing STRING, COMPARTMENTS, HPA, or IID information.
-
-The database name, version where available, access date, extraction procedure,
-identifier-matching procedure, and evidence fields used will be documented.
-
-
-## 12. Additional Context and Annotation Resources
-
-Additional resources described in the thesis proposal may be incorporated
-where they provide relevant and interpretable evidence.
-
-These include resources for:
-
-- tissue expression
-- cell-type expression
-- tissue-specific protein interactions
-- pathway membership
-- protein localisation
-- disease-relevant biological processes
-- condition-specific protein or pathway activity
-
-Potential resources include:
-
-- GTEx
-- Human Cell Atlas
-- CELLxGENE
-- Reactome
-- KEGG
-- ProteomicsDB
-
-These resources will not automatically be treated as equivalent evidence.
-The biological question answered by each database and the type of information
-extracted from it will be documented separately.
-
-
-## 13. Functional Annotation and Enrichment Analysis
-
-### Status
-
-Planned after completion of context-specific evidence integration.
-
-The context-annotated network will be investigated for functional
-relationships among its proteins.
-
-Planned analyses include:
-
-- Gene Ontology enrichment
-- biological process enrichment
-- pathway enrichment
-- Reactome pathway analysis
-- KEGG pathway analysis
-- identification of functional groups/modules
-- identification of proteins that participate collectively in related
-  biological processes or pathways
-
-Particular attention will be given to processes relevant to RP pathogenesis,
-including retinal and photoreceptor biology, cellular signalling,
-degeneration, cell death, and apoptosis where supported by the data.
-
-
-## 14. PathLinker Analysis
-
-### Status
-
-Planned.
-
-PathLinker analysis will be performed after the network has been sufficiently
-annotated and the relevant functional/pathway context has been evaluated.
-
-The purpose will be to investigate biologically plausible paths connecting
-RP-associated source proteins with selected downstream targets or biological
-processes.
-
-The exact source/target definitions, edge weighting strategy, network used,
-and PathLinker parameters will be documented before the final analysis is
-performed.
-
-
-## 15. Reproducibility and Data Provenance
-
-Reproducibility is maintained by recording:
+For each external database, the analysis records where available:
 
 - database name
 - organism
-- database version where available
-- download/access date
-- input identifiers
-- identifier conversion procedures
+- input dataset/file
+- identifier system
+- access/download date
 - thresholds
-- filtering/annotation rules
-- output filenames
-- analysis scripts/notebooks
-- methodological decisions
+- matching procedure
+- annotation rules
+- output filename
 
-Raw external database downloads are kept separately from processed project
-files.
+Large external raw database files are not treated as project-generated
+results.
 
-Large raw database files are not committed directly to the GitHub repository.
-Instead, their source, version, access date, and processing procedure are
-documented so that the analysis can be reproduced.
+Processed interaction-level annotation tables are retained separately from
+the raw downloaded database resources.
 
-Processed files used for downstream analysis are stored under:
+The main Stage 5 outputs are:
 
-`data/processed/`
+- `compartments_interaction_annotation_t2.tsv`
+- `hpa_retina_interaction_annotation.tsv`
+- `iid_interaction_annotation.tsv`
+- `tissuenet_identifier_mapping_resolved.tsv`
+- `tissuenet_interaction_annotation.tsv`
+- `context_specific_evidence_master_tissuenet.tsv`
+- `retinal_context_specific_network.tsv`
+- `retinal_context_excluded_interactions.tsv`
 
-Methodological and database documentation is stored under:
+---
 
-`docs/`
+# 9. Next Analytical Phase
 
+Following completion of the retinal context-specific network, the next
+analysis will focus on:
 
-## 16. Current Status
+1. functional annotation of the retinal-network proteins;
+2. Gene Ontology enrichment;
+3. Reactome pathway enrichment;
+4. KEGG pathway enrichment;
+5. identification of functional groups/modules in which proteins participate
+   collectively;
+6. interpretation of retinal degeneration, signalling, cell-death and other
+   biologically relevant pathways;
+7. PathLinker/source-to-target reconstruction after the functional context
+   has been established.
+
+PathLinker will therefore not be started before functional annotation and
+enrichment analysis have been completed and reviewed.
+
+---
+
+# 10. Current Project Status
 
 Completed:
 
-- RP gene-list preparation
+- RP gene collection and curation
 - STRING PPI network construction
 - STRING network audit
-- COMPARTMENTS annotation
+- COMPARTMENTS localisation annotation
 - HPA retinal-expression annotation
 - IID interaction annotation
-- integration of COMPARTMENTS, HPA, and IID into a master context-evidence
-  table
+- TissueNet identifier mapping
+- TissueNet PPI annotation
+- four-layer context-evidence integration
+- final Stage 5 QC audit
+- definition of retinal context-specific network
 
-Current master network:
+Current final retinal network:
 
-- 9,835 STRING interactions
-
-Current master evidence table:
-
-`data/processed/context_specific_evidence_master.tsv`
+- 9,149 interactions
+- 3,748 proteins
+- 105 RP seed proteins retained
 
 Next:
 
-1. Integrate TissueNet tissue-specific interaction evidence.
-2. Evaluate additional relevant context/annotation databases.
-3. Finalise the context-specific evidence framework.
-4. Perform functional annotation and enrichment analysis.
-5. Identify functional groups/modules and pathway relationships.
-6. Investigate RP-relevant signalling and cell-death mechanisms.
-7. Proceed to PathLinker analysis.
+Functional annotation and enrichment analysis.

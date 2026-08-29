@@ -366,101 +366,268 @@ Results:
 
 ---
 
+---
+
 ## Entry 7 — 2026-08-29
 
-### Stage 5 — Context-Specific Annotation (COMPARTMENTS + HPA + IID complete)
+### Stage 5 — Context-Specific Retinal Network — COMPLETE
 
-#### Supervisor-confirmed parameters (meeting 2026-08-15)
-- STRING combined score: ≥ 0.400
-- COMPARTMENTS confidence score: ≥ 2.0
-- Human Protein Atlas retinal expression: nTPM > 0
+#### Confirmed analysis criteria
 
-#### Important methodological change
-Per supervisor guidance, the approach changed from hard filtering
-to annotation. All 9,835 STRING interactions are retained in the
-master evidence table. Each database adds annotation columns rather
-than removing interactions. Final interaction selection will be made
-after all evidence layers are integrated.
+The Stage 5 context-specific analysis used the following criteria:
 
-#### Filter A — COMPARTMENTS (rerun with score ≥ 2.0)
+- STRING combined interaction score >= 0.400
+- COMPARTMENTS confidence score >= 2.0
+- Human Protein Atlas retinal expression nTPM > 0
 
-| Property | Value |
-|----------|-------|
-| Database | COMPARTMENTS (Jensen Lab) |
-| File | human_compartment_integrated_full.tsv |
-| URL | https://download.jensenlab.org/ |
-| Access date | 2026-08-13 |
-| Score cutoff | ≥ 2.0 (confirmed by supervisor 2026-08-15) |
-| Broad GO terms excluded | Yes |
+The analysis followed an annotation-first strategy.
 
-Results:
-- Interactions with shared specific compartment: 9,751 / 9,835
-- Interactions without compartment overlap: 84
-- Output: data/processed/compartments_interaction_annotation_t2.tsv
+All 9,835 original STRING interactions were retained in the complete master
+evidence table while biological evidence was added from COMPARTMENTS, HPA,
+IID, and TissueNet.
 
-#### Filter B — Human Protein Atlas (retinal expression)
+Final retinal-context filtering was performed only after the annotation
+layers had been completed and quality-controlled.
 
-| Property | Value |
-|----------|-------|
-| Database | Human Protein Atlas v25.1 |
-| File | rna_tissue_consensus.tsv |
-| URL | https://www.proteinatlas.org/about/download |
-| Access date | 2026-08-13 |
-| Expression cutoff | nTPM > 0 |
+---
 
-Results:
-- Both proteins expressed in retina: 9,202 / 9,835
-- Output: data/processed/hpa_retina_interaction_annotation.tsv
+### A. COMPARTMENTS — Subcellular localisation
 
-#### Filter C — IID (Integrated Interactions Database)
+COMPARTMENTS was used to evaluate whether interacting proteins shared at least
+one informative subcellular localisation.
 
-| Property | Value |
-|----------|-------|
-| Database | Integrated Interactions Database (IID) |
-| Dataset | Human annotated protein-protein interactions |
-| URL | https://iid.ophid.utoronto.ca |
-| Access date | 2026-08-29 |
-| Matching method | Exact undirected gene-pair matching |
+Broad Gene Ontology parent terms such as `cell` (GO:0005623), `cell part`
+(GO:0044464), and other non-specific cellular-component categories were not
+considered sufficient evidence of meaningful co-localisation.
 
-Results:
-- IID exact matches: 2,293 / 9,835 (23.31%)
-- Experimental support: 1,527 interactions
-- NOT_FOUND: not treated as evidence that interaction is false
-- Output: data/processed/iid_interaction_annotation.tsv
+Generic `Membrane` annotation alone was also not used as sufficient evidence
+of specific co-localisation.
 
-#### Master evidence table
+Final audited COMPARTMENTS result:
 
-All three annotation layers integrated into one file.
-All 9,835 STRING interactions retained.
+| Status | Interactions |
+|---|---:|
+| PASS | 9,751 |
+| NO_OVERLAP | 71 |
+| UNKNOWN | 13 |
+| Total | 9,835 |
 
-| Evidence layers | Interactions |
-|----------------|--------------|
-| All 3 (COMPARTMENTS + HPA + IID) | 2,240 |
-| 2 layers | 6,961 |
-| 1 layer | 604 |
-| 0 layers | 30 |
+The authoritative COMPARTMENTS result is therefore:
 
-Output: data/processed/context_specific_evidence_master.tsv
+`9,751 PASS / 71 NO_OVERLAP / 13 UNKNOWN`
 
-#### QC example — MERTK–GAS6
-- STRING score: 0.999
-- COMPARTMENTS: PASS (shared localisation)
-- HPA retina: MERTK 15.4 nTPM, GAS6 5.8 nTPM — both expressed
-- IID: EXPERIMENTAL (2 methods, 2 PMIDs)
-- Evidence layers: 3/3
+---
 
-#### Pending
-- TissueNet v3 tissue-specific interaction evidence
-- Functional annotation
-- Pathway enrichment analysis
-- PathLinker
+### B. Human Protein Atlas — Retina expression
+
+Human Protein Atlas RNA tissue consensus data were used to determine whether
+both proteins participating in an interaction were expressed in retina.
+
+Criterion:
+
+`retina nTPM > 0` for both interacting proteins.
+
+Final HPA result:
+
+| Status | Interactions |
+|---|---:|
+| BOTH_EXPRESSED | 9,202 |
+| BELOW_THRESHOLD | 437 |
+| UNKNOWN | 196 |
+
+Quality control confirmed that no interaction classified as BOTH_EXPRESSED
+contained retinal nTPM <= 0.
+
+---
+
+### C. Integrated Interactions Database (IID)
+
+IID was used as an additional independent source of PPI evidence.
+
+Exact undirected gene-pair matching was performed between the STRING network
+and the downloaded human IID interaction dataset.
+
+Absence from IID was recorded as NOT_FOUND and was not interpreted as evidence
+that a STRING interaction is biologically false.
+
+Final IID result:
+
+| IID evidence category | Interactions |
+|---|---:|
+| EXPERIMENTAL | 1,527 |
+| PREDICTED_ONLY | 625 |
+| ORTHOLOGY_ONLY | 104 |
+| PREDICTED_AND_ORTHOLOGY | 37 |
+| NOT_FOUND | 7,542 |
+
+Total IID exact matches:
+
+`2,293 / 9,835 (23.31%)`
+
+---
+
+### D. TissueNet v3 — Additional PPI evidence
+
+TissueNet v3 was used as an additional PPI evidence source.
+
+The TissueNet PPI file uses Ensembl gene identifiers, so gene-symbol to
+Ensembl-gene mapping was performed before interaction matching.
+
+Identifier mapping result:
+
+- Total STRING network proteins: 4,132
+- Resolved: 4,107
+- Unmapped: 23
+- Ambiguous: 2
+- Overall mapping coverage: 99.39%
+
+For RP seed proteins:
+
+- RP seed proteins: 105
+- Resolved: 105
+- Mapping coverage: 100%
+
+Important interpretation:
+
+TissueNet was not used as a direct retinal-expression source. The downloaded
+TissueNet HPA and GTEx expression matrices did not contain an explicit retina
+column. Direct retinal-expression evidence was therefore provided by the
+Human Protein Atlas retina dataset.
+
+Full STRING-network TissueNet result:
+
+| TissueNet status | Interactions |
+|---|---:|
+| FOUND | 929 |
+| NOT_FOUND | 8,838 |
+| MAPPING_UNRESOLVED | 59 |
+| MAPPING_AMBIGUOUS | 9 |
+
+Interactions testable after mapping:
+
+`9,767`
+
+TissueNet matches among testable interactions:
+
+`929 / 9,767 (9.51%)`
+
+---
+
+### E. Four-layer evidence integration
+
+COMPARTMENTS, HPA retina, IID, and TissueNet were integrated into one
+interaction-level evidence table while preserving all 9,835 original STRING
+interactions.
+
+Positive evidence-layer distribution:
+
+| Number of positive evidence layers | Interactions |
+|---:|---:|
+| 0 | 30 |
+| 1 | 590 |
+| 2 | 6,946 |
+| 3 | 1,383 |
+| 4 | 886 |
+
+The 886 interactions supported by all four evidence layers were not treated as
+the final retinal network because IID and TissueNet were supporting annotation
+sources rather than mandatory retinal-context filters.
+
+---
+
+### F. Final retinal context-specific network
+
+The final retinal context-specific network was defined using two primary
+biological criteria:
+
+1. COMPARTMENTS status = PASS
+2. both proteins expressed in retina with HPA nTPM > 0
+
+IID and TissueNet were retained as additional supporting evidence.
+
+Final network:
+
+| Item | Value |
+|---|---:|
+| Original STRING interactions | 9,835 |
+| Final retinal-context interactions | 9,149 |
+| Retained percentage | 93.02% |
+| Unique proteins | 3,748 |
+| RP seed proteins retained | 105 / 105 |
+| Excluded interactions | 686 |
+
+Exclusion reasons:
+
+| Reason | Interactions |
+|---|---:|
+| Failed HPA retina only | 602 |
+| Failed COMPARTMENTS only | 53 |
+| Failed both criteria | 31 |
+
+Additional evidence within the final 9,149-edge retinal network:
+
+- IID-supported interactions: 2,240
+- TissueNet-supported interactions: 898
+- Supported by both IID and TissueNet: 886
+
+---
 
 ### Output files
+
 | File | Description |
-|------|-------------|
-| data/processed/compartments_interaction_annotation_t2.tsv | COMPARTMENTS annotation |
-| data/processed/hpa_retina_interaction_annotation.tsv | HPA retinal expression annotation |
-| data/processed/iid_interaction_annotation.tsv | IID annotation |
-| data/processed/context_specific_evidence_master.tsv | Master evidence table |
+|---|---|
+| `context_specific_evidence_master_tissuenet.tsv` | Complete 9,835-edge four-layer evidence table |
+| `retinal_context_specific_network.tsv` | Final 9,149-edge retinal context-specific network |
+| `retinal_context_excluded_interactions.tsv` | 686 excluded interactions with reasons |
+| `compartments_interaction_annotation_t2.tsv` | Final audited COMPARTMENTS annotation |
+| `compartments_shared_t2.tsv` | COMPARTMENTS PASS-only subset |
+| `hpa_retina_interaction_annotation.tsv` | HPA retinal-expression annotation |
+| `iid_interaction_annotation.tsv` | IID interaction annotation |
+| `tissuenet_identifier_mapping_resolved.tsv` | TissueNet identifier-mapping table |
+| `tissuenet_interaction_annotation.tsv` | TissueNet interaction annotation |
+
+---
+
+### Representative QC interaction — MERTK–GAS6
+
+MERTK–GAS6 satisfies the primary retinal-context criteria and also has
+additional independent support.
+
+- STRING score: 0.999
+- COMPARTMENTS: PASS
+- MERTK retina expression: 15.4 nTPM
+- GAS6 retina expression: 5.8 nTPM
+- IID: EXPERIMENTAL
+- TissueNet: FOUND
+
+---
+
+### Stage 5 status
+
+Stage 5 is complete and quality-controlled.
+
+The final retinal context-specific network contains:
+
+- 9,149 interactions
+- 3,748 proteins
+- 105 RP seed proteins
+
+---
+
+### Next analytical phase
+
+The next analysis will follow this order:
+
+1. functional annotation of the 3,748 retinal-network proteins;
+2. Gene Ontology enrichment;
+3. Reactome pathway enrichment;
+4. KEGG pathway enrichment;
+5. identification of functional groups/modules and pathways in which proteins
+   participate collectively;
+6. biological interpretation of retinal degeneration, signalling, cell death,
+   apoptosis, ciliary biology, visual signalling, mitochondrial biology, and
+   other enriched mechanisms;
+7. PathLinker/source-to-target reconstruction after the functional context has
+   been established.
 
 ---
