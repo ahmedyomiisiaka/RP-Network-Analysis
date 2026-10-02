@@ -539,12 +539,21 @@ The main Stage 5 outputs are:
 ---
 
 
-# 9. Functional Annotation and Enrichment Analysis — Stage 6
+# 9. Preliminary Functional Annotation and Enrichment Analysis — Stage 8
+
+
+> **Stage-order clarification:** This enrichment analysis was performed
+> before completion of pathway reconstruction. It is retained as
+> preliminary Stage 8 work. The formal workflow proceeds from Stage 5
+> context-specific filtering to Stage 6 RP-to-apoptosis pathway
+> reconstruction, followed by Stage 7 topology/community analysis and
+> Stage 8 enrichment.
+
 
 Functional annotation and enrichment analysis was initiated using the final
 retinal context-specific network generated in Stage 5.
 
-The Stage 6 input network contains:
+The preliminary Stage 8 enrichment input network contained:
 
 - 9,149 retinal context-specific interactions
 - 3,748 unique proteins
@@ -707,7 +716,7 @@ corresponding process is biologically absent from RP.
 
 ---
 
-## 9.4 Stage 6 Files Generated So Far
+## 9.4 Preliminary Stage 8 Files Generated
 
 Enrichment input files:
 
@@ -729,7 +738,7 @@ GO Biological Process result files:
 
 ---
 
-## 9.5 Stage 6 Status
+## 9.5 Preliminary Stage 8 Status
 
 Completed so far:
 
@@ -747,19 +756,19 @@ Pending:
 - functional grouping/module interpretation
 - integration of enrichment results with subsequent pathway/network analyses
 
-Stage 6 is therefore in progress and is not yet complete.
+This preliminary Stage 8 enrichment work is preserved for reference and will be revisited after Stage 6 pathway reconstruction and Stage 7 network-topology analysis.
 
 ---
 
 # 10. Next Analytical Phase
 
-Stage 6 functional enrichment analysis is currently in progress.
+Preliminary Stage 8 functional enrichment analysis has been performed.
 
 GO Biological Process enrichment has been completed for RP seed proteins and
 retinal-network partners, including comparison of shared and set-specific
 significant processes.
 
-The remaining Stage 6 analysis will focus on:
+When Stage 8 is formally resumed, enrichment analysis may be extended to:
 
 1. GO Molecular Function enrichment;
 2. GO Cellular Component enrichment;
@@ -789,7 +798,7 @@ Completed:
 - four-layer context-evidence integration
 - final Stage 5 QC audit
 - definition of retinal context-specific network
-- Stage 6 enrichment input preparation
+- preliminary Stage 8 enrichment input preparation
 - RP-seed GO Biological Process enrichment
 - retinal-network-partner GO Biological Process enrichment
 - RP-seed versus partner GO Biological Process comparison
@@ -800,7 +809,7 @@ Current final retinal network:
 - 3,748 proteins
 - 105 RP seed proteins retained
 
-Current Stage 6 status:
+Current preliminary Stage 8 status:
 
 - GO Biological Process analysis complete
 - GO Molecular Function pending

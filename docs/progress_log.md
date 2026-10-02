@@ -636,9 +636,9 @@ The next analysis will follow this order:
 
 ## Entry 8 — 2026-08-30
 
-### Stage 6 — Functional Annotation and Enrichment Analysis — IN PROGRESS
+### Preliminary Stage 8 — Functional Annotation and Enrichment Analysis
 
-Stage 6 was started using the final retinal context-specific network produced
+Preliminary Stage 8 enrichment was initially performed using the retinal context-specific network available at that time
 in Stage 5.
 
 #### Input network
@@ -782,7 +782,7 @@ settings. It does not mean the process is biologically absent from RP.
 
 ---
 
-### Stage 6 output files created so far
+### Preliminary Stage 8 output files created
 
 #### Enrichment inputs
 
@@ -813,11 +813,11 @@ settings. It does not mean the process is biologically absent from RP.
 
 ---
 
-### Stage 6 status
+### Preliminary Stage 8 status
 
 Completed so far:
 
-- Stage 6 input preparation and QC
+- preliminary Stage 8 input preparation and QC
 - GO Biological Process enrichment of RP seed proteins
 - GO Biological Process enrichment of retinal-network partners
 - RP seed versus partner GO Biological Process comparison
@@ -831,6 +831,6 @@ Pending:
 - functional grouping/module interpretation
 - downstream integration with PathLinker
 
-Stage 6 is therefore still in progress.
+This enrichment work is preserved as preliminary Stage 8 analysis and will be revisited after Stage 6 pathway reconstruction and Stage 7 topology/community analysis.
 
 ---

@@ -1,0 +1,9 @@
+candidate_rule	edges_retained	edges_removed	percent_edges_retained	proteins_retained	RP_seeds_retained	RP_seeds_lost
+Retina RNA only	9202	633	93.56	3777	105	0
+Photoreceptor RNA only	8986	849	91.37	3664	103	2
+Primary retinal cells only	9150	685	93.04	3735	104	1
+COMPARTMENTS only	9800	35	99.64	4107	105	0
+Retina RNA + COMPARTMENTS	9184	651	93.38	3764	105	0
+Photoreceptor RNA + COMPARTMENTS	8968	867	91.18	3652	103	2
+Primary retinal cells + COMPARTMENTS	9132	703	92.85	3723	104	1
+Retina + photoreceptor + COMPARTMENTS	8734	1101	88.81	3514	103	2

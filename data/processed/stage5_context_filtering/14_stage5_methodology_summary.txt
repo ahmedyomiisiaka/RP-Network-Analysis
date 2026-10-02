@@ -1,0 +1,163 @@
+STAGE 5 — CONTEXT-SPECIFIC RETINAL PPI FILTERING
+================================================
+
+Purpose
+-------
+To restrict the Stage-4 STRING protein-protein interaction network
+to interactions supported in a human retinal biological context
+before RP-to-apoptosis pathway reconstruction.
+
+Input
+-----
+Stage-4 STRING network:
+- Interactions: 9,835
+- Proteins: 4,132
+- RP seeds represented: 105
+- STRING minimum combined score: 0.400
+
+Evidence layers
+---------------
+1. Human Protein Atlas (HPA) retina tissue RNA expression
+2. HPA retinal single-cell RNA expression:
+   - rod photoreceptors
+   - cone photoreceptors
+   - retinal pigment epithelium (RPE)
+   - additional retinal cell types retained as annotations
+3. COMPARTMENTS subcellular localization
+4. Integrated Interactions Database (IID)
+5. TissueNet
+6. KEGG pathway annotation
+7. Reactome pathway annotation
+8. ProteomicsDB investigated as supporting proteomics evidence
+
+Evidence integration
+--------------------
+All evidence was integrated into a master edge-level evidence table.
+
+Master table:
+- 9,835 interactions
+- 97 columns
+- no duplicate STRING interaction pairs
+
+Primary Stage-5 filtering rule
+------------------------------
+An interaction was retained when:
+
+1. BOTH endpoint proteins had HPA human-retina expression evidence
+   (hpa_retina_status = EXPRESSED)
+
+AND
+
+2. The interaction had COMPARTMENTS localization compatibility
+   (compartments_status = PASS).
+
+Retinal cell-type evidence was retained as supporting/contextual
+annotation rather than used as a mandatory exclusion criterion.
+
+Reason:
+A mandatory rod/cone photoreceptor criterion would remove RP seed
+genes CLN3 and TOPORS. TOPORS retained RPE expression evidence,
+while both genes had HPA retina-tissue expression evidence.
+
+IID and TissueNet were also retained as supporting interaction
+evidence rather than mandatory criteria because database absence
+was not interpreted as evidence that an interaction is biologically
+absent.
+
+KEGG and Reactome annotations were retained as pathway-context
+evidence and were not used as mandatory interaction filters.
+
+ProteomicsDB
+------------
+ProteomicsDB was investigated as an additional proteomics evidence
+source. A retina biological source (BTO:0001175) was identified.
+However, network-wide retina protein extraction was not obtained
+under the tested API configuration. ProteomicsDB was therefore not
+used as a mandatory filtering criterion.
+
+Final Stage-5 network
+---------------------
+Input interactions: 9,835
+Retained interactions: 9,184
+Excluded interactions: 651
+Retention: 93.38%
+
+Proteins retained: 3,764
+RP seeds retained: 105 / 105
+
+Exclusion reasons:
+- Retina-expression criterion only: 616
+- COMPARTMENTS criterion only: 18
+- Both criteria: 17
+
+Supporting evidence in retained network
+---------------------------------------
+Photoreceptor-supported interactions: 8,734
+Primary retinal-cell-supported interactions: 8,882
+
+IID:
+- Experimental: 1,503
+- Predicted only: 633
+- Orthology only: 104
+- Not found: 6,944
+
+TissueNet:
+- Found: 901
+- Not found: 8,283
+
+At least one external PPI support source (IID or TissueNet):
+- Supported: 2,252
+- Not supported/found: 6,932
+
+Graph quality control
+---------------------
+Nodes: 3,764
+Edges: 9,184
+Connected components: 1
+Largest connected component: 3,764 proteins (100%)
+RP seeds in largest component: 105 / 105
+
+Degree:
+- Mean: 4.88
+- Median: 1
+- Maximum: 432
+
+RP-seed degree:
+- Mean: 97.34
+- Median: 85
+- Minimum: 6
+- Maximum: 432
+
+STRING combined score:
+- Minimum: 0.400
+- Median: 0.556
+- Mean: 0.616
+- Maximum: 0.999
+
+Score distribution:
+- 0.400–0.499: 3,280
+- 0.500–0.699: 3,168
+- 0.700–0.899: 1,573
+- 0.900–1.000: 1,163
+
+Biological control
+------------------
+MERTK–GAS6 was retained:
+- STRING combined score: 0.999
+- both proteins HPA retina expressed
+- COMPARTMENTS: PASS
+- IID: EXPERIMENTAL
+- TissueNet: FOUND
+
+Interpretation
+--------------
+The resulting network represents a retina-context-supported PPI
+network rather than a retina-exclusive interactome.
+
+Absence of evidence in IID, TissueNet, a retinal cell subtype, or
+ProteomicsDB was not automatically interpreted as biological
+absence.
+
+The network is fully connected and retains all RP source proteins,
+making it suitable as the input network for Stage 6 RP-to-apoptosis
+pathway reconstruction.

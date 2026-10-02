@@ -32,8 +32,18 @@ Thumbs.db
 # Large datasets
 # -----------------------------
 data/raw/
+
+# Processed data are ignored by default.
 data/processed/*
-!data/processed/context_specific_evidence_master.tsv
+
+# Keep the final Stage-5 analysis directory.
+!data/processed/stage5_context_filtering/
+!data/processed/stage5_context_filtering/**
+
+# Keep Stage-6 documentation/results directory.
+!data/processed/stage6_pathway_reconstruction/
+!data/processed/stage6_pathway_reconstruction/**
+
 data/results/
 
 # -----------------------------

@@ -181,7 +181,7 @@ be made after all evidence layers are complete.
 
 ---
 
-## PANTHER / Gene Ontology — Stage 6 Functional Enrichment
+## PANTHER / Gene Ontology — Preliminary Stage 8 Functional Enrichment
 
 **Purpose:** Functional enrichment and overrepresentation analysis of
 RP seed proteins and retinal-network interaction partners.
@@ -285,7 +285,7 @@ GO terms are hierarchical and may represent overlapping parent and child
 biological concepts; therefore, related significant GO terms are interpreted
 as functional themes rather than as fully independent biological findings.
 
-### Current Stage 6 status
+### Current Preliminary Stage 8 Status
 
 Completed:
 
