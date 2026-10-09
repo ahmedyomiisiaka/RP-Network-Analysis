@@ -97,3 +97,7 @@ __pycache__/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Keep the completed 4,132-protein pathway enrichment analysis.
+!data/processed/pathway_enrichment_4132/
+!data/processed/pathway_enrichment_4132/**
