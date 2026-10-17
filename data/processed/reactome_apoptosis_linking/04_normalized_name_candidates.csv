@@ -1,0 +1,68 @@
+Term,Adjusted P-value,Reactome_ID_Reactome,Pathway_Name_Reactome,Mapping_Method
+Regulation of PLK1 Activity at G2 M Transition,9.429534839125254e-30,R-HSA-2565942,Regulation of PLK1 Activity at G2/M Transition,Punctuation_insensitive_name_candidate
+G2 M Transition,4.0978138911978766e-27,R-HSA-69275,G2/M Transition,Punctuation_insensitive_name_candidate
+Mitotic G2-G2 M Phases,1.3804123280916663e-26,R-HSA-453274,Mitotic G2-G2/M phases,Punctuation_insensitive_name_candidate
+Cooperation of PDCL (PhLP1) and TRiC CCT in G-protein Beta Folding,3.129261729951748e-18,R-HSA-6814122,Cooperation of PDCL (PhLP1) and TRiC/CCT in G-protein beta folding,Punctuation_insensitive_name_candidate
+NEP NS2 Interacts With the Cellular Export Machinery,1.2809223743392034e-15,R-HSA-168333,NEP/NS2 Interacts with the Cellular Export Machinery,Punctuation_insensitive_name_candidate
+Conversion From APC C Cdc20 to APC C Cdh1 in Late Anaphase,2.4501229484300694e-13,R-HSA-176407,Conversion from APC/C:Cdc20 to APC/C:Cdh1 in late anaphase,Punctuation_insensitive_name_candidate
+G Beta Gamma Signalling Through PLC Beta,2.4501229484300694e-13,R-HSA-418217,G beta:gamma signalling through PLC beta,Punctuation_insensitive_name_candidate
+G-protein Beta Gamma Signalling,2.532310898820629e-13,R-HSA-397795,G-protein beta:gamma signalling,Punctuation_insensitive_name_candidate
+Formation of Tubulin Folding Intermediates by CCT TriC,4.0001856531196826e-13,R-HSA-389960,Formation of tubulin folding intermediates by CCT/TriC,Punctuation_insensitive_name_candidate
+APC C Cdc20 Mediated Degradation of Cyclin B,1.7158501136162005e-12,R-HSA-174048,APC/C:Cdc20 mediated degradation of Cyclin B,Punctuation_insensitive_name_candidate
+Inactivation of APC C via Direct Inhibition of the APC C Complex,3.687918044085914e-12,R-HSA-141430,Inactivation of APC/C via direct inhibition of the APC/C complex,Punctuation_insensitive_name_candidate
+Cooperation of Prefoldin and TriC CCT in Actin and Tubulin Folding,3.973905243854044e-12,R-HSA-389958,Cooperation of Prefoldin and TriC/CCT  in actin and tubulin folding,Punctuation_insensitive_name_candidate
+G Beta Gamma Signalling Through PI3Kgamma,1.0546335384297326e-11,R-HSA-392451,G beta:gamma signalling through PI3Kgamma,Punctuation_insensitive_name_candidate
+G Beta Gamma Signalling Through CDC42,1.5977503157486577e-11,R-HSA-8964616,G beta:gamma signalling through CDC42,Punctuation_insensitive_name_candidate
+Prefoldin Mediated Transfer of Substrate to CCT TriC,2.2090909504458678e-10,R-HSA-389957,Prefoldin mediated transfer of substrate  to CCT/TriC,Punctuation_insensitive_name_candidate
+G Beta Gamma Signalling Through BTK,3.159886681313731e-10,R-HSA-8964315,G beta:gamma signalling through BTK,Punctuation_insensitive_name_candidate
+Phosphorylation of the APC C,5.418009264648174e-10,R-HSA-176412,Phosphorylation of the APC/C,Punctuation_insensitive_name_candidate
+G Alpha (12 13) Signalling Events,1.0822747557066394e-08,R-HSA-416482,G alpha (12/13) signalling events,Punctuation_insensitive_name_candidate
+Inhibition of Voltage Gated Ca2+ Channels via Gbeta Gamma Subunits,2.40485370840019e-08,R-HSA-997272,Inhibition  of voltage gated Ca2+ channels via Gbeta/gamma subunits,Punctuation_insensitive_name_candidate
+SARS-CoV-2 Activates Modulates Innate and Adaptive Immune Responses,7.297905753063234e-08,R-HSA-9705671,SARS-CoV-2 activates/modulates innate and adaptive immune responses,Punctuation_insensitive_name_candidate
+APC C-mediated Degradation of Cell Cycle Proteins,2.206797124164675e-07,R-HSA-174143,APC/C-mediated degradation of cell cycle proteins,Punctuation_insensitive_name_candidate
+Activation of APC C and APC C Cdc20 Mediated Degradation of Mitotic Proteins,3.039642320611225e-07,R-HSA-176814,Activation of APC/C and APC/C:Cdc20 mediated degradation of mitotic proteins,Punctuation_insensitive_name_candidate
+Regulation of APC C Activators Between G1 S and Early Anaphase,4.850773917034518e-07,R-HSA-176408,Regulation of APC/C activators between G1/S and early anaphase,Punctuation_insensitive_name_candidate
+Autodegradation of Cdh1 by Cdh1 APC C,5.815244501051547e-07,R-HSA-174084,Autodegradation of Cdh1 by Cdh1:APC/C,Punctuation_insensitive_name_candidate
+Cdc20 Phospho-APC C Mediated Degradation of Cyclin A,6.797510560669506e-07,R-HSA-174184,Cdc20:Phospho-APC/C mediated degradation of Cyclin A,Punctuation_insensitive_name_candidate
+APC C Cdc20 Mediated Degradation of Mitotic Proteins,7.092680131576347e-07,R-HSA-176409,APC/C:Cdc20 mediated degradation of mitotic proteins,Punctuation_insensitive_name_candidate
+Folding of Actin by CCT TriC,9.219683589854372e-07,R-HSA-390450,Folding of actin by CCT/TriC,Punctuation_insensitive_name_candidate
+APC C Cdc20 Mediated Degradation of Securin,9.550067527853364e-07,R-HSA-174154,APC/C:Cdc20 mediated degradation of Securin,Punctuation_insensitive_name_candidate
+PCP CE Pathway,1.0786219150096715e-06,R-HSA-4086400,PCP/CE pathway,Punctuation_insensitive_name_candidate
+The Role of GTSE1 in G2 M Progression After G2 Checkpoint,1.7122108185646283e-06,R-HSA-8852276,The role of GTSE1 in G2/M progression after G2 checkpoint,Punctuation_insensitive_name_candidate
+Loss of MECP2 Binding Ability to the NCoR SMRT Complex,8.024636660988727e-05,R-HSA-9022537,Loss of MECP2 binding ability to the NCoR/SMRT complex,Punctuation_insensitive_name_candidate
+Association of TriC CCT With Target Proteins During Biosynthesis,0.0001051016831697,R-HSA-390471,Association of TriC/CCT with target proteins during biosynthesis,Punctuation_insensitive_name_candidate
+Class B 2 (Secretin Family Receptors),0.0001202847554393,R-HSA-373080,Class B/2 (Secretin family receptors),Punctuation_insensitive_name_candidate
+Downregulation of SMAD2 3 SMAD4 Transcriptional Activity,0.0001352810890961,R-HSA-2173795,Downregulation of SMAD2/3:SMAD4 transcriptional activity,Punctuation_insensitive_name_candidate
+Amplification of Signal From Unattached Kinetochores via a MAD2 Inhibitory Signal,0.0002884958069056,R-HSA-141444,Amplification  of signal from unattached  kinetochores via a MAD2  inhibitory signal,Punctuation_insensitive_name_candidate
+CDC6 Association With the ORC Origin Complex,0.0004457567472722,R-HSA-68689,CDC6 association with the ORC:origin complex,Punctuation_insensitive_name_candidate
+Transcriptional Activity of SMAD2 SMAD3 SMAD4 Heterotrimer,0.0009413806671979,R-HSA-2173793,Transcriptional activity of SMAD2/SMAD3:SMAD4 heterotrimer,Punctuation_insensitive_name_candidate
+"Regulation of TBK1, IKKε-mediated Activation of IRF3, IRF7 Upon TLR3 Ligation",0.0011606924660974,R-HSA-9828211,"Regulation of TBK1, IKKÎµ-mediated activation of IRF3, IRF7 upon TLR3 ligation",Punctuation_insensitive_name_candidate
+Synthesis of Active Ubiquitin Roles of E1 and E2 Enzymes,0.0012808326935694,R-HSA-8866652,Synthesis of active ubiquitin: roles of E1 and E2 enzymes,Punctuation_insensitive_name_candidate
+Antigen Processing Ubiquitination & Proteasome Degradation,0.0013398561719108,R-HSA-983168,Antigen processing: Ubiquitination & Proteasome degradation,Punctuation_insensitive_name_candidate
+Sodium Proton Exchangers,0.0014710475622617,R-HSA-425986,Sodium/Proton exchangers,Punctuation_insensitive_name_candidate
+"Regulation of TBK1, IKKε (IKBKE)-mediated Activation of IRF3, IRF7",0.001796640671767,R-HSA-9824878,"Regulation of TBK1, IKKÎµ (IKBKE)-mediated activation of IRF3, IRF7 ",Punctuation_insensitive_name_candidate
+Metabolism of Nitric Oxide NOS3 Activation and Regulation,0.0023169791597988,R-HSA-202131,Metabolism of nitric oxide: NOS3 activation and regulation,Punctuation_insensitive_name_candidate
+N-glycan Trimming in the ER and Calnexin Calreticulin Cycle,0.0026550612566931,R-HSA-532668,N-glycan trimming in the ER and Calnexin/Calreticulin cycle,Punctuation_insensitive_name_candidate
+CREB1 Phosphorylation Through the Activation of CaMKII CaMKK CaMKIV Cascasde,0.004939564587831,R-HSA-442729,CREB1 phosphorylation through the activation of CaMKII/CaMKK/CaMKIV cascasde,Punctuation_insensitive_name_candidate
+Downregulation of ERBB2 ERBB3 Signaling,0.0051666664165554,R-HSA-1358803,Downregulation of ERBB2:ERBB3 signaling,Punctuation_insensitive_name_candidate
+TICAM1-dependent Activation of IRF3 IRF7,0.0051666664165554,R-HSA-9013973,TICAM1-dependent activation of IRF3/IRF7,Punctuation_insensitive_name_candidate
+SARS-CoV-1 Activates Modulates Innate Immune Responses,0.0053969532662868,R-HSA-9692916,SARS-CoV-1 activates/modulates innate immune responses,Punctuation_insensitive_name_candidate
+ATF4 Activates Genes in Response to Endoplasmic Reticulum Stress,0.0063244019599032,R-HSA-380994,ATF4 activates genes in response to endoplasmic reticulum  stress,Punctuation_insensitive_name_candidate
+Class A 1 (Rhodopsin-like Receptors),0.0064452899244837,R-HSA-373076,Class A/1 (Rhodopsin-like receptors),Punctuation_insensitive_name_candidate
+RAF MAP Kinase Cascade,0.008606583057389,R-HSA-5673001,RAF/MAP kinase cascade,Punctuation_insensitive_name_candidate
+Calnexin Calreticulin Cycle,0.0095972087041962,R-HSA-901042,Calnexin/calreticulin cycle,Punctuation_insensitive_name_candidate
+MAPK1 MAPK3 Signaling,0.0102280332703489,R-HSA-5684996,MAPK1/MAPK3 signaling,Punctuation_insensitive_name_candidate
+MAPK6 MAPK4 Signaling,0.0129704845321352,R-HSA-5687128,MAPK6/MAPK4 signaling,Punctuation_insensitive_name_candidate
+CD28 Dependent PI3K Akt Signaling,0.0142700434605191,R-HSA-389357,CD28 dependent PI3K/Akt signaling,Punctuation_insensitive_name_candidate
+"Activation of IRF3, IRF7 Mediated by TBK1, IKKε (IKBKE)",0.0152648783539231,R-HSA-936964,"Activation of IRF3, IRF7 mediated by TBK1, IKKÎµ (IKBKE)",Punctuation_insensitive_name_candidate
+G1 S Transition,0.0180348074594309,R-HSA-69206,G1/S Transition,Punctuation_insensitive_name_candidate
+G2 M Checkpoints,0.0181228005149615,R-HSA-69481,G2/M Checkpoints,Punctuation_insensitive_name_candidate
+H139Hfs13* PPM1K Causes a Mild Variant of MSUD,0.0208761429402771,R-HSA-9912529,H139Hfs13* PPM1K causes a mild variant of  MSUD,Punctuation_insensitive_name_candidate
+SUMO Is Conjugated to E1 (UBA2 SAE1),0.0208761429402771,R-HSA-3065676,SUMO is conjugated to E1 (UBA2:SAE1),Punctuation_insensitive_name_candidate
+Mitotic G1 Phase and G1 S Transition,0.0228725908898279,R-HSA-453279,Mitotic G1 phase and G1/S transition,Punctuation_insensitive_name_candidate
+Chk1 Chk2(Cds1) Mediated Inactivation of Cyclin B Cdk1 Complex,0.0228725908898279,R-HSA-75035,Chk1/Chk2(Cds1) mediated inactivation of Cyclin B:Cdk1 complex,Punctuation_insensitive_name_candidate
+N-glycan Antennae Elongation in the Medial trans-Golgi,0.0270556468348063,R-HSA-975576,N-glycan antennae elongation in the medial/trans-Golgi,Punctuation_insensitive_name_candidate
+Negative Regulation of the PI3K AKT Network,0.0334379369553747,R-HSA-199418,Negative regulation of the PI3K/AKT network,Punctuation_insensitive_name_candidate
+TBC RABGAPs,0.0375416401232217,R-HSA-8854214,TBC/RABGAPs,Punctuation_insensitive_name_candidate
+GSK3B and BTRC CUL1-mediated-degradation of NFE2L2,0.0430698496720821,R-HSA-9762114,GSK3B and BTRC:CUL1-mediated-degradation of NFE2L2,Punctuation_insensitive_name_candidate
+MET Activates PI3K AKT Signaling,0.0467173190355908,R-HSA-8851907,MET activates PI3K/AKT signaling,Punctuation_insensitive_name_candidate

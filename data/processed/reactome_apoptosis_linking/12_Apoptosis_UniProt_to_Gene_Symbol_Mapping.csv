@@ -1,0 +1,170 @@
+UniProt_Accession,Gene_Symbol,Protein_Name,Mapping_Status
+A1A4S6,ARHGAP10,Rho GTPase-activating protein 10,Mapped
+F5HEZ4,ORF71,Viral FLICE protein,Mapped
+O00206,TLR4,Toll-like receptor 4,Mapped
+O00220,TNFRSF10A,Tumor necrosis factor receptor superfamily member 10A,Mapped
+O00231,PSMD11,26S proteasome non-ATPase regulatory subunit 11,Mapped
+O00232,PSMD12,26S proteasome non-ATPase regulatory subunit 12,Mapped
+O00273,DFFA,DNA fragmentation factor subunit alpha,Mapped
+O00429,DNM1L,Dynamin-1-like protein,Mapped
+O00487,PSMD14,Ubiquitin C-terminal hydrolase PSMD14,Mapped
+O14727,APAF1,Apoptotic protease-activating factor 1,Mapped
+O14763,TNFRSF10B,Tumor necrosis factor receptor superfamily member 10B,Mapped
+O14818,PSMA7,Proteasome subunit alpha type-7,Mapped
+O15350,TP73,Tumor protein p73,Mapped
+O15519-1,CFLAR,Isoform 1 of CASP8 and FADD-like apoptosis regulator,Mapped
+O15519-2,CFLAR,Isoform 2 of CASP8 and FADD-like apoptosis regulator,Mapped
+O43236-6,SEPTIN4,Isoform ARTS of Septin-4,Mapped
+O43242,PSMD3,26S proteasome non-ATPase regulatory subunit 3,Mapped
+O43293,DAPK3,Death-associated protein kinase 3,Mapped
+O43521,BCL2L11,Bcl-2-like protein 11,Mapped
+O43903,GAS2,Growth arrest-specific protein 2,Mapped
+O60313,OPA1,"Dynamin-like GTPase OPA1, mitochondrial",Mapped
+O60443,GSDME,Gasdermin-E,Mapped
+O76075,DFFB,DNA fragmentation factor subunit beta,Mapped
+P02545-1,LMNA,Isoform A of Prelamin-A/C,Mapped
+P04637,TP53,Cellular tumor antigen p53,Mapped
+P06396,GSN,Gelsolin,Mapped
+P07305,H1-0,Histone H1.0,Mapped
+P08571,CD14,Monocyte differentiation antigen CD14,Mapped
+P08670,VIM,Vimentin,Mapped
+P09429,HMGB1,High mobility group protein B1,Mapped
+P0CG47,UBB,Polyubiquitin-B,Mapped
+P0CG48,UBC,Polyubiquitin-C,Mapped
+P10144,GZMB,Granzyme B,Mapped
+P10412,H1-4,Histone H1.4,Mapped
+P10415,BCL2,Apoptosis regulator Bcl-2,Mapped
+P10636,MAPT,Microtubule-associated protein tau,Mapped
+P12830,CDH1,Cadherin-1,Mapped
+P15924,DSP,Desmoplakin,Mapped
+P16401,H1-5,Histone H1.5,Mapped
+P16402,H1-3,Histone H1.3,Mapped
+P16403,H1-2,Histone H1.2,Mapped
+P17980,PSMC3,26S proteasome regulatory subunit 6A,Mapped
+P20618,PSMB1,Proteasome subunit beta type-1,Mapped
+P20700,LMNB1,Lamin-B1,Mapped
+P25054,APC,Adenomatous polyposis coli protein,Mapped
+P25445,FAS,Tumor necrosis factor receptor superfamily member 6,Mapped
+P25786,PSMA1,Proteasome subunit alpha type-1,Mapped
+P25787,PSMA2,Proteasome subunit alpha type-2,Mapped
+P25788,PSMA3,Proteasome subunit alpha type-3,Mapped
+P25789,PSMA4,Proteasome subunit alpha type-4,Mapped
+P26583,HMGB2,High mobility group protein B2,Mapped
+P27348,YWHAQ,14-3-3 protein theta,Mapped
+P27361,MAPK3,Mitogen-activated protein kinase 3,Mapped
+P28066,PSMA5,Proteasome subunit alpha type-5,Mapped
+P28070,PSMB4,Proteasome subunit beta type-4,Mapped
+P28072,PSMB6,Proteasome subunit beta type-6,Mapped
+P28074,PSMB5,Proteasome subunit beta type-5,Mapped
+P28482,MAPK1,Mitogen-activated protein kinase 1,Mapped
+P30419,NMT1,Glycylpeptide N-tetradecanoyltransferase 1,Mapped
+P31749,AKT1,RAC-alpha serine/threonine-protein kinase,Mapped
+P31751,AKT2,RAC-beta serine/threonine-protein kinase,Mapped
+P31946,YWHAB,14-3-3 protein beta/alpha,Mapped
+P31947,SFN,14-3-3 protein sigma,Mapped
+P32926,DSG3,Desmoglein-3,Mapped
+P35222,CTNNB1,Catenin beta-1,Mapped
+P35611,ADD1,Alpha-adducin,Mapped
+P35998,PSMC2,26S proteasome regulatory subunit 7,Mapped
+P40763,STAT3,Signal transducer and activator of transcription 3,Mapped
+P42574,CASP3,Caspase-3,Mapped
+P43146,DCC,Netrin receptor DCC,Mapped
+P43686,PSMC4,26S proteasome regulatory subunit 6B,Mapped
+P45983,MAPK8,Mitogen-activated protein kinase 8,Mapped
+P48023,FASLG,Tumor necrosis factor ligand superfamily member 6,Mapped
+P48454,PPP3CC,Serine/threonine-protein phosphatase 2B catalytic subunit gamma isoform,Mapped
+P48556,PSMD8,26S proteasome non-ATPase regulatory subunit 8,Mapped
+P49354,FNTA,Protein farnesyltransferase/geranylgeranyltransferase type-1 subunit alpha,Mapped
+P49720,PSMB3,Proteasome subunit beta type-3,Mapped
+P49721,PSMB2,Proteasome subunit beta type-2,Mapped
+P50591,TNFSF10,Tumor necrosis factor ligand superfamily member 10,Mapped
+P51572,BCAP31,B-cell receptor-associated protein 31,Mapped
+P51665,PSMD7,26S proteasome non-ATPase regulatory subunit 7,Mapped
+P51813,BMX,Cytoplasmic tyrosine-protein kinase BMX,Mapped
+P52294,KPNA1,Importin subunit alpha-5,Mapped
+P53355,DAPK1,Death-associated protein kinase 1,Mapped
+P55210,CASP7,Caspase-7,Mapped
+P55211,CASP9,Caspase-9,Mapped
+P55212,CASP6,Caspase-6,Mapped
+P55957,BID,BH3-interacting domain death agonist,Mapped
+P57764,GSDMD,Gasdermin-D,Mapped
+P60896,SEM1,26S proteasome complex subunit SEM1,Mapped
+P60900,PSMA6,Proteasome subunit alpha type-6,Mapped
+P61981,YWHAG,14-3-3 protein gamma,Mapped
+P62191,PSMC1,26S proteasome regulatory subunit 4,Mapped
+P62195,PSMC5,26S proteasome regulatory subunit 8,Mapped
+P62258,YWHAE,14-3-3 protein epsilon,Mapped
+P62333,PSMC6,26S proteasome regulatory subunit 10B,Mapped
+P62979,RPS27A,Ubiquitin-ribosomal protein eS31 fusion protein,Mapped
+P62987,UBA52,Ubiquitin-ribosomal protein eL40 fusion protein,Mapped
+P63098,PPP3R1,Calcineurin subunit B type 1,Mapped
+P63104,YWHAZ,14-3-3 protein zeta/delta,Mapped
+P63167,DYNLL1,"Dynein light chain 1, cytoplasmic",Mapped
+P98170,XIAP,E3 ubiquitin-protein ligase XIAP,Mapped
+P99999,CYCS,Cytochrome c,Mapped
+Q01094,E2F1,Transcription factor E2F1,Mapped
+Q01826,SATB1,DNA-binding protein SATB1,Mapped
+Q02413,DSG1,Desmoglein-1,Mapped
+Q02539,H1-1,Histone H1.1,Mapped
+Q04759,PRKCQ,Protein kinase C theta type,Mapped
+Q04917,YWHAH,14-3-3 protein eta,Mapped
+Q05397,PTK2,Focal adhesion kinase 1,Mapped
+Q05655,PRKCD,Protein kinase C delta type,Mapped
+Q07021,C1QBP,"Complement component 1 Q subcomponent-binding protein, mitochondrial",Mapped
+Q07157,TJP1,Tight junction protein 1,Mapped
+Q07812,BAX,Apoptosis regulator BAX,Mapped
+Q07817,BCL2L1,Bcl-2-like protein 1,Mapped
+Q12933,TRAF2,TNF receptor-associated factor 2,Mapped
+Q13158,FADD,FAS-associated death domain protein,Mapped
+Q13177,PAK2,Serine/threonine-protein kinase PAK 2,Mapped
+Q13200,PSMD2,26S proteasome non-ATPase regulatory subunit 2,Mapped
+Q13464,ROCK1,Rho-associated protein kinase 1,Mapped
+Q13490,BIRC2,Baculoviral IAP repeat-containing protein 2,Mapped
+Q13546,RIPK1,Receptor-interacting serine/threonine-protein kinase 1,Mapped
+Q13625,TP53BP2,Apoptosis-stimulating of p53 protein 2,Mapped
+Q13794,PMAIP1,Phorbol-12-myristate-13-acetate-induced protein 1,Mapped
+Q13813,SPTAN1,"Spectrin alpha chain, non-erythrocytic 1",Mapped
+Q13835,PKP1,Plakophilin-1,Mapped
+Q14126,DSG2,Desmoglein-2,Mapped
+Q14186,TFDP1,Transcription factor Dp-1,Mapped
+Q14188,TFDP2,Transcription factor Dp-2,Mapped
+Q14790,CASP8,Caspase-8,Mapped
+Q14974,KPNB1,Importin subunit beta-1,Mapped
+Q15008,PSMD6,26S proteasome non-ATPase regulatory subunit 6,Mapped
+Q15149,PLEC,Plectin,Mapped
+Q15628,TRADD,Tumor necrosis factor receptor type 1-associated DEATH domain protein,Mapped
+Q16186,ADRM1,Proteasomal ubiquitin receptor ADRM1,Mapped
+Q16611,BAK1,Bcl-2 homologous antagonist/killer,Mapped
+Q16625,OCLN,Occludin,Mapped
+Q6ZN44,UNC5A,Netrin receptor UNC5A,Mapped
+Q86XR7,TICAM2,TIR domain-containing adapter molecule 2,Mapped
+Q8IUC6,TICAM1,TIR domain-containing adapter molecule 1,Mapped
+Q8IZJ1,UNC5B,Netrin receptor UNC5B,Mapped
+Q8N726,CDKN2A,Tumor suppressor ARF,Mapped
+Q92934,BAD,Bcl2-associated agonist of cell death,Mapped
+Q96E52,OMA1,"Metalloendopeptidase OMA1, mitochondrial",Mapped
+Q96FJ2,DYNLL2,"Dynein light chain 2, cytoplasmic",Mapped
+Q96GX9,APIP,Methylthioribulose-1-phosphate dehydratase,Mapped
+Q96KQ4,PPP1R13B,Apoptosis-stimulating of p53 protein 1,Mapped
+Q96LC9,BMF,Bcl-2-modifying factor,Mapped
+Q98325,,Viral CASP8 and FADD-like apoptosis regulator,Mapped
+Q99436,PSMB7,Proteasome subunit beta type-7,Mapped
+Q99460,PSMD1,26S proteasome non-ATPase regulatory subunit 1,Mapped
+Q9BXH1,BBC3,"Bcl-2-binding component 3, isoforms 1/2",Mapped
+Q9BZF9,UACA,Uveal autoantigen with coiled-coil domains and ankyrin repeats,Mapped
+Q9H3D4,TP63,Tumor protein 63,Mapped
+Q9HAW4,CLSPN,Claspin,Mapped
+Q9NQS1,AVEN,Cell death regulator Aven,Mapped
+Q9NR28,DIABLO,Diablo IAP-binding mitochondrial protein,Mapped
+Q9P289,STK26,Serine/threonine-protein kinase 26,Mapped
+Q9UDY2,TJP2,Tight junction protein 2,Mapped
+Q9UIK4,DAPK2,Death-associated protein kinase 2,Mapped
+Q9UJU6,DBNL,Drebrin-like protein,Mapped
+Q9UKG1,APPL1,DCC-interacting protein 13-alpha,Mapped
+Q9UKV3,ACIN1,Apoptotic chromatin condensation inducer in the nucleus,Mapped
+Q9UNM6,PSMD13,26S proteasome non-ATPase regulatory subunit 13,Mapped
+Q9Y243,AKT3,RAC-gamma serine/threonine-protein kinase,Mapped
+Q9Y2G2,CARD8,Caspase recruitment domain-containing protein 8,Mapped
+Q9Y5V3,MAGED1,Melanoma-associated antigen D1,Mapped
+Q9Y6E0,STK24,Serine/threonine-protein kinase 24,Mapped
+Q9Y6Y9,LY96,Lymphocyte antigen 96,Mapped
